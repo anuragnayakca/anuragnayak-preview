@@ -1,0 +1,8 @@
+---
+layout: default
+title: Practical Financial Insights
+description: Clear, practical articles about insurance, workplace benefits, registered savings and financial decisions facing Canadian professionals.
+permalink: /insights/
+---
+<section class="page-hero"><div class="container narrow"><p class="eyebrow">INSIGHTS</p><h1>Practical Financial Insights</h1><p class="lede">Clear, practical articles about insurance, workplace benefits, registered savings and financial decisions facing Canadian professionals.</p></div></section>
+<section class="section"><div class="container"><div class="filter-row"><span>Tech Professionals</span><span>Workplace Benefits</span><span>Insurance</span><span>Registered Savings</span><span>Business Protection</span></div><div class="article-grid">{% for post in site.posts %}<a class="article-card" href="{{ post.url }}"><span>{{ post.category }}</span><h2>{{ post.title }}</h2><p>{{ post.description }}</p><small>{{ post.date | date:'%B %-d, %Y' }} • {{ post.read_time | default:'5 min read' }}</small></a>{% endfor %}</div></div></section>

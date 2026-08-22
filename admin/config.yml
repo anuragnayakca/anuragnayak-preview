@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: anuragnayakca/anuragnayak-site
+  branch: main
+media_folder: assets/images/uploads
+public_folder: /assets/images/uploads
+collections:
+  - name: posts
+    label: Insights
+    folder: _posts
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Publish Date, name: date, widget: datetime }
+      - { label: Description, name: description, widget: string }
+      - label: Category
+        name: category
+        widget: select
+        options: [Tech Professionals, Workplace Benefits, Insurance, Registered Savings, Business Protection]
+      - { label: Read Time, name: read_time, widget: string, default: "5 min read" }
+      - { label: Body, name: body, widget: markdown }

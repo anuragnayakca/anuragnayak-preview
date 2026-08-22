@@ -1,0 +1,6 @@
+(()=>{
+const btn=document.querySelector('[data-menu-button]'), menu=document.querySelector('[data-mobile-menu]');
+if(btn&&menu){btn.addEventListener('click',()=>{const open=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',String(!open));menu.hidden=open;document.body.classList.toggle('menu-open',!open)});menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{btn.setAttribute('aria-expanded','false');menu.hidden=true;document.body.classList.remove('menu-open')}));}
+const form=document.querySelector('[data-contact-form]');
+if(form){form.addEventListener('submit',async(e)=>{e.preventDefault();const status=form.querySelector('[data-form-status]');const button=form.querySelector('button[type="submit"]');status.textContent='Sending…';button.disabled=true;try{const payload=Object.fromEntries(new FormData(form).entries());const r=await fetch(form.action,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});if(!r.ok)throw new Error('submit');window.location.href='/thank-you/';}catch(err){status.textContent='I could not send the form. Please email contact@anuragnayak.ca or use Book a Conversation.';button.disabled=false;}});}
+})();

@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<article>
+<section class="page-hero article-hero"><div class="container narrow">
+<p class="eyebrow">{{ page.category | default: 'Insights' }}</p><h1>{{ page.title }}</h1>
+<div class="article-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time><span>•</span><span>{{ page.read_time | default:'5 min read' }}</span></div>
+</div></section>
+<div class="page-content"><div class="container article-body prose">{{ content }}
+<div class="article-end"><p>Information is general and educational. Product features, tax treatment and suitability depend on individual circumstances and applicable terms.</p><a class="btn primary" href="{{ site.data.site.booking_url }}">Book a Conversation</a></div></div></div>
+</article>

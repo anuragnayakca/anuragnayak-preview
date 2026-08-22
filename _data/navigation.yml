@@ -1,0 +1,14 @@
+- label: Home
+  url: /
+- label: Insurance
+  url: /insurance/
+- label: Registered Savings
+  url: /registered-savings/
+- label: Business Protection
+  url: /business-protection/
+- label: About
+  url: /about/
+- label: Insights
+  url: /insights/
+- label: Contact
+  url: /contact/
