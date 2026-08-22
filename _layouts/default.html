@@ -3,11 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#0b1117">
+  <meta name="theme-color" content="#0a1628">
   <meta name="author" content="{{ site.data.site.advisor_name }}">
   <meta property="og:site_name" content="{{ site.data.site.advisor_name }}">
   <meta property="og:locale" content="en_CA">
   <meta property="og:image" content="{{ '/assets/images/social-card.png' | absolute_url }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="{{ '/assets/images/social-card.png' | absolute_url }}">
   {% seo %}
@@ -17,12 +19,41 @@
   <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
   <script type="application/ld+json">{
     "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"{{ site.data.site.advisor_name }}",
-    "jobTitle":"{{ site.data.site.professional_title }}",
-    "url":"{{ site.url }}",
-    "email":"{{ site.data.site.email }}",
-    "sameAs":["{{ site.data.site.linkedin }}","{{ site.data.site.facebook }}"]
+    "@graph":[
+      {
+        "@type":"WebSite",
+        "@id":"{{ site.url }}/#website",
+        "url":"{{ site.url }}",
+        "name":"{{ site.data.site.advisor_name }}",
+        "description":"{{ site.description | escape }}"
+      },
+      {
+        "@type":"Person",
+        "@id":"{{ site.url }}/#anurag-nayak",
+        "name":"{{ site.data.site.advisor_name }}",
+        "jobTitle":"{{ site.data.site.professional_title }}",
+        "url":"{{ site.url }}",
+        "email":"{{ site.data.site.email }}"{% if site.data.site.phone %},
+        "telephone":"{{ site.data.site.phone }}"{% endif %},
+        "sameAs":["{{ site.data.site.linkedin }}","{{ site.data.site.facebook }}"{% if site.data.site.instagram %},"{{ site.data.site.instagram }}"{% endif %}]
+      },
+      {
+        "@type":"FinancialService",
+        "@id":"{{ site.url }}/#insurance-advisor",
+        "name":"{{ site.data.site.advisor_name }} — Insurance Advisor",
+        "url":"{{ site.url }}",
+        "email":"{{ site.data.site.email }}"{% if site.data.site.phone %},
+        "telephone":"{{ site.data.site.phone }}"{% endif %},
+        "founder":{"@id":"{{ site.url }}/#anurag-nayak"},
+        "areaServed":[
+          {"@type":"AdministrativeArea","name":"British Columbia"},
+          {"@type":"AdministrativeArea","name":"Alberta"},
+          {"@type":"AdministrativeArea","name":"Ontario"}
+        ],
+        "serviceType":["Life Insurance","Critical Illness Insurance","Disability Insurance","Workplace Benefits Review","Registered Savings","Group Extended Health Benefits","Business Protection"],
+        "contactPoint":{"@type":"ContactPoint","email":"{{ site.data.site.email }}"{% if site.data.site.phone %},"telephone":"{{ site.data.site.phone }}"{% endif %},"contactType":"Customer Service"}
+      }
+    ]
   }</script>
 </head>
 <body>

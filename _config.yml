@@ -1,6 +1,6 @@
 title: Anurag Nayak
 tagline: From Technology to Financial Clarity
-description: Helping Canadian tech professionals, families, and business owners navigate insurance, workplace benefits, and registered savings with clarity and confidence.
+description: Helping Canadian tech professionals, families, and business owners navigate insurance, workplace and group benefits, registered savings, and business protection with clarity and confidence.
 url: "https://anuragnayak.ca"
 baseurl: ""
 email: contact@anuragnayak.ca
@@ -11,8 +11,11 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+include:
+  - _headers
 exclude:
   - README.md
   - CLOUDFLARE_DEPLOYMENT.md
+  - BUILD_NOTES.md
   - cloudflare
   - functions

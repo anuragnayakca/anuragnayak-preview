@@ -1,5 +1,11 @@
 <footer class="site-footer"><div class="container footer-grid">
-<div><a class="footer-brand" href="/">Anurag Nayak</a><p>Helping Canadian tech professionals, families, and business owners navigate insurance, workplace benefits, and registered savings with clarity and confidence.</p><p class="license">{{ site.data.site.licensed_full }}</p></div>
-<div><h2>Explore</h2>{% for item in site.data.navigation %}<a href="{{ item.url }}">{{ item.label }}</a>{% endfor %}</div>
-<div><h2>Contact</h2><a href="mailto:{{ site.data.site.email }}">{{ site.data.site.email }}</a><a href="{{ site.data.site.booking_url }}">Book a Conversation</a><a href="/workplace-benefits/">Workplace Benefits</a></div>
+<div class="footer-about">
+  <div class="footer-profile"><img src="{{ site.data.site.headshot_square }}" alt="Anurag Nayak" loading="lazy"><div><a class="footer-brand" href="/">Anurag Nayak</a><span>{{ site.data.site.credential_line }}</span></div></div>
+  <p>Helping Canadian tech professionals, families, and business owners navigate insurance, workplace benefits, registered savings, and business protection with clarity and confidence.</p>
+  <p class="license">{{ site.data.site.licensed_full }} • {{ site.data.site.virtual_line }}</p>
+  <div class="social-links"><a href="{{ site.data.site.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="{{ site.data.site.facebook }}" target="_blank" rel="noopener noreferrer">Facebook</a>{% if site.data.site.instagram %}<a href="{{ site.data.site.instagram }}" target="_blank" rel="noopener noreferrer">Instagram</a>{% endif %}</div>
+</div>
+<div><h2>Who I Help</h2><a href="/tech-professionals/">Tech Professionals</a><a href="/business-owners/">Business Owners</a><a href="/families/">Families</a></div>
+<div><h2>Explore</h2><a href="/insurance/">Insurance</a><a href="/workplace-benefits/">Workplace Benefits</a><a href="/registered-savings/">Registered Savings</a><a href="/business-protection/">Business Protection</a><a href="/group-benefits/">Group Extended Health Benefits</a><a href="/insights/">Insights</a></div>
+<div><h2>Contact</h2><a href="mailto:{{ site.data.site.email }}">{{ site.data.site.email }}</a>{% if site.data.site.phone %}<a href="{{ site.data.site.phone_href }}">{{ site.data.site.phone }}</a>{% endif %}<a href="{{ site.data.site.booking_url }}">Book a Conversation</a><a href="/contact/">Send a Message</a></div>
 </div><div class="container footer-bottom"><p>Information on this website is provided for general educational purposes and should not be considered individual tax, legal, accounting, or investment advice. Insurance and financial product availability, terms, and suitability depend on individual circumstances. Please consult qualified professionals where appropriate.</p><div><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Use</a></div><p>© {{ site.time | date:'%Y' }} Anurag Nayak.</p></div></footer>

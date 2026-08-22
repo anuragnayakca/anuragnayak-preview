@@ -1,6 +1,4 @@
 User-agent: *
-Allow: /
-Disallow: /admin/
-Disallow: /thank-you/
+Disallow: /
 
-Sitemap: https://anuragnayak.ca/sitemap.xml
+# Preview environment only. Replace with production robots.txt before moving this build to anuragnayak.ca.
