@@ -5,14 +5,26 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#0a1628">
   <meta name="author" content="{{ site.data.site.advisor_name }}">
+  {% assign meta_title = page.seo_title | default: page.title | default: site.title %}
+  {% assign meta_description = page.description | default: site.description %}
+  <title>{{ meta_title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ meta_description | strip_html | strip_newlines | escape }}">
+  <meta name="robots" content="{% if page.noindex or page.robots contains 'noindex' %}noindex, nofollow{% else %}index, follow{% endif %}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:title" content="{{ meta_title | escape }}">
+  <meta property="og:description" content="{{ meta_description | strip_html | strip_newlines | escape }}">
   <meta property="og:site_name" content="{{ site.data.site.advisor_name }}">
   <meta property="og:locale" content="en_CA">
   <meta property="og:image" content="{{ '/assets/images/social-card.png' | absolute_url }}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="From Technology to Financial Clarity — Anurag Nayak">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ meta_title | escape }}">
+  <meta name="twitter:description" content="{{ meta_description | strip_html | strip_newlines | escape }}">
   <meta name="twitter:image" content="{{ '/assets/images/social-card.png' | absolute_url }}">
-  {% seo %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -35,7 +47,7 @@
         "url":"{{ site.url }}",
         "email":"{{ site.data.site.email }}"{% if site.data.site.phone %},
         "telephone":"{{ site.data.site.phone }}"{% endif %},
-        "sameAs":["{{ site.data.site.linkedin }}","{{ site.data.site.facebook }}"{% if site.data.site.instagram %},"{{ site.data.site.instagram }}"{% endif %}]
+        "sameAs":["{{ site.data.site.linkedin }}","{{ site.data.site.facebook }}"{% if site.data.site.instagram and site.data.site.instagram != '' %},"{{ site.data.site.instagram }}"{% endif %}]
       },
       {
         "@type":"FinancialService",

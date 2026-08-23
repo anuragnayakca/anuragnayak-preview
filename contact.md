@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Start With a Conversation
-description: Contact Anurag Nayak about insurance, workplace benefits, registered savings, business protection or an existing policy review.
+seo_title: "Contact Anurag Nayak"
+description: Book a conversation or send a message about insurance, workplace or group benefits, registered savings, business protection or an existing coverage review.
 permalink: /contact/
 ---
 <section class="page-hero"><div class="container narrow"><p class="eyebrow">CONTACT</p><h1>Start With a Conversation</h1><p class="lede">Have a question about personal protection, workplace benefits, registered savings, business protection, group benefits or your existing coverage? Start with a conversation.</p></div></section>

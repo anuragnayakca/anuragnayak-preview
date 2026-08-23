@@ -1,12 +1,13 @@
 ---
 layout: page
 title: From Technology to Financial Clarity
+seo_title: "About Anurag Nayak"
 eyebrow: About Anurag
 intro: Before entering financial services, I built my career across enterprise technology, infrastructure, cloud and corporate leadership.
-description: Learn how Anurag Nayak brings a technology and problem-solving background to conversations about insurance, group benefits, registered savings and business protection.
+description: Learn how Anurag Nayak brings an enterprise technology and problem-solving background to insurance, benefits, registered savings and business protection.
 permalink: /about/
 ---
-{% if site.data.site.headshot %}<div class="profile-photo"><img src="{{ site.data.site.headshot }}" alt="Anurag Nayak, Insurance Advisor" loading="lazy"></div>{% endif %}
+{% if site.data.site.headshot %}<div class="profile-photo"><img src="{{ site.data.site.headshot }}" alt="Anurag Nayak, Insurance Advisor" loading="lazy" width="720" height="900"></div>{% endif %}
 
 Technology taught me to begin with the current environment before proposing a solution. Understand what exists. Identify risks and dependencies. Evaluate the options. Make changes only when they are justified.
 

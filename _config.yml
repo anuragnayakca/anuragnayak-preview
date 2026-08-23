@@ -9,7 +9,6 @@ markdown: kramdown
 future: false
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
   - jekyll-sitemap
 include:
   - _headers
@@ -17,5 +16,6 @@ exclude:
   - README.md
   - CLOUDFLARE_DEPLOYMENT.md
   - BUILD_NOTES.md
+  - PRODUCTION_LAUNCH.md
   - cloudflare
   - functions

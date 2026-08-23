@@ -24,3 +24,16 @@ This revision incorporates the business-owner and trust updates supplied by Anur
 - Internal links checked against generated permalinks.
 - No legacy "Virtual across Canada", old booking URLs, dashboard dollar examples or Financial Security Advisor wording remains.
 - Booking URL remains centralized at https://booknow.anuragnayak.ca/discovery.
+
+
+## V4 audit fixes
+- Fixed mobile-menu primary CTA contrast.
+- Introduced a dark gold for text on white/cream while retaining bright gold on navy.
+- Removed duplicate SEO generation by eliminating jekyll-seo-tag output and using one hand-authored meta block.
+- Instagram remains intentionally omitted until a confirmed URL is supplied; JSON-LD never emits an empty sameAs value.
+- Shortened SEO titles and descriptions.
+- Added intrinsic image dimensions to headshots.
+- Increased sticky-header anchor offsets.
+- Expanded high-intent audience/service pages with useful FAQs. FAQ schema was intentionally not added.
+- Kept preview noindex/robots blocking in place. Replace preview robots and X-Robots-Tag before production launch.
+- Licence numbers remain intentionally unpublished per owner preference.

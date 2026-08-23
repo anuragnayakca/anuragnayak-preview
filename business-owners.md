@@ -1,9 +1,10 @@
 ---
 layout: page
 title: Insurance, Group Benefits and Protection for Business Owners
+seo_title: "Business Insurance & Group Benefits"
 eyebrow: Business Owners
 intro: Business ownership connects personal income, employees, family responsibilities, financing and continuity. A useful review starts with what would actually be affected if circumstances changed.
-description: Insurance, group extended health benefits and business protection considerations for business owners and incorporated professionals in British Columbia, Alberta and Ontario.
+description: Business insurance, group benefits and continuity planning for business owners in BC, Alberta and Ontario. Start with the risks that matter.
 permalink: /business-owners/
 ---
 ## Personal and business responsibilities are connected
@@ -30,5 +31,21 @@ A continuity review can include ownership transition, debt, key people, family c
 
 ## The owner's personal protection still matters
 Business owners may also need to review personal life, critical illness and disability coverage, especially where personal income and household obligations depend heavily on the owner's ability to work.
+
+## Questions business owners often ask
+### Is business insurance the same as my personal life insurance?
+No. Personal coverage is generally intended to address household or personal obligations, while business-owned or business-purpose coverage may be structured around the company, shareholders, debt, key people or succession. The needs can be connected, but they should be identified separately.
+
+### Does insurance replace a shareholder or buy-sell agreement?
+No. An agreement establishes legal rights and obligations. Insurance may provide a source of funding for certain events, but it does not replace the legal agreement, a current business valuation or professional tax and legal advice.
+
+### Is a corporate-owned life insurance payout automatically tax-free to shareholders?
+No. Corporate-owned policies can have Capital Dividend Account implications, but the amount of any CDA credit and how funds are ultimately distributed depend on the policy, adjusted cost basis, corporate structure and applicable tax rules. This is an area to coordinate with the business's accountant and legal advisors.
+
+### Where do group benefits fit into the business picture?
+Group extended health benefits address employee compensation and wellbeing rather than key-person or shareholder risk. They can still be part of the same overall business review because employee retention, cost and administration affect the company.
+
+### When should a business protection plan be reviewed?
+A review is worth considering after meaningful changes such as adding a partner, hiring key employees, taking on debt, changing ownership, significant business growth, a new shareholder agreement or a material change in family responsibilities.
 
 <div class="content-cta"><h2>Start with the business problem, not the product.</h2><p>We can first identify the people, obligations, employee needs and dependencies that matter, then evaluate which insurance or group benefit options are worth considering.</p><a class="btn primary" href="{{ site.data.site.booking_url }}">Discuss My Business</a></div>
