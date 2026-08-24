@@ -1,0 +1,1 @@
+{% if page.url != '/' %}<nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li>{% if page.breadcrumb_parent %}<li><a href="{{ page.breadcrumb_parent_url }}">{{ page.breadcrumb_parent }}</a></li>{% endif %}<li aria-current="page">{{ page.breadcrumb_label | default: page.title }}</li></ol></nav>{% endif %}

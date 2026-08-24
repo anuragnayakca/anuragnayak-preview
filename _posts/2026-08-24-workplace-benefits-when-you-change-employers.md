@@ -1,11 +1,19 @@
 ---
 layout: post
-title: "What Happens to Your Workplace Benefits When You Change Jobs?"
-date: 2026-08-21
-description: "A practical checklist of the insurance and benefit questions worth reviewing before or shortly after a job change."
+title: "What Happens to Your Benefits When You Change Employers?"
+description: "A practical checklist of workplace-benefit questions to review before or shortly after a job change."
+excerpt_text: "A practical checklist of workplace-benefit questions to review before or shortly after a job change."
 category: Workplace Benefits
+tags: [Professionals and Career Changes, Workplace Benefits]
+featured_image: /assets/images/social-card.png
+featured_image_alt: "Anurag Nayak website article graphic"
 read_time: 5 min read
+date: 2026-08-24
+published: false
+seo_title: "What Happens to Benefits When You Change Employers?"
 ---
+**DRAFT — REVIEW BEFORE PUBLISHING**
+
 A job change usually gets evaluated through salary, role, commute and career potential. Your benefits deserve a place on that list too.
 
 Employer benefits can include life insurance, disability coverage, health and dental benefits, accidental death coverage and optional employee-paid protection. Some benefits may end when employment ends, while others may have conversion or continuation options subject to plan terms and deadlines.
@@ -25,4 +33,4 @@ Two workplace disability plans can look similar while using different waiting pe
 
 The purpose of the review is to understand the transition. If your new workplace benefits, personal coverage and financial resources appropriately address your needs, that may be the right conclusion.
 
-A good next step is simply to put the old and new benefit summaries side by side and identify what changed.
+A useful next step is simply to put the old and new benefit summaries side by side and identify what changed.

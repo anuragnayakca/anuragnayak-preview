@@ -1,41 +1,45 @@
 ---
-layout: page
-title: Insurance and Registered Savings for Families
-seo_title: "Family Insurance & Registered Savings"
-eyebrow: Families
-intro: As income, mortgages, children and longer-term goals grow, protection and savings decisions often become more connected.
-description: Understand life, critical illness, disability, mortgage protection and registered savings for families in BC, Alberta and Ontario.
-permalink: /families/
+layout: audience
+title: Families
+seo_title: "Insurance & Savings Reviews for Families | Anurag Nayak"
+description: "Review life, critical illness and disability insurance, workplace coverage, mortgages and registered savings as family responsibilities change."
+permalink: /who-i-help/families/
+breadcrumb_parent: Who I Help
+breadcrumb_parent_url: /who-i-help/
+heading: "Understand how your coverage and savings decisions support the people and responsibilities in your life."
+intro: "Family planning is less about predicting every future event and more about understanding what depends on your income, what resources are already available and what deserves review as life changes."
+considerations:
+  - "Income replacement and family expenses"
+  - "Life, critical illness and disability insurance"
+  - "Mortgage-related protection and other debt"
+  - "Education savings and RESP questions"
+  - "RRSP, TFSA, FHSA and other registered accounts"
+  - "Workplace coverage alongside personal insurance"
+  - "Existing-policy reviews after life changes"
+faqs:
+  - question: "When should a family review life insurance?"
+    answer: "A review may be useful after changes such as marriage, a new child, a mortgage, a major income change, a new business, a job change or when an existing policy approaches renewal."
+  - question: "Does having workplace life insurance mean I do not need personal coverage?"
+    answer: "Not necessarily, and it does not automatically mean you need more. The useful question is what the workplace plan provides, how long it continues, what responsibilities depend on your income and whether the total arrangement fits your situation."
+  - question: "Can we discuss RESP and other registered accounts?"
+    answer: "Yes. Registered account structures can be discussed at an educational level, and eligible investment options may be considered through applicable licensed channels subject to suitability and compliance requirements."
+  - question: "Do you provide mortgage insurance?"
+    answer: "I can discuss personally owned life and health insurance in the context of mortgage-related responsibilities. I do not provide home or automobile insurance."
+cta_title: "Review the responsibilities that have changed."
+cta_text: "A family review can bring workplace coverage, personal policies, debt and savings questions into one clearer picture."
 ---
-## Start with the responsibilities that would continue
-Mortgage payments, household expenses, childcare, education goals and other commitments do not automatically disappear when income or health changes. A review should begin with those responsibilities and the resources already available.
+Family financial arrangements rarely arrive all at once. A workplace plan may have been in place before marriage. A term policy may have been purchased with the first mortgage. An RESP may start after a child is born, while RRSP and TFSA contributions continue separately.
 
-## Workplace benefits are part of the picture
-Employer life and disability coverage can provide an important foundation. Understanding the amount, definitions and what happens if employment changes can help determine whether personal coverage deserves a closer look.
+Each decision may have made sense at the time. The question is whether the pieces still reflect the responsibilities the family has today.
 
-## Life, critical illness and disability protection
-Each type of insurance is designed for a different financial risk. Coverage amounts, policy definitions, waiting periods, terms and costs vary, so recommendations should reflect individual circumstances rather than a standard package.
+## Start with what depends on income
 
-## Mortgage protection
-Personally owned coverage and lender or creditor insurance can address mortgage-related risks differently. Ownership, portability, beneficiaries, underwriting and cost are all worth comparing.
+Income supports more than day-to-day spending. It may support a mortgage, childcare, education savings, retirement contributions, debt payments and the ability of a partner to maintain family responsibilities. Insurance discussions are most useful when they begin with those responsibilities rather than a generic coverage amount.
 
-## Registered savings
-RRSP, TFSA, FHSA and RESP accounts can support different goals. The right priority depends on income, contribution room, tax considerations, time horizon and what the family is saving for.
+## Review workplace and personal coverage together
 
-## Questions families often ask
-### How much life insurance does a family need?
-There is no single multiple of income that works for every household. Existing savings, debts, mortgage balance, childcare, education goals, survivor income and the length of time support may be needed all influence the calculation.
+Workplace life, disability and health benefits can be valuable. Personal coverage may offer different ownership, portability or contract features. The goal is not to argue that one is automatically better. It is to understand the role of each and whether there is unnecessary duplication or an unsupported responsibility.
 
-### Is mortgage insurance from the lender the same as personally owned coverage?
-Not necessarily. Ownership, beneficiary structure, portability, underwriting and how the amount of coverage changes can differ. The useful approach is to compare the actual terms rather than assuming one option is always better.
+## Savings accounts also need a purpose
 
-### Should we keep personal coverage if we already have workplace benefits?
-Maybe, maybe not. Workplace coverage can be a valuable foundation. The review should look at how much is provided, whether it changes with employment, and whether it covers the responsibilities your household would still have.
-
-### Where do RRSP, TFSA, FHSA and RESP fit together?
-Each account serves a different purpose. Retirement, flexibility, a first-home goal, children's education, current tax rate and contribution room all matter. Families often benefit from deciding which goal has priority before deciding which account receives the next dollar.
-
-### When should our coverage be reviewed?
-Major life changes are natural review points: buying a home, having a child, changing jobs, becoming self-employed, taking on significant debt or experiencing a major income change. A review does not automatically mean replacing existing coverage.
-
-<div class="content-cta"><h2>Connect protection with the life you are actually funding.</h2><p>Start with your current benefits, policies, mortgage, family responsibilities and savings goals.</p><a class="btn primary" href="{{ site.data.site.booking_url }}">Review My Current Setup</a></div>
+RRSPs, TFSAs, FHSAs and RESPs have different rules and objectives. A contribution is useful only in the context of the goal, time horizon, access needs and risk level. Registered-account decisions may also interact with tax planning, which should be coordinated with qualified tax professionals where needed.

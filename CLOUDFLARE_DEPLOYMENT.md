@@ -1,28 +1,43 @@
-# Cloudflare deployment
+# Cloudflare Pages deployment
 
-## Pages
+## Pages build settings
+
+- Framework: Jekyll
 - Production branch: `main`
 - Build command: `bundle exec jekyll build`
-- Build output: `_site`
-- Environment variable: `RUBY_VERSION=3.3.8` (or another supported recent Ruby version matching the build)
+- Build output directory: `_site`
+- Root directory: repository root
 
-## Preview workflow
-Connect the GitHub repository to Cloudflare Pages. Pull-request branches receive preview deployments. Do not move the custom domain until the preview is approved.
+## Contact form bindings
 
-## Contact form
-The public form posts to `/api/contact`, handled by `functions/api/contact.js`.
+The Pages Function at `functions/api/contact.js` expects:
 
-Create a separate Worker from `cloudflare/contact-email-worker.js`, onboard `anuragnayak.ca` in Cloudflare Email Service, and bind `EMAIL` as a `send_email` binding. Set Worker variables:
-- `FROM_EMAIL` (an address on the onboarded domain)
-- `TO_EMAIL=contact@anuragnayak.ca`
+- `CONTACT_WORKER` — Service Binding to the email-delivery Worker
+- `CONTACT_SHARED_SECRET` — secret shared by the Pages Function and email Worker
+- `TURNSTILE_SECRET` — optional but recommended Turnstile secret
+- `FORM_RATE_LIMIT` — optional KV namespace used for a simple per-IP contact-form rate limit
+
+The email Worker at `cloudflare/contact-email-worker.js` expects:
+
 - `CONTACT_SHARED_SECRET`
+- `FROM_EMAIL`
+- `TO_EMAIL`
+- `EMAIL` — Cloudflare Email service binding
 
-In the Pages project add:
-- service binding `CONTACT_WORKER` pointing to that Worker
-- secret `CONTACT_SHARED_SECRET` with the same value
-- secret `TURNSTILE_SECRET`
+## CMS OAuth Worker
 
-Add the Turnstile site key to `_data/site.yml` as `turnstile_site_key`.
+Deploy `cloudflare/cms-oauth-worker.js` separately and configure:
 
-## Custom domain
-After preview approval, attach `anuragnayak.ca` and `www.anuragnayak.ca`. Preserve existing mail MX records unless intentionally changing email hosting.
+- `GITHUB_CLIENT_ID`
+- `GITHUB_CLIENT_SECRET`
+- `ALLOWED_ORIGIN`
+
+Recommended route: `cms-auth.anuragnayak.ca/*`.
+
+## Turnstile
+
+Create a Turnstile widget for the production and preview domains. Add the public site key to `_data/site.yml` and store the secret only in Cloudflare environment variables.
+
+## Analytics
+
+No advertising or marketing pixels are installed by default. If Cloudflare Web Analytics is enabled later, update the privacy policy to match the actual configuration.

@@ -1,0 +1,1 @@
+{% if page.faqs and page.faqs.size > 0 %}<section class="faq-block" aria-labelledby="faq-heading"><p class="eyebrow">COMMON QUESTIONS</p><h2 id="faq-heading">Questions worth asking</h2><div class="faq-list">{% for faq in page.faqs %}<details><summary>{{ faq.question }}</summary><div><p>{{ faq.answer }}</p></div></details>{% endfor %}</div></section>{% endif %}

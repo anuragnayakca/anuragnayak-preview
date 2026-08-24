@@ -1,0 +1,8 @@
+---
+layout: default
+---
+<section class="page-hero"><div class="container narrow">{% include breadcrumbs.html %}<p class="eyebrow">WHO I HELP</p><h1>{{ page.heading | default: page.title }}</h1><p class="lede">{{ page.intro }}</p></div></section>
+<section class="page-content"><div class="container"><div class="content-layout"><article class="prose main-prose">{{ content }}
+{% if page.considerations %}<h2>Areas that may be worth reviewing</h2><div class="check-grid">{% for item in page.considerations %}<div><span aria-hidden="true">✓</span><p>{{ item }}</p></div>{% endfor %}</div>{% endif %}
+{% if page.special_section_title %}<section id="{{ page.special_section_id | default: 'more-context' }}" class="callout-panel"><p class="eyebrow">ADDITIONAL CONTEXT</p><h2>{{ page.special_section_title }}</h2><p>{{ page.special_section_text }}</p></section>{% endif %}
+{% include faq.html %}{% include content_cta.html %}</article><aside class="side-card"><h2>Start with the current picture</h2><p>Bring the documents or information you already have. The first step is understanding what is in place and what questions you want to answer.</p><a class="btn primary" href="/book/">Book a Consultation</a><a class="text-link" href="/services/">Explore Services</a></aside></div></div></section>

@@ -1,51 +1,51 @@
 ---
-layout: page
-title: Insurance, Group Benefits and Protection for Business Owners
-seo_title: "Business Insurance & Group Benefits"
-eyebrow: Business Owners
-intro: Business ownership connects personal income, employees, family responsibilities, financing and continuity. A useful review starts with what would actually be affected if circumstances changed.
-description: Business insurance, group benefits and continuity planning for business owners in BC, Alberta and Ontario. Start with the risks that matter.
-permalink: /business-owners/
+layout: audience
+title: Business Owners
+seo_title: "Insurance for Business Owners | Anurag Nayak"
+description: "Review owner protection, key-person risk, buy-sell funding, employee benefits and business insurance considerations in BC, AB and ON."
+permalink: /who-i-help/business-owners/
+breadcrumb_parent: Who I Help
+breadcrumb_parent_url: /who-i-help/
+heading: "Review the protection and benefit arrangements connected to the business you have built."
+intro: "Business ownership can connect personal income, employees, partners, debt and continuity in ways that deserve a coordinated review."
+considerations:
+  - "Owner and key-person insurance considerations"
+  - "Buy-sell and shareholder-agreement funding questions"
+  - "Business debt and financial obligations"
+  - "Corporate-owned life insurance concepts"
+  - "Employee life, health, dental and disability benefits"
+  - "Personal protection for owners and incorporated professionals"
+  - "Coordination with legal, tax and accounting professionals"
+faqs:
+  - question: "What is key-person insurance intended to address?"
+    answer: "It is generally used to address financial consequences a business may face if a person who is important to revenue, operations, relationships or financing dies or becomes unable to work. The appropriate structure depends on the business and policy terms."
+  - question: "Can insurance fund a buy-sell agreement?"
+    answer: "Insurance can be one possible funding method for certain triggering events, but the legal agreement, valuation method, ownership structure and tax treatment should be coordinated with legal and accounting professionals."
+  - question: "Do you arrange employee health and dental benefits?"
+    answer: "Yes. Group extended health-benefit options can be reviewed for businesses, subject to carrier eligibility, plan design, employee participation and budget."
+  - question: "Can a corporation own life insurance?"
+    answer: "A corporation may own life insurance in appropriate circumstances. Ownership, beneficiary structure, tax treatment and any potential Capital Dividend Account implications depend on the policy and corporate circumstances and should be reviewed with qualified tax and accounting professionals."
+  - question: "Do you provide tax or legal advice for my corporation?"
+    answer: "No. I can explain insurance and benefit concepts and coordinate the discussion, but legal, accounting and tax conclusions should come from the appropriate professionals."
+cta_title: "Start with the responsibilities tied to the business."
+cta_text: "A review can help identify which risks, people and obligations deserve further discussion before choosing a product or structure."
 ---
-## Personal and business responsibilities are connected
-For many owners, the business supports family income, employees, long-term goals and future wealth. That makes personal insurance and business protection related, but they are not the same problem. Start by identifying which obligation belongs where.
+Business owners often have two financial pictures operating at the same time: the household that depends on their income and the business that may depend on their leadership, relationships, knowledge or capital.
 
-## Group Extended Health Benefits
-If you have employees, a group benefits plan can be part of how you support and retain your team. I arrange group extended health benefit plans for businesses and can help you understand plan design, employer costs, employee needs and available options.
+That can create questions that do not arise in the same way for an employee. What happens to debt if an owner dies? How would a partner's shares be purchased? What financial effect would the loss of a key employee have? Are employee benefits still appropriate as the company grows? Does the owner have personal disability or critical illness protection if there is no traditional workplace plan?
 
-Depending on the carrier and plan design, benefits may include health, prescription drugs, dental, vision, paramedical services and other coverage. Eligibility, features, cost-sharing and coverage vary by business and plan.
+## Begin with continuity and obligations
 
-<a class="text-link" href="/group-benefits/">Explore Group Extended Health Benefits →</a>
+Business insurance should not begin with a complicated tax strategy. A more useful starting point is identifying obligations and dependencies. That may include loans, leases, payroll, partner arrangements, client relationships, ownership transfer requirements or the household's dependence on business income.
 
-## Key-person risk
-The death, disability or serious illness of an owner or critical employee may affect revenue, client relationships, financing, operations and confidence inside the business. Insurance may be one source of liquidity while the company adjusts, subject to the structure and policy terms.
+Once the responsibility is clear, different funding approaches can be considered. Insurance may be one of them, but policy availability, underwriting, cost, ownership structure and legal or tax considerations all matter.
 
-## Shareholder and buy-sell funding
-A shareholder agreement can set out what should happen after certain triggering events, but the agreement and the funding mechanism are different pieces. Life insurance may be one option for a death-related obligation. Legal agreements, valuations and insurance structures should be coordinated with qualified professionals.
+## Employee benefits are part of the business conversation
 
-## Corporate-owned life insurance
-Corporate-owned life insurance may be considered for certain protection, estate or succession objectives. Tax treatment and any Capital Dividend Account implications depend on the policy structure and circumstances and should be reviewed with qualified tax and legal professionals.
+For a business with employees, group benefits may include health, dental, life and disability coverage, with other features depending on the plan and provider. The right discussion includes employee needs, business size, plan design, participation requirements and budget.
 
-## Continuity and succession
-A continuity review can include ownership transition, debt, key people, family considerations, shareholders, employees, clients and the time required for the business to adapt. Insurance can support a plan, but it is not the entire plan.
+A benefit plan should not be sold on the promise that it will automatically improve recruitment or retention. It should be evaluated on what it provides, what it costs and whether it fits the workforce and business.
 
-## The owner's personal protection still matters
-Business owners may also need to review personal life, critical illness and disability coverage, especially where personal income and household obligations depend heavily on the owner's ability to work.
+## Corporate insurance requires coordinated advice
 
-## Questions business owners often ask
-### Is business insurance the same as my personal life insurance?
-No. Personal coverage is generally intended to address household or personal obligations, while business-owned or business-purpose coverage may be structured around the company, shareholders, debt, key people or succession. The needs can be connected, but they should be identified separately.
-
-### Does insurance replace a shareholder or buy-sell agreement?
-No. An agreement establishes legal rights and obligations. Insurance may provide a source of funding for certain events, but it does not replace the legal agreement, a current business valuation or professional tax and legal advice.
-
-### Is a corporate-owned life insurance payout automatically tax-free to shareholders?
-No. Corporate-owned policies can have Capital Dividend Account implications, but the amount of any CDA credit and how funds are ultimately distributed depend on the policy, adjusted cost basis, corporate structure and applicable tax rules. This is an area to coordinate with the business's accountant and legal advisors.
-
-### Where do group benefits fit into the business picture?
-Group extended health benefits address employee compensation and wellbeing rather than key-person or shareholder risk. They can still be part of the same overall business review because employee retention, cost and administration affect the company.
-
-### When should a business protection plan be reviewed?
-A review is worth considering after meaningful changes such as adding a partner, hiring key employees, taking on debt, changing ownership, significant business growth, a new shareholder agreement or a material change in family responsibilities.
-
-<div class="content-cta"><h2>Start with the business problem, not the product.</h2><p>We can first identify the people, obligations, employee needs and dependencies that matter, then evaluate which insurance or group benefit options are worth considering.</p><a class="btn primary" href="{{ site.data.site.booking_url }}">Discuss My Business</a></div>
+Corporate-owned life insurance and other ownership structures can have tax and estate implications. Those outcomes depend on legislation, policy structure, adjusted cost basis, beneficiary arrangements and corporate circumstances. Insurance planning should therefore be coordinated with the business's accountant, lawyer and tax professionals where appropriate.

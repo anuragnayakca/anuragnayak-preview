@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /
 
-# Preview environment only. Replace with production robots.txt before moving this build to anuragnayak.ca.
+# PREVIEW BUILD: replace with production robots.txt before connecting anuragnayak.ca.

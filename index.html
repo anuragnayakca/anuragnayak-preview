@@ -1,40 +1,77 @@
 ---
 layout: default
-title: "From Technology to Financial Clarity"
-seo_title: "Insurance Advisor: Tech, Business & Families"
-description: Helping tech professionals, families and business owners in BC, Alberta and Ontario understand insurance, benefits, savings and business protection.
+seo_title: "Insurance Advisor in BC, AB & ON | Anurag Nayak"
+description: "Practical guidance for Canadian professionals, families and business owners on insurance, workplace benefits and investment options."
 ---
-<section class="hero">
-<div class="hero-grid-bg" aria-hidden="true"></div><div class="container hero-layout">
-<div class="hero-copy"><p class="eyebrow">LLQP-QUALIFIED INSURANCE ADVISOR | BC • AB • ON</p><h1>From Technology to <span>Financial Clarity</span></h1><p class="hero-lede">Helping Canadian tech professionals, families, and business owners navigate insurance, workplace and group benefits, registered savings, and business protection with clarity and confidence.</p><div class="actions"><a class="btn primary" href="{{ site.data.site.booking_url }}">Book a Conversation</a><a class="btn secondary" href="#who-i-help">See Who I Help</a></div><p class="trust-line">Licensed in British Columbia, Alberta & Ontario <span>•</span> Virtual appointments available</p></div>
-<div class="clarity-visual" aria-label="Abstract diagram showing complexity becoming structured clarity">
-<div class="visual-label">COMPLEXITY</div><div class="nodes chaos">{% for i in (1..12) %}<i></i>{% endfor %}</div><div class="flow-lines"><i></i><i></i><i></i><i></i></div><div class="structured"><b></b><b></b><b></b><b></b></div><div class="visual-label end">CLARITY</div>
-</div></div></section>
+<section class="hero" id="top">
+  <div class="hero-pattern" aria-hidden="true"></div>
+  <div class="container hero-layout">
+    <div class="hero-copy">
+      <p class="eyebrow">{{ site.data.home.hero.eyebrow }}</p>
+      <h1>{{ site.data.home.hero.title }}</h1>
+      <p class="hero-lede">{{ site.data.home.hero.support }}</p>
+      <div class="actions">
+        <a class="btn primary" href="/book/">{{ site.data.home.hero.primary_label }}</a>
+        <a class="btn secondary" href="/services/">{{ site.data.home.hero.secondary_label }}</a>
+      </div>
+      <p class="trust-line">{{ site.data.site.virtual_line }} <span>•</span> {{ site.data.site.in_person_line }}</p>
+    </div>
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-accent" aria-hidden="true"></div>
+      <img class="hero-photo" src="{{ site.data.site.headshot }}" alt="Anurag Nayak, Insurance Advisor" width="720" height="900" fetchpriority="high">
+      <div class="hero-photo-note"><strong>Start with what you already have.</strong><span>Review first. Change only where there is a clear reason.</span></div>
+    </div>
+  </div>
+</section>
 
-<section class="section intro-section"><div class="container"><div class="section-heading"><p class="eyebrow">START WITH THE CURRENT PICTURE</p><h2>Start With What You Already Have</h2><p>Good financial decisions do not always begin with buying something new. They often begin with understanding what is already in place.</p></div><div class="card-grid four">
-<article class="card"><span class="card-num">01</span><h3>Workplace Benefits</h3><p>Understand what your employer currently provides, where potential limitations may exist, and what may change if your employment changes.</p><a href="/workplace-benefits/">Understand my benefits →</a></article>
-<article class="card"><span class="card-num">02</span><h3>Personal Protection</h3><p>Consider how illness, disability, or death could affect your income, mortgage, family responsibilities, and longer-term plans.</p><a href="/insurance/">Explore protection →</a></article>
-<article class="card"><span class="card-num">03</span><h3>Business & Ownership</h3><p>Review key-person dependencies, shareholder obligations, employee benefit needs, continuity plans, and existing business coverage before considering anything new.</p><a href="/business-owners/">For business owners →</a></article>
-<article class="card"><span class="card-num">04</span><h3>Registered Savings</h3><p>Understand how RRSP, TFSA, FHSA, and RESP options may fit into your financial picture.</p><a href="/registered-savings/">Explore registered savings →</a></article>
-</div><div class="reassurance"><span></span><p>If what you already have is appropriate, I’ll tell you that too.</p><a class="text-link" href="{{ site.data.site.booking_url }}">Review My Current Setup →</a></div></div></section>
+<section class="section start-section" id="start">
+  <div class="container">
+    <div class="section-heading split"><div><p class="eyebrow">{{ site.data.home.start.eyebrow }}</p><h2>{{ site.data.home.start.title }}</h2></div><p>{{ site.data.home.start.body }}</p></div>
+    <div class="principle-grid">{% for item in site.data.home.start.points %}<article><span>{{ forloop.index | prepend: '0' }}</span><p>{{ item }}</p></article>{% endfor %}</div>
+  </div>
+</section>
 
-<section class="section audience" id="who-i-help"><div class="container"><div class="section-heading split"><div><p class="eyebrow">WHO I HELP</p><h2>Different responsibilities. One clarity-first approach.</h2></div><p>Whether the questions begin with a career, a family, or a business, the process is the same: understand what exists, identify what deserves attention, and evaluate options before making changes.</p></div><div class="card-grid three">
-<article class="audience-card"><div class="audience-top"><span>TECH PROFESSIONALS</span><span class="signal"></span></div><h3>Career changes can change more than your job title.</h3><p>Workplace benefits, personal protection and registered savings can overlap in ways that are easy to miss during career moves, contracting or incorporation.</p><ul><li>Workplace benefits</li><li>Life, critical illness & disability</li><li>RRSP, TFSA, FHSA & RESP</li></ul><a href="/tech-professionals/">For Tech Professionals →</a></article>
-<article class="audience-card"><div class="audience-top"><span>BUSINESS OWNERS</span><span class="signal"></span></div><h3>Your personal finances and your business do not live in separate worlds.</h3><p>Ownership can create questions around key people, shareholder obligations, continuity, succession, and the financial impact on your family and company.</p><ul><li>Key-person & buy-sell considerations</li><li>Group extended health benefits</li><li>Corporate-owned insurance & continuity</li></ul><a href="/business-owners/">For Business Owners →</a></article>
-<article class="audience-card"><div class="audience-top"><span>FAMILIES</span><span class="signal"></span></div><h3>Protection and savings become more connected as life grows.</h3><p>Mortgages, children, income and longer-term goals often need to be considered together rather than one product at a time.</p><ul><li>Income & family protection</li><li>Mortgage responsibilities</li><li>Education & registered savings</li></ul><a href="/families/">For Families →</a></article>
-</div></div></section>
+<section class="section audience-section" id="who-i-help">
+  <div class="container">
+    <div class="section-heading"><p class="eyebrow">{{ site.data.home.audiences.eyebrow }}</p><h2>{{ site.data.home.audiences.title }}</h2><p>{{ site.data.home.audiences.intro }}</p></div>
+    <div class="card-grid three audience-grid">{% for card in site.data.home.audiences.cards %}<article class="audience-card"><div class="audience-mark" aria-hidden="true"></div><h3>{{ card.title }}</h3><p>{{ card.text }}</p><p class="audience-note">{{ card.note }}</p><a class="text-link" href="{{ card.url }}">{{ card.cta }} →</a></article>{% endfor %}</div>
+  </div>
+</section>
 
-<section class="section services" id="how-i-help"><div class="container"><div class="section-heading"><p class="eyebrow">HOW I HELP</p><h2>Protection and Savings Made Easier to Understand</h2><p>Personal and business decisions are connected. The goal is to understand the purpose, trade-offs and fit of each option rather than start with a product list.</p></div><div class="service-grid">
-<a class="service-block" href="/insurance/"><span>01</span><h3>Insurance Protection</h3><p>Life, critical illness, disability and personal mortgage protection, explained around what each is designed to do.</p><b>Explore Insurance →</b></a>
-<a class="service-block" href="/business-protection/"><span>02</span><h3>Business Protection</h3><p>Key-person, buy-sell funding, corporate-owned insurance and business continuity considerations for owners and incorporated professionals.</p><b>Explore Business Protection →</b></a>
-<a class="service-block" href="/workplace-benefits/"><span>03</span><h3>Workplace Benefits</h3><p>Understand how employer-provided benefits fit with personal protection and what may change when employment changes.</p><b>Understand Workplace Benefits →</b></a>
-<a class="service-block" href="/registered-savings/"><span>04</span><h3>Registered Savings</h3><p>RRSP, TFSA, FHSA and RESP options, with the purpose, trade-offs and fit explained in plain language.</p><b>Explore Registered Savings →</b></a>
-</div><div class="business-benefits-callout"><div><p class="eyebrow">FOR EMPLOYERS</p><h3>Group Extended Health Benefits</h3><p>I also help business owners explore employee group benefit plans that may include health, dental and other coverage options depending on the plan design and eligibility.</p></div><a class="btn outline-dark" href="/group-benefits/">Explore Group Benefits</a></div></div></section>
+<section class="section services-section" id="services">
+  <div class="container">
+    <div class="section-heading split"><div><p class="eyebrow">{{ site.data.home.services.eyebrow }}</p><h2>{{ site.data.home.services.title }}</h2></div><p>{{ site.data.home.services.intro }}</p></div>
+    <div class="service-card-grid">{% for card in site.data.home.services.cards %}<a class="service-card" href="{{ card.url }}"><span>{{ forloop.index | prepend: '0' }}</span><h3>{{ card.title }}</h3><p>{{ card.text }}</p><b>Learn more →</b></a>{% endfor %}</div>
+  </div>
+</section>
 
-<section class="section tech-section"><div class="container tech-layout"><div><p class="eyebrow">A DIFFERENT PROFESSIONAL BACKGROUND</p><h2>A Technology Background. An Analytical Approach.</h2><p>My career across enterprise technology, infrastructure, cloud, and corporate leadership shaped the way I solve problems.</p><p>Understand the current environment first. Identify dependencies and potential gaps. Evaluate the available options. Then decide what actually needs to change.</p><p>I bring the same mindset to conversations about personal protection, workplace and group benefits, registered savings, and business protection today.</p><a class="text-link light" href="/about/">Read my story →</a></div><aside class="advisor-card"><img src="{{ site.data.site.headshot_square }}" alt="Anurag Nayak, LLQP Licensed Insurance Advisor" loading="lazy" width="420" height="420"><div><p class="eyebrow">MEET YOUR ADVISOR</p><h3>Anurag Nayak</h3><p>{{ site.data.site.credential_line }}</p><ul><li>Licensed in BC, Alberta & Ontario</li><li>Background in enterprise technology, infrastructure & cloud</li><li>Personal, family and business-owner conversations</li></ul><a class="text-link light" href="/about/">About Anurag →</a></div></aside></div></section>
+<section class="section process-section" id="process">
+  <div class="container">
+    <div class="section-heading"><p class="eyebrow">{{ site.data.home.process.eyebrow }}</p><h2>{{ site.data.home.process.title }}</h2></div>
+    <div class="process-grid three">{% for step in site.data.home.process.steps %}<article><span>0{{ forloop.index }}</span><h3>{{ step.title }}</h3><p>{{ step.text }}</p></article>{% endfor %}</div>
+    <p class="process-note">A consultation does not assume that a product recommendation or change will be appropriate.</p>
+  </div>
+</section>
 
-<section class="section process"><div class="container"><div class="section-heading"><p class="eyebrow">HOW I WORK</p><h2>Start With Understanding, Not Products</h2><p>Understand first. Decide second.</p></div><div class="process-grid"><article><span>01</span><h3>Understand</h3><p>Review what is already in place.</p></article><article><span>02</span><h3>Identify</h3><p>Find questions, potential gaps, or areas worth reviewing.</p></article><article><span>03</span><h3>Evaluate</h3><p>Understand available options, costs, trade-offs, and limitations.</p></article><article><span>04</span><h3>Decide</h3><p>Determine whether anything actually needs to change.</p></article></div><div class="center-action"><p>The goal is not to replace something simply because a review was completed. Sometimes confirmation that your current setup is appropriate is valuable too.</p><a class="btn outline-dark" href="{{ site.data.site.booking_url }}">Start a Conversation</a></div></div></section>
+<section class="section background-section">
+  <div class="container background-layout">
+    <div class="background-photo"><img src="{{ site.data.site.headshot_square }}" alt="Anurag Nayak" loading="lazy" width="420" height="420"></div>
+    <div><p class="eyebrow">{{ site.data.home.background.eyebrow }}</p><h2>{{ site.data.home.background.title }}</h2>{% for paragraph in site.data.home.background.paragraphs %}<p>{{ paragraph }}</p>{% endfor %}<a class="text-link light" href="/about/">Learn More About Anurag →</a></div>
+  </div>
+</section>
 
-<section class="section insights-preview"><div class="container"><div class="section-heading split"><div><p class="eyebrow">PRACTICAL FINANCIAL INSIGHTS</p><h2>Clear explanations for real financial decisions.</h2></div><a class="text-link" href="/insights/">View All Insights →</a></div><div class="article-grid">{% assign posts = site.posts | limit: 3 %}{% for post in posts %}<a class="article-card" href="{{ post.url }}"><span>{{ post.category }}</span><h3>{{ post.title }}</h3><p>{{ post.description }}</p><small>{{ post.date | date:'%B %-d, %Y' }} • {{ post.read_time }}</small></a>{% endfor %}{% if site.posts.size == 0 %}<div class="article-card"><span>WORKPLACE BENEFITS</span><h3>What Happens to Your Workplace Benefits When You Change Jobs?</h3><p>Coming soon.</p></div>{% endif %}</div></div></section>
+<section class="section insights-preview">
+  <div class="container">
+    <div class="section-heading split"><div><p class="eyebrow">INSIGHTS</p><h2>Practical articles for real financial decisions.</h2></div><p>Insurance, workplace benefits, business protection, registered accounts and policy-review questions explained in plain Canadian English.</p></div>
+    {% if site.posts.size > 0 %}<div class="article-grid">{% for post in site.posts limit:3 %}{% include article_card.html post=post %}{% endfor %}</div>{% else %}<div class="empty-state"><h3>New articles are being prepared.</h3><p>Draft content is reviewed before publication. Check back for practical articles on insurance, workplace benefits, business protection and investment-account questions.</p></div>{% endif %}
+    <div class="center-action"><a class="btn outline-dark" href="/insights/">View All Insights</a></div>
+  </div>
+</section>
 
-<section class="final-cta"><div class="container cta-inner"><div><p class="eyebrow">NOT SURE WHERE TO START?</p><h2>Start with what you already have.</h2><p>A conversation can help clarify what is working, what may be worth reviewing, and whether anything needs to change.</p></div><div class="actions"><a class="btn primary" href="{{ site.data.site.booking_url }}">Book a Conversation</a><a class="btn secondary" href="/contact/">Send a Message</a></div></div></section>
+<section class="section faq-section">
+  <div class="container narrow"><div class="section-heading"><p class="eyebrow">{{ site.data.home.faq.eyebrow }}</p><h2>{{ site.data.home.faq.title }}</h2></div><div class="faq-list">{% for faq in site.data.home.faq.items %}<details><summary>{{ faq.question }}</summary><div><p>{{ faq.answer }}</p></div></details>{% endfor %}</div></div>
+</section>
+
+{% include testimonials.html %}
+
+<section class="final-cta"><div class="container cta-inner"><div><p class="eyebrow">A PRACTICAL FIRST STEP</p><h2>{{ site.data.home.final_cta.title }}</h2><p>{{ site.data.home.final_cta.text }}</p></div><div class="actions"><a class="btn primary" href="/book/">{{ site.data.home.final_cta.button }}</a><a class="btn secondary" href="/contact/">Send a Message</a></div></div></section>

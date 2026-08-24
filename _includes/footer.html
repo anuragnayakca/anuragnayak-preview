@@ -1,11 +1,26 @@
-<footer class="site-footer"><div class="container footer-grid">
-<div class="footer-about">
-  <div class="footer-profile"><img src="{{ site.data.site.headshot_square }}" alt="Anurag Nayak" loading="lazy" width="420" height="420"><div><a class="footer-brand" href="/">Anurag Nayak</a><span>{{ site.data.site.credential_line }}</span></div></div>
-  <p>Helping Canadian tech professionals, families, and business owners navigate insurance, workplace benefits, registered savings, and business protection with clarity and confidence.</p>
-  <p class="license">{{ site.data.site.licensed_full }}. Virtual appointments available for residents of these provinces.</p>
-  <div class="social-links"><a href="{{ site.data.site.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="{{ site.data.site.facebook }}" target="_blank" rel="noopener noreferrer">Facebook</a>{% if site.data.site.instagram and site.data.site.instagram != '' %}<a href="{{ site.data.site.instagram }}" target="_blank" rel="noopener noreferrer">Instagram</a>{% endif %}</div>
-</div>
-<div><h2>Who I Help</h2><a href="/tech-professionals/">Tech Professionals</a><a href="/business-owners/">Business Owners</a><a href="/families/">Families</a></div>
-<div><h2>Explore</h2><a href="/insurance/">Insurance</a><a href="/workplace-benefits/">Workplace Benefits</a><a href="/registered-savings/">Registered Savings</a><a href="/business-protection/">Business Protection</a><a href="/group-benefits/">Group Extended Health Benefits</a><a href="/insights/">Insights</a></div>
-<div><h2>Contact</h2><a href="mailto:{{ site.data.site.email }}">{{ site.data.site.email }}</a>{% if site.data.site.phone %}<a href="{{ site.data.site.phone_href }}">{{ site.data.site.phone }}</a>{% endif %}<a href="{{ site.data.site.booking_url }}">Book a Conversation</a><a href="/contact/">Send a Message</a></div>
-</div><div class="container footer-bottom"><p>Information on this website is provided for general educational purposes and should not be considered individual tax, legal, accounting, or investment advice. Insurance and financial product availability, terms, and suitability depend on individual circumstances. Please consult qualified professionals where appropriate.</p><div><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Use</a></div><p>© {{ site.time | date:'%Y' }} Anurag Nayak.</p></div></footer>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-about">
+      <div class="footer-profile">
+        <img src="{{ site.data.site.headshot_square }}" alt="Portrait of Anurag Nayak" loading="lazy" width="420" height="420">
+        <div><a class="footer-brand" href="/">Anurag Nayak</a><span>Insurance Advisor</span></div>
+      </div>
+      <p>Helping Canadian professionals, families and business owners understand insurance, workplace benefits and investment options with greater clarity.</p>
+      <p class="license">{{ site.data.site.licensing_disclosure }}</p>
+      <div class="social-links">
+        <a href="{{ site.data.site.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="{{ site.data.site.facebook }}" target="_blank" rel="noopener noreferrer">Facebook</a>
+        {% if site.data.site.instagram and site.data.site.instagram != '' %}<a href="{{ site.data.site.instagram }}" target="_blank" rel="noopener noreferrer">Instagram</a>{% endif %}
+      </div>
+    </div>
+    <div><h2>Who I Help</h2><a href="/who-i-help/">Overview</a><a href="/who-i-help/professionals/">Professionals</a><a href="/who-i-help/business-owners/">Business Owners</a><a href="/who-i-help/families/">Families</a></div>
+    <div><h2>Services</h2><a href="/services/">Overview</a><a href="/services/personal-insurance/">Personal Insurance</a><a href="/services/business-insurance/">Business Insurance</a><a href="/services/employee-benefits/">Employee Benefits</a><a href="/services/registered-investments/">Registered Investment Options</a><a href="/services/non-registered-investments/">Non-Registered Investment Options</a><a href="/services/policy-reviews/">Policy Reviews</a></div>
+    <div><h2>Contact</h2><a href="mailto:{{ site.data.site.email }}">{{ site.data.site.email }}</a><a href="{{ site.data.site.phone_href }}">{{ site.data.site.phone }}</a><a href="/book/">Book a Consultation</a><a href="/contact/">Send a Message</a><a href="/insights/">Insights</a></div>
+  </div>
+  <div class="container footer-bottom">
+    <p>{{ site.data.site.licensing_disclosure }}</p>
+    <p>Information on this website is provided for general educational purposes only and is not personal insurance, investment, legal, accounting or tax advice. A personal recommendation requires an appropriate needs, suitability, eligibility and licensing review. Product features, tax rules and licensing requirements may change.</p>
+    <div class="footer-legal"><a href="/privacy/">Privacy</a><a href="/terms/">Terms & Disclaimer</a><a href="/accessibility/">Accessibility</a></div>
+    <p>© {{ site.time | date:'%Y' }} Anurag Nayak.</p>
+  </div>
+</footer>

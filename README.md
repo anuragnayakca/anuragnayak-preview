@@ -1,17 +1,26 @@
-# anuragnayak.ca — Cloudflare Preview Redesign v2
+# anuragnayak.ca — Jekyll + Decap CMS + Cloudflare Pages
 
-Jekyll static site prepared for Cloudflare Pages.
+Static-first website for Anurag Nayak, Insurance Advisor licensed in British Columbia, Alberta and Ontario.
 
-Build command:
+## Core stack
+
+- Jekyll 4.3
+- GitHub source control
+- Cloudflare Pages hosting
+- Cloudflare Pages Functions / Workers for contact processing and CMS OAuth
+- Cloudflare Turnstile for optional form anti-spam verification
+- Decap CMS for browser-based content editing
+- Zoho booking handoff at `https://booknow.anuragnayak.ca/discovery`
+
+## Build
 
 ```bash
+bundle install
 bundle exec jekyll build
 ```
 
-Output directory:
+Cloudflare output directory: `_site`
 
-```text
-_site
-```
+## Important
 
-This v2 preview strengthens business-owner positioning and aligns the visual identity with the navy/gold social-media brand.
+This repository is configured as a **preview build** with crawler blocking in `robots.txt` and `_headers`. Follow `PRODUCTION_LAUNCH.md` before connecting the production domain.

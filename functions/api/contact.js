@@ -1,26 +1,75 @@
-export async function onRequestPost(context) {
-  const { request, env } = context;
+const json = (body, status = 200) => new Response(JSON.stringify(body), {
+  status,
+  headers: { 'content-type': 'application/json; charset=UTF-8', 'cache-control': 'no-store' }
+});
+
+const clean = (value, max = 1500) => String(value ?? '')
+  .replace(/[<>]/g, '')
+  .replace(/[\u0000-\u001F\u007F]/g, ' ')
+  .trim()
+  .slice(0, max);
+
+const emailOk = value => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) && !/[\r\n]/.test(value);
+
+export async function onRequestPost({ request, env }) {
   try {
-    const data = await request.json();
-    const allowedProvinces = ['British Columbia','Alberta','Ontario'];
-    const required = ['firstName','lastName','email','province','topic','consent'];
-    if (required.some(k => !String(data[k] || '').trim())) return json({error:'Missing required fields'},400);
-    if (!allowedProvinces.includes(data.province)) return json({error:'Invalid province'},400);
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) return json({error:'Invalid email'},400);
-    if ((data.message || '').length > 1500) return json({error:'Message too long'},400);
-    const ip = request.headers.get('CF-Connecting-IP') || '';
-    if (env.TURNSTILE_SECRET) {
-      const token=data['cf-turnstile-response'];
-      if(!token) return json({error:'Verification required'},400);
-      const body=new FormData(); body.append('secret',env.TURNSTILE_SECRET); body.append('response',token); body.append('remoteip',ip);
-      const vr=await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify',{method:'POST',body});
-      const v=await vr.json(); if(!v.success) return json({error:'Verification failed'},400);
+    if ((request.headers.get('content-type') || '').split(';')[0] !== 'application/json') {
+      return json({ error: 'Unsupported request.' }, 415);
     }
-    if (!env.CONTACT_WORKER) return json({error:'Contact service not configured'},503);
-    const clean = Object.fromEntries(Object.entries(data).map(([k,v])=>[k, String(v ?? '').replace(/[<>]/g,'').trim()]));
-    const result = await env.CONTACT_WORKER.fetch('https://contact-worker.internal/send',{method:'POST',headers:{'Content-Type':'application/json','X-Contact-Key':env.CONTACT_SHARED_SECRET || ''},body:JSON.stringify(clean)});
-    if(!result.ok) return json({error:'Delivery failed'},502);
-    return json({ok:true},200);
-  } catch { return json({error:'Invalid request'},400); }
+
+    const raw = await request.json();
+    if (clean(raw.company_website, 200)) return json({ ok: true }); // honeypot
+
+    const data = {
+      name: clean(raw.name, 100),
+      email: clean(raw.email, 160).toLowerCase(),
+      province: clean(raw.province, 60),
+      visitor_type: clean(raw.visitor_type, 60),
+      topic: clean(raw.topic, 100),
+      message: clean(raw.message, 1500),
+      consent: clean(raw.consent, 20),
+      turnstile: clean(raw['cf-turnstile-response'], 2048)
+    };
+
+    const required = ['name', 'email', 'province', 'visitor_type', 'topic', 'message', 'consent'];
+    if (required.some(key => !data[key])) return json({ error: 'Please complete the required fields.' }, 400);
+    if (!emailOk(data.email)) return json({ error: 'Please enter a valid email address.' }, 400);
+    if (data.consent !== 'yes') return json({ error: 'Consent is required so we can respond to your inquiry.' }, 400);
+
+    const allowedProvinces = ['British Columbia', 'Alberta', 'Ontario', 'Other'];
+    const visitorTypes = ['Professional', 'Business Owner', 'Family', 'Other'];
+    if (!allowedProvinces.includes(data.province) || !visitorTypes.includes(data.visitor_type)) return json({ error: 'Invalid selection.' }, 400);
+
+    const ip = request.headers.get('CF-Connecting-IP') || 'unknown';
+    if (env.FORM_RATE_LIMIT) {
+      const key = `contact:${ip}`;
+      const current = Number(await env.FORM_RATE_LIMIT.get(key) || 0);
+      if (current >= 5) return json({ error: 'Too many requests. Please wait before trying again.' }, 429);
+      await env.FORM_RATE_LIMIT.put(key, String(current + 1), { expirationTtl: 3600 });
+    }
+
+    if (env.TURNSTILE_SECRET) {
+      if (!data.turnstile) return json({ error: 'Verification is required.' }, 400);
+      const body = new FormData();
+      body.append('secret', env.TURNSTILE_SECRET);
+      body.append('response', data.turnstile);
+      body.append('remoteip', ip);
+      const verify = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', { method: 'POST', body });
+      const result = await verify.json();
+      if (!result.success) return json({ error: 'Verification failed. Please try again.' }, 400);
+    }
+
+    if (!env.CONTACT_WORKER) return json({ error: 'Contact delivery is not configured yet.' }, 503);
+
+    const delivery = await env.CONTACT_WORKER.fetch('https://contact-worker.internal/send', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json', 'x-contact-key': env.CONTACT_SHARED_SECRET || '' },
+      body: JSON.stringify(data)
+    });
+    if (!delivery.ok) return json({ error: 'The message could not be delivered. Please email contact@anuragnayak.ca.' }, 502);
+
+    return json({ ok: true });
+  } catch (error) {
+    return json({ error: 'The form could not be processed. Please try again or email contact@anuragnayak.ca.' }, 400);
+  }
 }
-function json(body,status){return new Response(JSON.stringify(body),{status,headers:{'content-type':'application/json','cache-control':'no-store'}})}

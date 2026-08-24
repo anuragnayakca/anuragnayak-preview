@@ -1,32 +1,49 @@
 ---
 layout: page
-title: From Technology to Financial Clarity
-seo_title: "About Anurag Nayak"
-eyebrow: About Anurag
-intro: Before entering financial services, I built my career across enterprise technology, infrastructure, cloud and corporate leadership.
-description: Learn how Anurag Nayak brings an enterprise technology and problem-solving background to insurance, benefits, registered savings and business protection.
+title: About Anurag
+seo_title: "About Anurag Nayak | Insurance Advisor"
+description: "Learn how Anurag's corporate IT background shapes a practical, no-pressure approach to reviewing insurance, benefits and investment options."
 permalink: /about/
+eyebrow: ABOUT ANURAG
+heading: "A demanding career can leave important financial decisions disconnected."
+intro: "My role is to help you step back, understand what is already in place and decide what deserves attention before discussing changes."
+cta_title: "Start with the situation you have today."
+cta_text: "A first consultation is an opportunity to understand what is already working, what has changed and what questions are worth reviewing."
 ---
-{% if site.data.site.headshot %}<div class="profile-photo"><img src="{{ site.data.site.headshot }}" alt="Anurag Nayak, Insurance Advisor" loading="lazy" width="720" height="900"></div>{% endif %}
+Having spent more than two decades in corporate IT across technical and leadership roles, I understand how much attention a demanding career requires. There is always another project, greater responsibility, a new skill to develop or a career move to consider. It is easy to rely on workplace benefits while insurance, savings and investment decisions are made at different times and rarely reviewed together.
 
-Technology taught me to begin with the current environment before proposing a solution. Understand what exists. Identify risks and dependencies. Evaluate the options. Make changes only when they are justified.
+The challenge is not always a lack of income or savings. The more important question is whether the different pieces work together, whether the level of risk remains appropriate, and whether your income and responsibilities are adequately protected.
 
-Today, I bring that same mindset to conversations about insurance, workplace benefits, registered savings, group benefits and business protection.
+Today, I help professionals, families and business owners step back, understand what they already have and make more deliberate decisions. My role is not to begin with a product. It is to identify what is already working, what may deserve attention and whether any change is appropriate.
 
-## A career built around complex systems
-<div class="timeline">
-<div><span>01</span><h3>Enterprise Systems Administration</h3><p>Hands-on infrastructure and systems work built a foundation in disciplined problem solving.</p></div>
-<div><span>02</span><h3>Infrastructure & Storage Consulting</h3><p>Working across complex environments meant understanding dependencies before making changes.</p></div>
-<div><span>03</span><h3>Technical Services Leadership</h3><p>Technical decisions increasingly became business decisions involving risk, communication and priorities.</p></div>
-<div><span>04</span><h3>VP, Global IT</h3><p>Corporate leadership added another perspective: systems matter, but so do the people and business outcomes around them.</p></div>
-<div><span>05</span><h3>Cloud & Technology</h3><p>Enterprise technology and cloud work continued to reinforce a structured, evidence-based approach.</p></div>
-</div>
+## Particular familiarity with demanding professional careers
 
-## Today
-I help tech professionals, families and business owners understand financial protection, workplace benefits, registered savings, group benefits and business-protection decisions with greater clarity.
+My background gives me particular familiarity with technology careers and the questions that can arise around workplace benefits, contract work, job changes and income protection. At the same time, these questions are not limited to one profession. I work with professionals from different industries, along with families and business owners.
 
-**LLQP Licensed Insurance Advisor • Licensed in British Columbia, Alberta and Ontario.**
+I do not use the website to list technical certifications, employers or project history. The relevant part of that background is simpler: I understand what it is like to stay focused on career progression while financial decisions accumulate around you.
 
-Business owners can also work with me on **group extended health benefits** for employees, alongside key-person, buy-sell and continuity considerations.
+## How I approach a review
 
-<div class="content-cta"><h2>Start with a conversation.</h2><p>No product list to memorize. We begin with what you already have and what you are trying to solve.</p><a class="btn primary" href="{{ site.data.site.booking_url }}">Start a Conversation</a></div>
+### Understand before recommending
+
+We begin with your current arrangements, responsibilities and questions. If what you already have is appropriate, that is useful to know too.
+
+### Explain without unnecessary jargon
+
+Insurance, workplace benefits and investment-account decisions can become technical quickly. My role is to explain the important features, conditions and trade-offs in plain language.
+
+### Consider the complete situation
+
+A policy or account does not exist in isolation. Employment, family responsibilities, business ownership, debt, access to funds, risk tolerance and time horizon may all affect the discussion.
+
+### Make decisions without pressure
+
+A first conversation is not built around urgency. It is intended to clarify whether there is something worth reviewing and whether I am the right person to help.
+
+## Licensing and meeting options
+
+LLQP-qualified. {{ site.data.site.licensing_disclosure }}
+
+{{ site.data.site.virtual_line }} {{ site.data.site.in_person_line }}
+
+**[CONFIRM BEFORE PUBLISHING]** Final professional-title, licensing-disclosure and investment-related wording should be reviewed under the applicable agency, MGA, dealer, carrier and provincial compliance requirements before production launch.

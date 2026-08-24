@@ -1,13 +1,31 @@
 - label: Home
   url: /
-- label: Insurance
-  url: /insurance/
-- label: Registered Savings
-  url: /registered-savings/
-- label: Business Owners
-  url: /business-owners/
 - label: About
   url: /about/
+- label: Who I Help
+  url: /who-i-help/
+  children:
+    - label: Professionals
+      url: /who-i-help/professionals/
+    - label: Business Owners
+      url: /who-i-help/business-owners/
+    - label: Families
+      url: /who-i-help/families/
+- label: Services
+  url: /services/
+  children:
+    - label: Personal Insurance
+      url: /services/personal-insurance/
+    - label: Business Insurance
+      url: /services/business-insurance/
+    - label: Employee Benefits
+      url: /services/employee-benefits/
+    - label: Registered Investment Options
+      url: /services/registered-investments/
+    - label: Non-Registered Investment Options
+      url: /services/non-registered-investments/
+    - label: Insurance Policy Reviews
+      url: /services/policy-reviews/
 - label: Insights
   url: /insights/
 - label: Contact

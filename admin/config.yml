@@ -1,22 +1,268 @@
 backend:
   name: github
-  repo: anuragnayakca/anuragnayak-site
+  repo: anuragnayakca/anuragnayak-preview
   branch: main
+  base_url: https://cms-auth.anuragnayak.ca
+  auth_endpoint: auth
+
+publish_mode: editorial_workflow
 media_folder: assets/images/uploads
 public_folder: /assets/images/uploads
+site_url: https://anuragnayak.ca
+display_url: https://anuragnayak.ca
+logo_url: /assets/images/anurag-headshot.webp
+
 collections:
+  - name: site_content
+    label: Site Content
+    files:
+      - name: homepage
+        label: Homepage
+        file: _data/home.yml
+        fields:
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Headline, name: title, widget: text }
+              - { label: Supporting copy, name: support, widget: text }
+              - { label: Primary CTA, name: primary_label, widget: string }
+              - { label: Secondary CTA, name: secondary_label, widget: string }
+          - label: Start with what you already have
+            name: start
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: title, widget: string }
+              - { label: Body, name: body, widget: text }
+              - { label: Points, name: points, widget: list }
+          - label: Audiences
+            name: audiences
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: title, widget: string }
+              - { label: Intro, name: intro, widget: text }
+              - label: Audience cards
+                name: cards
+                widget: list
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Text, name: text, widget: text }
+                  - { label: Note, name: note, widget: text }
+                  - { label: URL, name: url, widget: string }
+                  - { label: CTA, name: cta, widget: string }
+          - label: Services
+            name: services
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: title, widget: string }
+              - { label: Intro, name: intro, widget: text }
+              - label: Service cards
+                name: cards
+                widget: list
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Text, name: text, widget: text }
+                  - { label: URL, name: url, widget: string }
+          - label: Process
+            name: process
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: title, widget: string }
+              - label: Steps
+                name: steps
+                widget: list
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Text, name: text, widget: text }
+          - label: Background section
+            name: background
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: title, widget: string }
+              - { label: Paragraphs, name: paragraphs, widget: list }
+          - label: FAQ
+            name: faq
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: title, widget: string }
+              - label: Questions
+                name: items
+                widget: list
+                fields:
+                  - { label: Question, name: question, widget: string }
+                  - { label: Answer, name: answer, widget: text }
+          - label: Final CTA
+            name: final_cta
+            widget: object
+            fields:
+              - { label: Heading, name: title, widget: string }
+              - { label: Text, name: text, widget: text }
+              - { label: Button, name: button, widget: string }
+      - name: business_settings
+        label: Contact & Business Settings
+        file: _data/site.yml
+        fields:
+          - { label: Advisor name, name: advisor_name, widget: string }
+          - { label: Public title, name: professional_title, widget: string }
+          - { label: Qualification line, name: qualification_line, widget: string, required: false }
+          - { label: Short licensing line, name: licensed_short, widget: string }
+          - { label: Licensing disclosure, name: licensing_disclosure, widget: text }
+          - { label: Virtual meeting line, name: virtual_line, widget: string }
+          - { label: In-person meeting line, name: in_person_line, widget: string }
+          - { label: Email, name: email, widget: string }
+          - { label: Phone, name: phone, widget: string }
+          - { label: Phone link, name: phone_href, widget: string }
+          - { label: Booking URL, name: booking_url, widget: string }
+          - { label: LinkedIn, name: linkedin, widget: string }
+          - { label: Facebook, name: facebook, widget: string }
+          - { label: Instagram, name: instagram, widget: string, required: false }
+          - { label: Portrait, name: headshot, widget: image }
+          - { label: Square headshot, name: headshot_square, widget: image }
+          - { label: Social sharing image, name: social_image, widget: image }
+          - { label: Turnstile site key, name: turnstile_site_key, widget: string, required: false }
+          - { label: Analytics enabled, name: analytics_enabled, widget: boolean, default: false }
+
+  - name: audience_pages
+    label: Audience Pages
+    files:
+      - name: professionals
+        label: Professionals
+        file: professionals.md
+        fields: &audience_fields
+          - { label: Layout, name: layout, widget: hidden, default: audience }
+          - { label: Title, name: title, widget: string }
+          - { label: SEO title, name: seo_title, widget: string }
+          - { label: Meta description, name: description, widget: text }
+          - { label: Permalink, name: permalink, widget: hidden }
+          - { label: Breadcrumb parent, name: breadcrumb_parent, widget: hidden }
+          - { label: Breadcrumb parent URL, name: breadcrumb_parent_url, widget: hidden }
+          - { label: Headline, name: heading, widget: string }
+          - { label: Intro, name: intro, widget: text }
+          - { label: Review areas, name: considerations, widget: list }
+          - { label: Special section ID, name: special_section_id, widget: string, required: false }
+          - { label: Special section title, name: special_section_title, widget: string, required: false }
+          - { label: Special section text, name: special_section_text, widget: text, required: false }
+          - label: FAQs
+            name: faqs
+            widget: list
+            fields:
+              - { label: Question, name: question, widget: string }
+              - { label: Answer, name: answer, widget: text }
+          - { label: CTA heading, name: cta_title, widget: string, required: false }
+          - { label: CTA text, name: cta_text, widget: text, required: false }
+          - { label: Page body, name: body, widget: markdown }
+      - { name: business_owners, label: Business Owners, file: business-owners.md, fields: *audience_fields }
+      - { name: families, label: Families, file: families.md, fields: *audience_fields }
+
+  - name: service_pages
+    label: Service Pages
+    files:
+      - name: personal_insurance
+        label: Personal Insurance
+        file: personal-insurance.md
+        fields: &service_fields
+          - { label: Layout, name: layout, widget: hidden, default: service }
+          - { label: Title, name: title, widget: string }
+          - { label: SEO title, name: seo_title, widget: string }
+          - { label: Meta description, name: description, widget: text }
+          - { label: Permalink, name: permalink, widget: hidden }
+          - { label: Breadcrumb parent, name: breadcrumb_parent, widget: hidden }
+          - { label: Breadcrumb parent URL, name: breadcrumb_parent_url, widget: hidden }
+          - { label: Headline, name: heading, widget: string }
+          - { label: Intro, name: intro, widget: text }
+          - { label: Relevant when, name: relevant_when, widget: list }
+          - { label: Review points, name: review_points, widget: list }
+          - { label: Limitations, name: limitations, widget: list }
+          - label: FAQs
+            name: faqs
+            widget: list
+            fields:
+              - { label: Question, name: question, widget: string }
+              - { label: Answer, name: answer, widget: text }
+          - label: Related links
+            name: related_links
+            widget: list
+            required: false
+            fields:
+              - { label: Label, name: label, widget: string }
+              - { label: URL, name: url, widget: string }
+          - { label: Educational disclaimer, name: educational_disclaimer, widget: text }
+          - { label: CTA heading, name: cta_title, widget: string, required: false }
+          - { label: CTA text, name: cta_text, widget: text, required: false }
+          - { label: Page body, name: body, widget: markdown }
+      - { name: business_insurance, label: Business Insurance, file: business-insurance.md, fields: *service_fields }
+      - { name: employee_benefits, label: Employee Benefits, file: employee-benefits.md, fields: *service_fields }
+      - { name: registered_investments, label: Registered Investment Options, file: registered-investments.md, fields: *service_fields }
+      - { name: non_registered_investments, label: Non-Registered Investment Options, file: non-registered-investments.md, fields: *service_fields }
+      - { name: policy_reviews, label: Insurance Policy Reviews, file: policy-reviews.md, fields: *service_fields }
+
+  - name: general_pages
+    label: General Pages
+    files:
+      - name: about
+        label: About
+        file: about.md
+        fields: &general_fields
+          - { label: Layout, name: layout, widget: hidden, default: page }
+          - { label: Title, name: title, widget: string }
+          - { label: SEO title, name: seo_title, widget: string }
+          - { label: Meta description, name: description, widget: text }
+          - { label: Permalink, name: permalink, widget: hidden }
+          - { label: Eyebrow, name: eyebrow, widget: string, required: false }
+          - { label: Headline, name: heading, widget: string }
+          - { label: Intro, name: intro, widget: text }
+          - { label: CTA heading, name: cta_title, widget: string, required: false }
+          - { label: CTA text, name: cta_text, widget: text, required: false }
+          - { label: Page body, name: body, widget: markdown }
+      - { name: who_i_help, label: Who I Help Overview, file: who-i-help.md, fields: *general_fields }
+      - { name: services, label: Services Overview, file: services.md, fields: *general_fields }
+      - { name: book, label: Book a Consultation, file: book.md, fields: *general_fields }
+
   - name: posts
     label: Insights
+    label_singular: Article
     folder: _posts
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}} — {{date}}"
+    sortable_fields: [date, title, category]
+    view_filters:
+      - { label: Unpublished, field: published, pattern: false }
+      - { label: Published, field: published, pattern: true }
     fields:
+      - { label: Layout, name: layout, widget: hidden, default: post }
       - { label: Title, name: title, widget: string }
-      - { label: Publish Date, name: date, widget: datetime }
-      - { label: Description, name: description, widget: string }
+      - { label: URL slug, name: slug, widget: string, required: false, hint: "Leave blank to use the title-based slug." }
+      - { label: Author, name: author, widget: string, default: "Anurag Nayak" }
+      - { label: Publication date, name: date, widget: datetime }
+      - { label: Updated date, name: updated, widget: datetime, required: false }
+      - { label: Short excerpt, name: excerpt_text, widget: text }
       - label: Category
         name: category
         widget: select
-        options: [Tech Professionals, Workplace Benefits, Insurance, Registered Savings, Business Protection]
-      - { label: Read Time, name: read_time, widget: string, default: "5 min read" }
+        options:
+          - Insurance Basics
+          - Workplace Benefits
+          - Professionals and Career Changes
+          - Business Protection
+          - Employee Benefits
+          - Registered Accounts
+          - Policy Reviews
+          - Families and Financial Responsibilities
+      - { label: Tags, name: tags, widget: list, required: false }
+      - { label: Featured image, name: featured_image, widget: image }
+      - { label: Featured-image alternative text, name: featured_image_alt, widget: string }
+      - { label: SEO title, name: seo_title, widget: string }
+      - { label: Meta description, name: description, widget: text }
+      - { label: Canonical URL, name: canonical_url, widget: string, required: false }
+      - { label: Social-sharing image, name: social_image, widget: image, required: false }
+      - { label: Estimated reading time, name: read_time, widget: string, default: "5 min read" }
+      - { label: Publish on website, name: published, widget: boolean, default: false }
       - { label: Body, name: body, widget: markdown }

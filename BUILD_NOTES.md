@@ -1,39 +1,45 @@
-# Build Notes — v3
+# Build notes — Master Prompt revision
 
-This revision incorporates the business-owner and trust updates supplied by Anurag.
+## Strategic changes
 
-## Brand and audience
-- Core positioning: From Technology to Financial Clarity.
-- Primary audiences shown with equal prominence: Tech Professionals, Business Owners, Families.
-- Business Owners is now a primary navigation destination.
-- Navy/gold visual direction retained to align with social branding while keeping the modern technology-inspired layout.
+- Broadens the professional audience beyond technology while retaining a dedicated section acknowledging Anurag's technology-career familiarity.
+- Uses the Master Prompt homepage headline and education-first messaging.
+- Replaces product-first primary navigation with Home, About, Who I Help, Services, Insights, Contact and Book a Consultation.
+- Creates dedicated nested audience and service routes.
+- Leads with the visitor's current financial picture rather than Anurag's analytical background.
 
-## Advisor trust
-- Added Anurag's supplied professional portrait and headshot.
-- Added LLQP Licensed Insurance Advisor wording without licence numbers.
-- Added +1 250-731-5313 to Contact, footer and structured data.
-- Photo now appears on the homepage advisor panel, About page and footer.
+## New pages
 
-## Business-owner services
-- Added dedicated Group Extended Health Benefits page at /group-benefits/.
-- Added group benefits to Business Owner page, Business Protection page, homepage service messaging, contact form and structured data.
-- Group benefits language is conditional and educational; plan features depend on carrier, eligibility and plan design.
+- `/who-i-help/`
+- `/who-i-help/professionals/`
+- `/who-i-help/business-owners/`
+- `/who-i-help/families/`
+- `/services/`
+- `/services/personal-insurance/`
+- `/services/business-insurance/`
+- `/services/employee-benefits/`
+- `/services/registered-investments/`
+- `/services/non-registered-investments/`
+- `/services/policy-reviews/`
+- `/book/`
+- `/accessibility/`
 
-## Technical QA
-- YAML/front matter validated.
-- Internal links checked against generated permalinks.
-- No legacy "Virtual across Canada", old booking URLs, dashboard dollar examples or Financial Security Advisor wording remains.
-- Booking URL remains centralized at https://booknow.anuragnayak.ca/discovery.
+## Preserved and strengthened
 
+- Jekyll + GitHub + Cloudflare Pages architecture
+- Decap CMS approach
+- existing professional photograph
+- confirmed email, phone and booking destination
+- Cloudflare Pages Function contact architecture
+- accessibility foundations and responsive design
 
-## V4 audit fixes
-- Fixed mobile-menu primary CTA contrast.
-- Introduced a dark gold for text on white/cream while retaining bright gold on navy.
-- Removed duplicate SEO generation by eliminating jekyll-seo-tag output and using one hand-authored meta block.
-- Instagram remains intentionally omitted until a confirmed URL is supplied; JSON-LD never emits an empty sameAs value.
-- Shortened SEO titles and descriptions.
-- Added intrinsic image dimensions to headshots.
-- Increased sticky-header anchor offsets.
-- Expanded high-intent audience/service pages with useful FAQs. FAQ schema was intentionally not added.
-- Kept preview noindex/robots blocking in place. Replace preview robots and X-Robots-Tag before production launch.
-- Licence numbers remain intentionally unpublished per owner preference.
+## Draft publishing policy
+
+The three sample Insights articles are stored in `_posts` with `published: false`, so Jekyll does not publish them until they are reviewed and deliberately enabled.
+
+## Known configuration dependencies
+
+- CMS GitHub OAuth Worker must be configured.
+- Contact email Worker/Turnstile must be configured.
+- Production crawler blocking must be removed before launch.
+- Compliance items listed in `COMPLIANCE_CHECKLIST.md` remain to be confirmed.
