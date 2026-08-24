@@ -1,8 +1,8 @@
 ---
 layout: service
 title: Business Insurance
-seo_title: "Business Insurance for Canadian Owners | Anurag Nayak"
-description: "Explore key-person, buy-sell funding, business-loan and corporate-owned life-insurance considerations for business owners."
+seo_title: "Business Insurance for Owners | Anurag Nayak"
+description: "Review key-person, buy-sell funding, business debt, corporate-owned life insurance and owner-protection considerations in BC, Alberta and Ontario."
 permalink: /services/business-insurance/
 breadcrumb_parent: Services
 breadcrumb_parent_url: /services/

@@ -2,4 +2,13 @@
 layout: default
 ---
 <section class="page-hero"><div class="container narrow">{% include breadcrumbs.html %}<p class="eyebrow">{{ page.eyebrow | default: 'ANURAG NAYAK' }}</p><h1>{{ page.heading | default: page.title }}</h1>{% if page.intro %}<p class="lede">{{ page.intro }}</p>{% endif %}</div></section>
-<section class="page-content"><div class="container narrow"><article class="prose">{{ content }}</article>{% include content_cta.html %}</div></section>
+<section class="page-content">
+  {% if page.show_profile_photo %}
+  <div class="container about-page-layout">
+    <aside class="about-page-photo"><img src="{{ site.data.site.headshot }}" alt="Portrait of Anurag Nayak" width="720" height="900"><div><strong>Anurag Nayak</strong><span>Insurance Advisor</span><small>Licensed in BC • AB • ON</small></div></aside>
+    <article class="prose">{{ content }}{% include content_cta.html %}</article>
+  </div>
+  {% else %}
+  <div class="container narrow"><article class="prose">{{ content }}</article>{% include content_cta.html %}</div>
+  {% endif %}
+</section>

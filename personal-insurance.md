@@ -2,7 +2,7 @@
 layout: service
 title: Personal Insurance
 seo_title: "Personal Insurance | Life, CI & Disability | Anurag Nayak"
-description: "Review life, critical illness and disability insurance in the context of income, workplace benefits, debt and family responsibilities."
+description: "Review life, critical illness and disability insurance alongside workplace benefits, income, debt and family responsibilities in BC, AB and ON."
 permalink: /services/personal-insurance/
 breadcrumb_parent: Services
 breadcrumb_parent_url: /services/

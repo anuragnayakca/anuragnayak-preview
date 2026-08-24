@@ -2,7 +2,7 @@
 layout: audience
 title: Professionals
 seo_title: "Insurance for Canadian Professionals | Anurag Nayak"
-description: "Review workplace benefits, personal insurance and investment options as your career, income, employer or responsibilities change."
+description: "Review workplace benefits, personal insurance and investment options as your career, employer, income or responsibilities change in BC, AB and ON."
 permalink: /who-i-help/professionals/
 breadcrumb_parent: Who I Help
 breadcrumb_parent_url: /who-i-help/
@@ -18,7 +18,7 @@ considerations:
   - "Existing policy and account reviews"
 special_section_id: technology
 special_section_title: "A particular understanding of technology careers"
-special_section_text: "More than two decades in corporate IT gives me particular familiarity with job changes, project-driven careers, continuous learning, workplace benefits, contract work and the tendency to postpone personal financial reviews while career demands take priority. That background is relevant context, not a requirement for working together."
+special_section_text: "Having spent more than two decades in corporate IT across technical and leadership roles, I have particular familiarity with job changes, project-driven careers, continuous learning, workplace benefits, contract work and the tendency to postpone personal financial reviews while career demands take priority. That background is relevant context, not a requirement for working together."
 faqs:
   - question: "Do you work with professionals outside technology?"
     answer: "Yes. Technology is part of my background, but I work with professionals from different fields, including healthcare, consulting, management, executive and contract roles."

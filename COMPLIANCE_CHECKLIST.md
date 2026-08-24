@@ -1,13 +1,13 @@
 # Compliance and publication checklist
 
-Items below should be confirmed before the production website is published.
+Internal review items for production publication. These notes are not rendered on the public website.
 
 ## Professional and licensing disclosures
 
-- [ ] Confirm `Insurance Advisor` is approved as the public title in all three licensed provinces and under the applicable agency/MGA/dealer requirements.
-- [ ] Confirm the final provincial licensing disclosure.
-- [ ] Confirm whether the `LLQP-qualified` wording should remain, be revised or be removed.
-- [ ] Confirm any required trade name, agency, MGA, dealer or insurer disclosure that must appear publicly.
+- [x] Public website title uses `Insurance Advisor`.
+- [x] Public LLQP branding has been removed.
+- [ ] Confirm the final provincial licensing disclosure remains current for British Columbia, Alberta and Ontario at launch.
+- [ ] Add any trade name, agency, MGA, dealer or insurer disclosure only if it is contractually or legally required for public advertising.
 
 ## Services
 
@@ -20,28 +20,28 @@ Items below should be confirmed before the production website is published.
 
 - [ ] Compliance review of registered investment page.
 - [ ] Compliance review of non-registered investment page.
-- [ ] Compliance review of corporate-owned insurance wording and any CDA references.
-- [ ] Confirm the investment disclaimer required by the applicable dealer/compliance department.
+- [ ] Compliance review of corporate-owned insurance wording.
+- [ ] Confirm the investment disclaimer required by the applicable licensed channel or compliance department.
 
 ## Privacy and forms
 
-- [ ] Review privacy policy against final Cloudflare, email, CMS, booking and analytics configuration.
+- [ ] Review privacy policy against the final Cloudflare, email, CMS, booking and analytics configuration.
 - [ ] Confirm contact-form consent wording.
 - [ ] Confirm data retention and deletion practices.
-- [ ] Confirm cross-border processing disclosures for all service providers.
+- [ ] Confirm cross-border processing disclosures for the final service providers.
 
 ## Content
 
-- [ ] Review all draft articles before publishing.
-- [ ] Do not publish contribution limits, tax rates, statistics or regulatory guidance without authoritative current sources.
+- [ ] Review the five launch articles before the production domain is switched.
+- [ ] Keep authoritative source links current when factual rules or government guidance are referenced.
 - [ ] Do not publish testimonials without written client permission and required disclosures.
 - [ ] Do not publish carrier logos or trademarks without permission.
 
 ## Technical
 
 - [ ] Verify production robots and security headers.
-- [ ] Verify all booking, phone, email and social links.
-- [ ] Verify no fake statistics, ratings, testimonials, awards or affiliations were added.
+- [ ] Verify booking, phone, email and social links.
+- [ ] Verify no fake statistics, ratings, testimonials, awards or affiliations are present.
 
 ## Official references for final validation
 

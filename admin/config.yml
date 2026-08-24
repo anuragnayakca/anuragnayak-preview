@@ -26,7 +26,8 @@ collections:
             fields:
               - { label: Eyebrow, name: eyebrow, widget: string }
               - { label: Headline, name: title, widget: text }
-              - { label: Supporting copy, name: support, widget: text }
+              - { label: Positioning line, name: support, widget: text }
+              - { label: Supporting detail, name: detail, widget: text }
               - { label: Primary CTA, name: primary_label, widget: string }
               - { label: Secondary CTA, name: secondary_label, widget: string }
           - label: Start with what you already have
@@ -36,7 +37,12 @@ collections:
               - { label: Eyebrow, name: eyebrow, widget: string }
               - { label: Heading, name: title, widget: string }
               - { label: Body, name: body, widget: text }
-              - { label: Points, name: points, widget: list }
+              - label: Review points
+                name: points
+                widget: list
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Text, name: text, widget: text }
           - label: Audiences
             name: audiences
             widget: object
@@ -50,7 +56,6 @@ collections:
                 fields:
                   - { label: Title, name: title, widget: string }
                   - { label: Text, name: text, widget: text }
-                  - { label: Note, name: note, widget: text }
                   - { label: URL, name: url, widget: string }
                   - { label: CTA, name: cta, widget: string }
           - label: Services
@@ -65,8 +70,22 @@ collections:
                 widget: list
                 fields:
                   - { label: Title, name: title, widget: string }
-                  - { label: Text, name: text, widget: text }
+                  - { label: Short explanation, name: short, widget: text }
                   - { label: URL, name: url, widget: string }
+                  - { label: Focus points, name: points, widget: list }
+          - label: Business owner spotlight
+            name: business_spotlight
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Heading, name: title, widget: string }
+              - { label: Text, name: text, widget: text }
+              - label: Cards
+                name: cards
+                widget: list
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Text, name: text, widget: text }
           - label: Process
             name: process
             widget: object
@@ -111,7 +130,6 @@ collections:
         fields:
           - { label: Advisor name, name: advisor_name, widget: string }
           - { label: Public title, name: professional_title, widget: string }
-          - { label: Qualification line, name: qualification_line, widget: string, required: false }
           - { label: Short licensing line, name: licensed_short, widget: string }
           - { label: Licensing disclosure, name: licensing_disclosure, widget: text }
           - { label: Virtual meeting line, name: virtual_line, widget: string }
@@ -215,6 +233,7 @@ collections:
           - { label: SEO title, name: seo_title, widget: string }
           - { label: Meta description, name: description, widget: text }
           - { label: Permalink, name: permalink, widget: hidden }
+          - { label: Show profile photo, name: show_profile_photo, widget: boolean, required: false, default: false }
           - { label: Eyebrow, name: eyebrow, widget: string, required: false }
           - { label: Headline, name: heading, widget: string }
           - { label: Intro, name: intro, widget: text }

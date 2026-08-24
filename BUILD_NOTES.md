@@ -1,45 +1,58 @@
-# Build notes — Master Prompt revision
+# Build notes — v6 conversion and visual simplification
 
-## Strategic changes
+## Direction
 
-- Broadens the professional audience beyond technology while retaining a dedicated section acknowledging Anurag's technology-career familiarity.
-- Uses the Master Prompt homepage headline and education-first messaging.
-- Replaces product-first primary navigation with Home, About, Who I Help, Services, Insights, Contact and Book a Consultation.
-- Creates dedicated nested audience and service routes.
-- Leads with the visitor's current financial picture rather than Anurag's analytical background.
+v6 keeps the Jekyll + GitHub + Cloudflare Pages architecture and focuses on conversion, scanability and progressive disclosure rather than another framework rebuild.
 
-## New pages
+## Homepage changes
 
-- `/who-i-help/`
-- `/who-i-help/professionals/`
-- `/who-i-help/business-owners/`
-- `/who-i-help/families/`
-- `/services/`
-- `/services/personal-insurance/`
-- `/services/business-insurance/`
-- `/services/employee-benefits/`
-- `/services/registered-investments/`
-- `/services/non-registered-investments/`
-- `/services/policy-reviews/`
-- `/book/`
-- `/accessibility/`
+- Replaces the long mission-statement H1 with **Start with what you already have.**
+- Moves the broad positioning statement into supporting copy.
+- Replaces the hero portrait with a CSS-based current-picture visual connecting workplace benefits, personal insurance, investment options and responsibilities.
+- Moves Anurag's professional photograph to the background/About section.
+- Reduces homepage text density with shorter audience cards and four review points.
+- Replaces six paragraph-heavy service cards with an interactive service explorer. Without JavaScript, the service labels remain normal links to the dedicated service pages.
+- Adds a dedicated Business Owners spotlight for owner protection, key people, employee benefits and continuity.
+- Reduces the homepage FAQ to four questions.
+- Adds phone/email beside the final conversion section.
 
-## Preserved and strengthened
+## Professional positioning
 
-- Jekyll + GitHub + Cloudflare Pages architecture
-- Decap CMS approach
-- existing professional photograph
-- confirmed email, phone and booking destination
-- Cloudflare Pages Function contact architecture
-- accessibility foundations and responsive design
+- Public title remains **Insurance Advisor**.
+- Public LLQP wording has been removed.
+- The preferred experience wording is **more than two decades in corporate IT across technical and leadership roles**.
+- `From Technology to Financial Clarity` is retained as a secondary differentiator in the About/background section rather than the primary audience definition.
 
-## Draft publishing policy
+## Insights
 
-The three sample Insights articles are stored in `_posts` with `published: false`, so Jekyll does not publish them until they are reviewed and deliberately enabled.
+Five educational articles are published in the build:
 
-## Known configuration dependencies
+1. What Happens to Your Workplace Benefits When You Change Employers?
+2. Workplace Life Insurance vs Personal Life Insurance: What Should You Review?
+3. Disability Insurance: Questions to Ask When Your Income Depends on Your Ability to Work
+4. Five Insurance Areas Business Owners May Want to Review
+5. Employee Benefits for Small Businesses: What Should an Employer Consider?
 
-- CMS GitHub OAuth Worker must be configured.
-- Contact email Worker/Turnstile must be configured.
-- Production crawler blocking must be removed before launch.
-- Compliance items listed in `COMPLIANCE_CHECKLIST.md` remain to be confirmed.
+Each includes a branded featured image and links to relevant Government of Canada / FCAC / CRA resources where factual guidance is referenced.
+
+## Technical audit fixes
+
+- Contact Pages Function accepts JSON, URL-encoded and multipart submissions.
+- Native form submissions redirect to `/thank-you/` with HTTP 303 after success instead of returning raw JSON.
+- Mobile navigation is progressively enhanced: it remains reachable without JavaScript and becomes collapsible when JavaScript is available.
+- Remaining dark-panel eyebrow contrast was corrected.
+- Important routing/social touch targets were enlarged.
+- Meta descriptions and titles were refreshed across core pages.
+- Public `[CONFIRM BEFORE PUBLISHING]` markers and draft labels were removed.
+- FAQs remain on all six service pages and all three audience pages.
+
+## Service-page presentation
+
+Service-page content depth is retained, but the most important review areas are presented first in compact visual blocks. Limitations and the consultation process use accordions so the page is easier to scan without deleting useful educational content.
+
+## Deployment dependencies
+
+- CMS GitHub OAuth Worker still requires one-time configuration.
+- Contact email Worker, optional Turnstile and optional KV rate limiting require Cloudflare bindings.
+- Preview crawler blocking must be removed before the production domain is switched.
+- Final compliance review should follow `COMPLIANCE_CHECKLIST.md`.

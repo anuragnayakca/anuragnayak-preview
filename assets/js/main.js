@@ -3,18 +3,21 @@
   const mobileMenu=document.querySelector('[data-mobile-menu]');
 
   if(menuButton&&mobileMenu){
+    mobileMenu.classList.remove('is-open');
+    menuButton.setAttribute('aria-expanded','false');
     menuButton.addEventListener('click',()=>{
       const open=menuButton.getAttribute('aria-expanded')==='true';
       menuButton.setAttribute('aria-expanded',String(!open));
-      mobileMenu.hidden=open;
+      mobileMenu.classList.toggle('is-open',!open);
       document.body.classList.toggle('menu-open',!open);
       if(!open){const first=mobileMenu.querySelector('a,summary');if(first)first.focus();}
     });
     mobileMenu.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{
       menuButton.setAttribute('aria-expanded','false');
-      mobileMenu.hidden=true;
+      mobileMenu.classList.remove('is-open');
       document.body.classList.remove('menu-open');
     }));
+    document.documentElement.classList.add('js');
   }
 
   const dropdowns=[...document.querySelectorAll('.nav-dropdown')];
@@ -24,9 +27,29 @@
   document.addEventListener('keydown',event=>{
     if(event.key==='Escape'){
       dropdowns.forEach(drop=>drop.open=false);
-      if(mobileMenu&&!mobileMenu.hidden){mobileMenu.hidden=true;menuButton?.setAttribute('aria-expanded','false');menuButton?.focus();}
+      if(mobileMenu?.classList.contains('is-open')){
+        mobileMenu.classList.remove('is-open');
+        menuButton?.setAttribute('aria-expanded','false');
+        document.body.classList.remove('menu-open');
+        menuButton?.focus();
+      }
     }
   });
+
+  const explorer=document.querySelector('[data-service-explorer]');
+  if(explorer){
+    const tabs=[...explorer.querySelectorAll('[data-service-tab]')];
+    const panels=[...explorer.querySelectorAll('[data-service-panel]')];
+    tabs.forEach(tab=>tab.addEventListener('click',event=>{
+      const key=tab.dataset.serviceTab;
+      const panel=panels.find(item=>item.dataset.servicePanel===key);
+      if(!panel)return;
+      event.preventDefault();
+      tabs.forEach(item=>{item.classList.toggle('active',item===tab);item.removeAttribute('aria-current');});
+      tab.setAttribute('aria-current','true');
+      panels.forEach(item=>{item.hidden=item!==panel;item.classList.toggle('active',item===panel);});
+    }));
+  }
 
   const form=document.querySelector('[data-contact-form]');
   if(form){
@@ -40,7 +63,7 @@
       button.setAttribute('aria-busy','true');
       try{
         const payload=Object.fromEntries(new FormData(form).entries());
-        const response=await fetch(form.action,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(payload)});
+        const response=await fetch(form.action,{method:'POST',headers:{'content-type':'application/json','accept':'application/json','x-requested-with':'fetch'},body:JSON.stringify(payload)});
         const result=await response.json().catch(()=>({}));
         if(!response.ok)throw new Error(result.error||'Unable to send your message.');
         window.location.href='/thank-you/';

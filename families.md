@@ -2,7 +2,7 @@
 layout: audience
 title: Families
 seo_title: "Insurance & Savings Reviews for Families | Anurag Nayak"
-description: "Review life, critical illness and disability insurance, workplace coverage, mortgages and registered savings as family responsibilities change."
+description: "Review life, critical illness and disability coverage, workplace benefits, mortgage responsibilities and registered savings as family circumstances change."
 permalink: /who-i-help/families/
 breadcrumb_parent: Who I Help
 breadcrumb_parent_url: /who-i-help/

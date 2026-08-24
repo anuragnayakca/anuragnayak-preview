@@ -2,7 +2,7 @@
 layout: service
 title: Employee Benefits
 seo_title: "Employee Benefits for Small Business | Anurag Nayak"
-description: "Explore group life, health, dental and disability benefit options for businesses in BC, Alberta and Ontario."
+description: "Review group health, dental, life and disability benefit options, plan design and employer considerations for small businesses in BC, Alberta and Ontario."
 permalink: /services/employee-benefits/
 breadcrumb_parent: Services
 breadcrumb_parent_url: /services/

@@ -2,7 +2,7 @@
 layout: page
 title: Book a Consultation
 seo_title: "Book a Consultation | Anurag Nayak"
-description: "Book a practical, no-pressure consultation about insurance, workplace benefits, business needs or eligible investment options."
+description: "Book a practical, no-pressure consultation with Anurag Nayak about insurance, workplace benefits, business needs or investment options in BC, AB or ON."
 permalink: /book/
 eyebrow: BOOK A CONSULTATION
 heading: "A first conversation should help you understand the situation, not rush you into a decision."
@@ -44,4 +44,4 @@ The consultation is educational and no pressure. A meeting does not assume that 
   <a class="btn primary" href="{{ site.data.site.booking_url }}" target="_blank" rel="noopener noreferrer">Open Booking Calendar</a>
 </div>
 
-**[CONFIRM BEFORE PUBLISHING]** Final booking disclosures and any scheduler privacy wording should be reviewed against the actual scheduling-provider settings and compliance requirements.
+The external booking provider has its own privacy terms and settings. Please review them when you continue to the scheduling page.

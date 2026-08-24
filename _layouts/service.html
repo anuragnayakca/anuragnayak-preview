@@ -2,11 +2,14 @@
 layout: default
 ---
 <section class="page-hero"><div class="container narrow">{% include breadcrumbs.html %}<p class="eyebrow">SERVICE</p><h1>{{ page.heading | default: page.title }}</h1><p class="lede">{{ page.intro }}</p></div></section>
-<section class="page-content service-page"><div class="container"><div class="content-layout"><article class="prose main-prose">{{ content }}
-{% if page.relevant_when %}<h2>When this conversation may be relevant</h2><ul class="feature-list">{% for item in page.relevant_when %}<li>{{ item }}</li>{% endfor %}</ul>{% endif %}
-{% if page.review_points %}<h2>What we can review or discuss</h2><div class="check-grid">{% for item in page.review_points %}<div><span aria-hidden="true">✓</span><p>{{ item }}</p></div>{% endfor %}</div>{% endif %}
-{% if page.limitations %}<h2>Important limitations and trade-offs</h2><ul>{% for item in page.limitations %}<li>{{ item }}</li>{% endfor %}</ul>{% endif %}
-<h2>How the consultation works</h2><ol class="numbered-steps"><li><strong>Understand the current arrangement.</strong> Review what is already in place and what has changed.</li><li><strong>Clarify the question.</strong> Identify what deserves attention and what may already be appropriate.</li><li><strong>Evaluate available options.</strong> Discuss alternatives only where there is a clear reason, subject to eligibility, suitability and licensing requirements.</li></ol>
+<section class="page-content service-page"><div class="container"><div class="content-layout"><article class="prose main-prose">
+{% if page.relevant_when or page.review_points %}<div class="service-at-a-glance">
+  {% if page.relevant_when %}<section><p class="eyebrow">WHEN A REVIEW MAY HELP</p><h2>Situations worth a closer look</h2><ul class="compact-list">{% for item in page.relevant_when %}<li>{{ item }}</li>{% endfor %}</ul></section>{% endif %}
+  {% if page.review_points %}<section><p class="eyebrow">WHAT WE CAN REVIEW</p><h2>Bring the current picture together</h2><div class="check-grid">{% for item in page.review_points %}<div><span aria-hidden="true">✓</span><p>{{ item }}</p></div>{% endfor %}</div></section>{% endif %}
+</div>{% endif %}
+<div class="service-editorial">{{ content }}</div>
+{% if page.limitations %}<details class="content-accordion"><summary>Important limitations and trade-offs</summary><div><ul>{% for item in page.limitations %}<li>{{ item }}</li>{% endfor %}</ul></div></details>{% endif %}
+<details class="content-accordion"><summary>How the consultation works</summary><div><ol class="numbered-steps"><li><strong>Understand the current arrangement.</strong> Review what is already in place and what has changed.</li><li><strong>Clarify the question.</strong> Identify what deserves attention and what may already be appropriate.</li><li><strong>Evaluate available options.</strong> Discuss alternatives only where there is a clear reason, subject to eligibility, suitability and licensing requirements.</li></ol></div></details>
 {% if site.posts.size > 0 %}<section class="related-insights"><p class="eyebrow">RELATED INSIGHTS</p><h2>Related articles</h2><div class="related-list">{% for post in site.posts limit:2 %}<a href="{{ post.url }}"><span>{{ post.category }}</span><strong>{{ post.title }}</strong></a>{% endfor %}</div></section>{% endif %}
 {% include faq.html %}
 {% include service_disclaimer.html %}

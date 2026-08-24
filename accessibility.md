@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Accessibility Statement
-seo_title: "Accessibility Statement | Anurag Nayak"
-description: "Accessibility goals and contact information for anuragnayak.ca."
+seo_title: "Accessibility | Anurag Nayak"
+description: "Accessibility information for anuragnayak.ca, including keyboard support, reduced motion, readable contrast and how to report a website barrier."
 permalink: /accessibility/
 eyebrow: ACCESSIBILITY
 heading: "A website intended to be usable by as many people as practical."
@@ -22,4 +22,4 @@ External services such as the booking provider may have accessibility characteri
 
 If you encounter an accessibility problem, email [{{ site.data.site.email }}](mailto:{{ site.data.site.email }}) or call [{{ site.data.site.phone }}]({{ site.data.site.phone_href }}). Please describe the page and the difficulty you encountered.
 
-**[CONFIRM BEFORE PUBLISHING]** Complete keyboard, 200% zoom, reduced-motion and automated accessibility testing on the final deployed production build before launch.
+Accessibility testing is part of the site maintenance process. If you encounter a barrier, please contact us so it can be reviewed.

@@ -1,7 +1,3 @@
-- label: Home
-  url: /
-- label: About
-  url: /about/
 - label: Who I Help
   url: /who-i-help/
   children:
@@ -26,6 +22,8 @@
       url: /services/non-registered-investments/
     - label: Insurance Policy Reviews
       url: /services/policy-reviews/
+- label: About
+  url: /about/
 - label: Insights
   url: /insights/
 - label: Contact

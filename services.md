@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Services
-seo_title: "Insurance, Benefits & Investment Options | Anurag Nayak"
-description: "Explore personal insurance, business insurance, employee benefits, registered and non-registered investment options, and policy reviews."
+seo_title: "Insurance, Benefits & Investments | Anurag Nayak"
+description: "Explore personal and business insurance, employee benefits, registered and non-registered investment options, and policy reviews in BC, AB and ON."
 permalink: /services/
 eyebrow: SERVICES
 heading: "Begin with the responsibility or decision, not the product."

@@ -2,7 +2,7 @@
 layout: audience
 title: Business Owners
 seo_title: "Insurance for Business Owners | Anurag Nayak"
-description: "Review owner protection, key-person risk, buy-sell funding, employee benefits and business insurance considerations in BC, AB and ON."
+description: "Review owner protection, key people, buy-sell funding, employee benefits, business debt and continuity considerations in BC, Alberta and Ontario."
 permalink: /who-i-help/business-owners/
 breadcrumb_parent: Who I Help
 breadcrumb_parent_url: /who-i-help/

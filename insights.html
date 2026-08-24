@@ -2,15 +2,14 @@
 layout: default
 title: Insights
 seo_title: "Insurance & Benefits Insights | Anurag Nayak"
-description: "Practical articles on insurance, workplace benefits, business protection, registered accounts and policy reviews for Canadians."
-permalink: /insights/
----
+description: "Read practical Canadian articles on insurance, workplace benefits, business protection, employee benefits, registered accounts and policy reviews."
+permalink: /insights/---
 <section class="page-hero"><div class="container narrow">{% include breadcrumbs.html %}<p class="eyebrow">INSIGHTS</p><h1>Practical explanations for decisions that are easy to postpone.</h1><p class="lede">Articles on insurance, workplace benefits, business protection, employee benefits, registered accounts and policy reviews. New content is published when it is useful and reviewed.</p></div></section>
 <section class="page-content"><div class="container">
   {% if site.posts.size > 0 %}
   <div class="insights-tools" data-insights-tools><label class="search-field">Search articles<input type="search" placeholder="Search by topic or title" data-article-search></label><div class="filter-row" role="group" aria-label="Filter articles by category"><button class="filter active" type="button" data-category="all">All</button><button class="filter" type="button" data-category="insurance basics">Insurance Basics</button><button class="filter" type="button" data-category="workplace benefits">Workplace Benefits</button><button class="filter" type="button" data-category="business protection">Business Protection</button><button class="filter" type="button" data-category="employee benefits">Employee Benefits</button><button class="filter" type="button" data-category="registered accounts">Registered Accounts</button><button class="filter" type="button" data-category="policy reviews">Policy Reviews</button></div></div>
   <div class="article-grid" data-article-grid>{% for post in site.posts %}{% include article_card.html post=post %}{% endfor %}</div><div class="center-action"><button class="btn outline-dark" type="button" data-load-more>Load more articles</button></div><p class="search-empty" data-search-empty hidden>No articles match that search yet.</p>
   {% else %}
-  <div class="empty-state"><p class="eyebrow">EDITORIAL REVIEW IN PROGRESS</p><h2>Draft articles are being prepared before publication.</h2><p>The publishing plan is approximately one or two useful articles per month. Draft topics currently include workplace-benefit changes, disability-insurance questions and workplace versus personal life insurance.</p><a class="btn outline-dark" href="/book/">Book a Consultation</a></div>
+  <div class="empty-state"><h2>No articles are available right now.</h2><p>Please check back for practical educational content, or explore the service pages for common questions and review points.</p><a class="btn outline-dark" href="/services/">Explore Services</a></div>
   {% endif %}
 </div></section>

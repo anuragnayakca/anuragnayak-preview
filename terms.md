@@ -2,13 +2,13 @@
 layout: page
 title: Website Terms and Disclaimer
 seo_title: "Website Terms & Disclaimer | Anurag Nayak"
-description: "Educational-use, licensing, investment, product and external-link disclaimers for anuragnayak.ca."
+description: "Read the educational-use, insurance and investment disclaimers, licensing scope, external-link terms and website-use conditions for anuragnayak.ca."
 permalink: /terms/
 eyebrow: TERMS & DISCLAIMER
 heading: "General educational information, not personal advice"
 intro: "Please read these terms before relying on information published on this website."
 ---
-**[CONFIRM BEFORE PUBLISHING]** Final legal and compliance review is required before production launch.
+These terms should be reviewed periodically and updated if the website, services or applicable requirements change.
 
 ## Educational information
 

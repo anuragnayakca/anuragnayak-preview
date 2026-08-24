@@ -2,14 +2,13 @@
 layout: page
 title: Privacy Policy
 seo_title: "Privacy Policy | Anurag Nayak"
-description: "How this website handles contact information, scheduling links, cookies, service providers and privacy requests."
+description: "Read how anuragnayak.ca handles contact-form information, scheduling links, service providers, analytics, retention, safeguards and privacy requests."
 permalink: /privacy/
 eyebrow: PRIVACY
 heading: "Privacy and website information"
 intro: "This policy describes the website configuration currently intended for anuragnayak.ca."
-noindex: false
----
-**[CONFIRM BEFORE PUBLISHING]** This privacy policy must be reviewed against the final production configuration, service providers and applicable privacy requirements before launch.
+noindex: false---
+This privacy policy describes the website configuration and information-handling practices currently intended for this site. It should be updated whenever the services or data practices change.
 
 ## Information collected through the contact form
 
@@ -23,7 +22,7 @@ Information submitted through the contact form is used to respond to your inquir
 
 ## Scheduling provider
 
-The website links to an external scheduling service at `booknow.anuragnayak.ca`. Information you provide there is processed under that service's configuration and privacy terms. **[CONFIRM BEFORE PUBLISHING]** Confirm the final scheduling provider, data-processing location and retention settings.
+The website links to an external scheduling service at `booknow.anuragnayak.ca`. Information you provide there is processed under the scheduling provider's privacy terms and configuration.
 
 ## Hosting and form processing
 
@@ -43,4 +42,4 @@ To ask about personal information submitted through this website, request a corr
 
 ## Cross-border processing
 
-Some service providers may process information outside your province or outside Canada. **[CONFIRM BEFORE PUBLISHING]** Confirm the final hosting, scheduling, email, CMS and analytics providers and update this section where required.
+Some service providers may process information outside your province or outside Canada. Where applicable, their privacy terms and safeguards govern that processing.

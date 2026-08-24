@@ -1,8 +1,8 @@
 ---
 layout: service
 title: Registered Investment Options
-seo_title: "RRSP, TFSA, FHSA, RESP & RDSP Options | Anurag Nayak"
-description: "Understand the role, eligibility and trade-offs of common registered account structures before choosing investment options."
+seo_title: "RRSP, TFSA, FHSA, RESP & RDSP | Anurag Nayak"
+description: "Understand RRSP, TFSA, FHSA, RESP and RDSP account purposes, eligibility, access, contribution considerations and investment choices in BC, AB and ON."
 permalink: /services/registered-investments/
 breadcrumb_parent: Services
 breadcrumb_parent_url: /services/

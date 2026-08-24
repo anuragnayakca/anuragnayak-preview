@@ -1,8 +1,8 @@
 ---
 layout: service
 title: Insurance Policy Reviews
-seo_title: "Insurance Policy Review | Anurag Nayak"
-description: "Review existing life, critical illness and disability policies without assuming that replacement or new coverage is necessary."
+seo_title: "Insurance Policy Reviews | Anurag Nayak"
+description: "Review existing life, critical illness and disability policies, renewal and conversion options, and changed responsibilities without assuming replacement."
 permalink: /services/policy-reviews/
 breadcrumb_parent: Services
 breadcrumb_parent_url: /services/

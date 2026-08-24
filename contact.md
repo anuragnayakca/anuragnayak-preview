@@ -2,9 +2,8 @@
 layout: default
 title: Contact
 seo_title: "Contact Anurag Nayak | Insurance Advisor"
-description: "Contact Anurag Nayak about insurance, workplace benefits, business needs, policy reviews or eligible investment options in BC, AB and ON."
-permalink: /contact/
----
+description: "Contact Anurag Nayak about personal or business insurance, employee or workplace benefits, policy reviews and eligible investment options in BC, AB and ON."
+permalink: /contact/---
 <section class="page-hero"><div class="container narrow">{% include breadcrumbs.html %}<p class="eyebrow">CONTACT</p><h1>Start with your question, not a product name.</h1><p class="lede">Use the form for a general inquiry, or book a consultation if you would rather choose a time directly.</p></div></section>
 <section class="section contact-section"><div class="container contact-grid"><div class="contact-copy"><p class="eyebrow">GET IN TOUCH</p><h2>A short message is enough.</h2><p>Please do not send medical information, Social Insurance Numbers, policy numbers, account numbers, passwords or detailed financial balances through this form.</p><a class="email-link" href="mailto:{{ site.data.site.email }}">{{ site.data.site.email }}</a><a class="phone-link" href="{{ site.data.site.phone_href }}">{{ site.data.site.phone }}</a><p class="license">{{ site.data.site.licensing_disclosure }}</p><a class="btn outline-dark" href="/book/">Book a Consultation</a></div>
 <form class="contact-form" action="/api/contact" method="post" data-contact-form novalidate>

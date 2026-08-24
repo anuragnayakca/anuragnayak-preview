@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Who I Help
-seo_title: "Who I Help | Professionals, Business Owners & Families"
-description: "Insurance, benefits and investment-option reviews for professionals, business owners and families in BC, Alberta and Ontario."
+seo_title: "Who I Help | Anurag Nayak"
+description: "Insurance, workplace-benefit and investment-option reviews for professionals, business owners and families in British Columbia, Alberta and Ontario."
 permalink: /who-i-help/
 eyebrow: WHO I HELP
 heading: "Financial responsibilities look different from one household or business to another."

@@ -2,7 +2,7 @@
 layout: service
 title: Non-Registered Investment Options
 seo_title: "Non-Registered Investment Options | Anurag Nayak"
-description: "Explore where non-registered investment options may fit after considering liquidity, risk, taxation and registered account room."
+description: "Explore non-registered investment options in the context of liquidity, time horizon, risk, taxation and available registered account room in BC, AB and ON."
 permalink: /services/non-registered-investments/
 breadcrumb_parent: Services
 breadcrumb_parent_url: /services/
