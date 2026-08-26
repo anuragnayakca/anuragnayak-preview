@@ -4,6 +4,9 @@ This package is intentionally configured as a crawler-blocked preview.
 
 Before connecting `anuragnayak.ca`:
 
+Before launch, explicitly verify that `/contact/`, `/insights/` and `/privacy/` render with the shared layout. v7 includes an automatic build guard for this regression.
+
+
 1. Replace `robots.txt` with:
 
 ```text

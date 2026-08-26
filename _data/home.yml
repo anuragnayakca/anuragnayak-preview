@@ -1,14 +1,14 @@
 hero:
   eyebrow: "INSURANCE ADVISOR | BC • AB • ON"
-  title: "Start with what you already have."
-  support: "Helping Canadian professionals, families and business owners navigate insurance, workplace benefits and investment options with clarity and confidence."
-  detail: "Understand what is already in place, identify what may deserve attention and explore your options through a practical, no-pressure conversation."
+  title: "How well do your insurance, benefits and investment options fit together?"
+  support: "I help Canadian professionals, families and business owners understand what they already have, what may deserve attention and what options are worth considering."
+  detail: "No pressure to change what is already working."
   primary_label: "Book a Consultation"
   secondary_label: "Explore Services"
 start:
-  eyebrow: "YOUR CURRENT PICTURE"
-  title: "Good decisions begin with understanding the pieces already in place."
-  body: "A review brings coverage, benefits, accounts and responsibilities into one conversation before any change is considered."
+  eyebrow: "START WITH WHAT YOU ALREADY HAVE"
+  title: "Before changing anything, understand the current setup."
+  body: "The goal is not to find a problem in every area. It is to see what is working, what has changed and what deserves a closer look."
   points:
     - title: "What you have"
       text: "Coverage, benefits, policies and accounts already in place."

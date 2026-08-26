@@ -5,7 +5,7 @@ description: "Review what happens to workplace life, disability, health and dent
 excerpt_text: "A job change is a good time to compare what ends, what begins, and what personal coverage continues independently of employment."
 category: Workplace Benefits
 tags: [Professionals and Career Changes, Workplace Benefits, Policy Reviews]
-featured_image: /assets/images/insight-job-change.png
+featured_image: /assets/images/insight-job-change.webp
 featured_image_alt: "Abstract illustration of workplace benefits moving from one employer to another"
 read_time: 6 min read
 date: 2026-08-19

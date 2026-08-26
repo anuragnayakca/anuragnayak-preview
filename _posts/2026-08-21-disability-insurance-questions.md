@@ -5,7 +5,7 @@ description: "Review disability definitions, waiting periods, benefit amounts, d
 excerpt_text: "Having disability insurance is one question. Understanding what the coverage would actually do for your income is the more useful one."
 category: Insurance Basics
 tags: [Professionals and Career Changes, Workplace Benefits, Income Protection]
-featured_image: /assets/images/insight-disability.png
+featured_image: /assets/images/insight-disability.webp
 featured_image_alt: "Abstract illustration representing income continuity and disability insurance"
 read_time: 7 min read
 date: 2026-08-21

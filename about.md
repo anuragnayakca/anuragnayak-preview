@@ -10,6 +10,7 @@ heading: "A demanding career can leave important financial decisions disconnecte
 intro: "My role is to help you step back, understand what is already in place and decide what deserves attention before discussing changes."
 cta_title: "Start with the situation you have today."
 cta_text: "A first consultation is an opportunity to understand what is already working, what has changed and what questions are worth reviewing."
+last_modified_at: 2026-08-24
 ---
 Having spent more than two decades in corporate IT across technical and leadership roles, I understand how much attention a demanding career requires. There is always another project, greater responsibility, a new skill to develop or a career move to consider. Along the way, insurance, workplace benefits, savings and investment decisions can be made at different times and rarely reviewed together.
 

@@ -7,7 +7,9 @@ permalink: /privacy/
 eyebrow: PRIVACY
 heading: "Privacy and website information"
 intro: "This policy describes the website configuration currently intended for anuragnayak.ca."
-noindex: false---
+noindex: false
+last_modified_at: 2026-08-24
+---
 This privacy policy describes the website configuration and information-handling practices currently intended for this site. It should be updated whenever the services or data practices change.
 
 ## Information collected through the contact form

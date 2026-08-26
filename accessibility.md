@@ -7,6 +7,7 @@ permalink: /accessibility/
 eyebrow: ACCESSIBILITY
 heading: "A website intended to be usable by as many people as practical."
 intro: "The site is being developed with WCAG 2.2 AA as the accessibility target."
+last_modified_at: 2026-08-24
 ---
 ## Accessibility measures
 

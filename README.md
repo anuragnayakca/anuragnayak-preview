@@ -1,4 +1,4 @@
-# anuragnayak.ca — v6
+# anuragnayak.ca — v7
 
 Static-first website for Anurag Nayak, Insurance Advisor serving British Columbia, Alberta and Ontario.
 
@@ -12,18 +12,18 @@ Static-first website for Anurag Nayak, Insurance Advisor serving British Columbi
 - Decap CMS for browser-based content editing
 - Zoho booking handoff at `https://booknow.anuragnayak.ca/discovery`
 
-## v6 focus
+## v7 focus
 
-v6 keeps the stable technical architecture and improves conversion and scanability:
+v7 keeps the stable technical architecture and closes the latest audit findings:
 
-- shorter hero with **Start with what you already have.**
-- meaningful current-picture hero visual instead of a portrait
-- interactive service explorer
-- stronger Business Owners presentation
-- shorter audience cards and homepage FAQ
-- five published educational articles
-- no public development/compliance placeholders
-- progressive-enhancement fixes for the mobile menu and contact form
+- visitor-facing hero question: **How well do your insurance, benefits and investment options fit together?**
+- `Start with what you already have` retained as the review philosophy lower on the homepage
+- repaired Contact, Insights and Privacy front matter
+- build guard for pages missing the shared HTML shell
+- compact mobile Services accordions
+- five published educational articles with WebP thumbnails
+- explicit service-to-article internal links
+- improved mobile tap targets and styled contact-form error responses
 
 ## Build
 

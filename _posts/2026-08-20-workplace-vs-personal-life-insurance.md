@@ -5,7 +5,7 @@ description: "Workplace and personally owned life insurance can play different r
 excerpt_text: "Workplace life insurance can be a useful foundation. The useful comparison is how it fits with personal coverage and your responsibilities."
 category: Insurance Basics
 tags: [Workplace Benefits, Policy Reviews, Families]
-featured_image: /assets/images/insight-life-insurance.png
+featured_image: /assets/images/insight-life-insurance.webp
 featured_image_alt: "Abstract illustration comparing workplace and personal life insurance"
 read_time: 6 min read
 date: 2026-08-20

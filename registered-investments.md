@@ -43,6 +43,7 @@ related_links:
   - label: Families
     url: /who-i-help/families/
 educational_disclaimer: "Registered-account information is general. Confirm current eligibility, contribution and tax rules with authoritative government sources and obtain tax advice where appropriate."
+last_modified_at: 2026-08-24
 ---
 Registered accounts are often discussed as though one account is automatically the best place to save. In reality, the right structure depends on the purpose of the money, the time horizon, tax circumstances, access needs and available contribution room.
 

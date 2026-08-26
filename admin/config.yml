@@ -211,6 +211,7 @@ collections:
             fields:
               - { label: Label, name: label, widget: string }
               - { label: URL, name: url, widget: string }
+          - { label: Related article slugs, name: related_articles, widget: list, required: false, hint: "Use the article slug only, for example disability-insurance-questions." }
           - { label: Educational disclaimer, name: educational_disclaimer, widget: text }
           - { label: CTA heading, name: cta_title, widget: string, required: false }
           - { label: CTA text, name: cta_text, widget: text, required: false }

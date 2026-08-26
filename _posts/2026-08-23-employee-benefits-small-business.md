@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "Employee Benefits for Small Businesses: What Should an Employer Consider?"
+title: "What Should a Small Employer Consider in an Employee Benefits Plan?"
 description: "Review health, dental, group life and disability benefits for small businesses, including plan design, cost sharing, eligibility and review questions."
 excerpt_text: "Employee benefits are easier to evaluate when the employer starts with workforce needs, budget, eligibility and plan design rather than a list of features."
 category: Employee Benefits
 tags: [Business Owners, Employee Benefits, Group Benefits]
-featured_image: /assets/images/insight-employee-benefits.png
+featured_image: /assets/images/insight-employee-benefits.webp
 featured_image_alt: "Abstract illustration representing employee health and group benefits"
 read_time: 7 min read
 date: 2026-08-23
 published: true
-seo_title: "Employee Benefits for Small Business"
+seo_title: "What Should a Small Employer Consider in a Benefits Plan?"
 ---
 An employee benefits plan can include several types of coverage under one workplace arrangement. For a small business, the challenge is deciding what is useful for the workforce while keeping the plan understandable and financially manageable.
 

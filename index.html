@@ -2,6 +2,7 @@
 layout: default
 seo_title: "Insurance Advisor in BC, AB & ON | Anurag Nayak"
 description: "Review insurance, workplace benefits and investment options with Anurag Nayak, serving professionals, families and business owners in BC, AB and ON."
+last_modified_at: 2026-08-24
 ---
 <section class="hero" id="top">
   <div class="hero-pattern" aria-hidden="true"></div>
@@ -17,13 +18,13 @@ description: "Review insurance, workplace benefits and investment options with A
       </div>
       <p class="trust-line">Zoom: {{ site.data.site.licensed_short }} <span>•</span> In-person: Nanaimo area where practical</p>
     </div>
-    <div class="picture-map" role="img" aria-label="A visual showing workplace benefits, personal insurance, investment options and business or family responsibilities coming together as one current financial picture">
+    <div class="picture-map" role="img" aria-label="A visual showing workplace benefits, personal insurance, investment options and family or business responsibilities coming together into one clearer picture">
       <div class="picture-map-grid" aria-hidden="true"></div>
       <div class="picture-node node-benefits"><span>01</span><strong>Workplace Benefits</strong><small>Life • Disability • Health</small></div>
-      <div class="picture-node node-insurance"><span>02</span><strong>Personal Insurance</strong><small>Life • CI • Disability</small></div>
+      <div class="picture-node node-insurance"><span>02</span><strong>Personal Insurance</strong><small>Life • Critical illness • Disability</small></div>
       <div class="picture-node node-investments"><span>03</span><strong>Investment Options</strong><small>Registered • Non-registered</small></div>
       <div class="picture-node node-responsibilities"><span>04</span><strong>Responsibilities</strong><small>Family • Mortgage • Business</small></div>
-      <div class="picture-center"><small>YOUR</small><strong>CURRENT<br>PICTURE</strong></div>
+      <div class="picture-center"><small>ONE</small><strong>CLEARER<br>PICTURE</strong></div>
       <div class="picture-flow" aria-hidden="true"><span>Review</span><b>→</b><span>Understand</span><b>→</b><span>Decide</span></div>
     </div>
   </div>
@@ -53,6 +54,14 @@ description: "Review insurance, workplace benefits and investment options with A
       <div class="service-panels">
         {% for card in site.data.home.services.cards %}<article class="service-panel{% if forloop.first %} active{% endif %}" id="service-panel-{{ forloop.index0 }}" data-service-panel="{{ forloop.index0 }}"{% unless forloop.first %} hidden{% endunless %}><p class="eyebrow">{{ card.title }}</p><h3>{{ card.title }}</h3><p>{{ card.short }}</p><div class="service-mini-grid">{% for point in card.points %}<div><span aria-hidden="true">✓</span>{{ point }}</div>{% endfor %}</div><a class="text-link" href="{{ card.url }}">Explore {{ card.title }} →</a></article>{% endfor %}
       </div>
+    </div>
+    <div class="service-mobile" aria-label="Service areas">
+      {% for card in site.data.home.services.cards %}
+      <details class="service-mobile-item">
+        <summary><span>{{ forloop.index | prepend: '0' }}</span><strong>{{ card.title }}</strong></summary>
+        <div><p>{{ card.short }}</p><ul>{% for point in card.points %}<li>{{ point }}</li>{% endfor %}</ul><a class="text-link" href="{{ card.url }}">Explore {{ card.title }} →</a></div>
+      </details>
+      {% endfor %}
     </div>
   </div>
 </section>

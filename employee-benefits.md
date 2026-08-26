@@ -42,7 +42,11 @@ related_links:
     url: /services/business-insurance/
   - label: Contact
     url: /contact/
+related_articles:
+  - employee-benefits-small-business
+  - workplace-benefits-when-you-change-employers
 educational_disclaimer: "Employee-benefit plan features, eligibility, participation rules, pricing and tax treatment vary by provider, province and plan design."
+last_modified_at: 2026-08-24
 ---
 Employee benefits are often discussed as a recruiting tool, but that is only part of the decision. A benefit plan is a recurring business commitment that should make sense for the employees who use it and for the employer who funds or administers it.
 

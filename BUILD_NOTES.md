@@ -1,58 +1,41 @@
-# Build notes — v6 conversion and visual simplification
+# Build notes — v7 audit correction and hero refinement
 
 ## Direction
 
-v6 keeps the Jekyll + GitHub + Cloudflare Pages architecture and focuses on conversion, scanability and progressive disclosure rather than another framework rebuild.
+v7 keeps the existing Jekyll + GitHub + Cloudflare Pages architecture. The latest audit showed that the technical foundation is strong; this revision fixes the three broken source pages, closes smaller audit items, and changes the hero from a process slogan to a visitor-facing question.
 
-## Homepage changes
+## Hero change
 
-- Replaces the long mission-statement H1 with **Start with what you already have.**
-- Moves the broad positioning statement into supporting copy.
-- Replaces the hero portrait with a CSS-based current-picture visual connecting workplace benefits, personal insurance, investment options and responsibilities.
-- Moves Anurag's professional photograph to the background/About section.
-- Reduces homepage text density with shorter audience cards and four review points.
-- Replaces six paragraph-heavy service cards with an interactive service explorer. Without JavaScript, the service labels remain normal links to the dedicated service pages.
-- Adds a dedicated Business Owners spotlight for owner protection, key people, employee benefits and continuity.
-- Reduces the homepage FAQ to four questions.
-- Adds phone/email beside the final conversion section.
+The v6 headline `Start with what you already have.` was useful as an internal philosophy, but it did not immediately tell a new visitor why the site matters.
 
-## Professional positioning
+v7 uses:
 
-- Public title remains **Insurance Advisor**.
-- Public LLQP wording has been removed.
-- The preferred experience wording is **more than two decades in corporate IT across technical and leadership roles**.
-- `From Technology to Financial Clarity` is retained as a secondary differentiator in the About/background section rather than the primary audience definition.
+**How well do your insurance, benefits and investment options fit together?**
 
-## Insights
+The supporting copy explains the audience and outcome. `Start with what you already have` is retained lower on the homepage as the review philosophy, where it has context.
 
-Five educational articles are published in the build:
+The hero visual now resolves the four areas into **One Clearer Picture**.
 
-1. What Happens to Your Workplace Benefits When You Change Employers?
-2. Workplace Life Insurance vs Personal Life Insurance: What Should You Review?
-3. Disability Insurance: Questions to Ask When Your Income Depends on Your Ability to Work
-4. Five Insurance Areas Business Owners May Want to Review
-5. Employee Benefits for Small Businesses: What Should an Employer Consider?
+## Audit blockers fixed
 
-Each includes a branded featured image and links to relevant Government of Canada / FCAC / CRA resources where factual guidance is referenced.
+- Rebuilt the front matter fences in `contact.md`, `insights.html` and `privacy.md` so Jekyll applies the normal layout instead of exposing template code.
+- Added a Jekyll post-write output guard that fails the build if any generated HTML page lacks a doctype or title.
+- Styled non-JavaScript contact-form error responses with the public site stylesheet and branded page structure.
+- Renamed the employee-benefits article so its title no longer duplicates the Employee Benefits service page.
+- Added explicit related-article links from Personal Insurance, Business Insurance, Employee Benefits and Policy Reviews.
+- Converted the five Insights thumbnails from PNG to WebP and updated article references.
+- Increased mobile footer and legal-link tap targets.
+- Added last-modified metadata to current public pages for sitemap freshness where supported by the sitemap generator.
+- Added a compact native `<details>` service navigator on small screens so the homepage is materially shorter on mobile.
 
-## Technical audit fixes
+## Positioning retained
 
-- Contact Pages Function accepts JSON, URL-encoded and multipart submissions.
-- Native form submissions redirect to `/thank-you/` with HTTP 303 after success instead of returning raw JSON.
-- Mobile navigation is progressively enhanced: it remains reachable without JavaScript and becomes collapsible when JavaScript is available.
-- Remaining dark-panel eyebrow contrast was corrected.
-- Important routing/social touch targets were enlarged.
-- Meta descriptions and titles were refreshed across core pages.
-- Public `[CONFIRM BEFORE PUBLISHING]` markers and draft labels were removed.
-- FAQs remain on all six service pages and all three audience pages.
+- Public title: **Insurance Advisor**.
+- Licensed service area: British Columbia, Alberta and Ontario.
+- Experience wording: **more than two decades in corporate IT across technical and leadership roles**.
+- Technology remains a credibility differentiator, not an exclusive audience definition.
+- Professionals, Business Owners and Families remain visually equal audience groups.
 
-## Service-page presentation
+## Preview / production
 
-Service-page content depth is retained, but the most important review areas are presented first in compact visual blocks. Limitations and the consultation process use accordions so the page is easier to scan without deleting useful educational content.
-
-## Deployment dependencies
-
-- CMS GitHub OAuth Worker still requires one-time configuration.
-- Contact email Worker, optional Turnstile and optional KV rate limiting require Cloudflare bindings.
-- Preview crawler blocking must be removed before the production domain is switched.
-- Final compliance review should follow `COMPLIANCE_CHECKLIST.md`.
+The preview remains intentionally blocked from indexing. Follow `PRODUCTION_LAUNCH.md` before moving the production domain.

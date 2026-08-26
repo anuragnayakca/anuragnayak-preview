@@ -5,7 +5,7 @@ description: "Review personal protection, key people, ownership agreements, busi
 excerpt_text: "Business insurance planning starts with responsibilities: the owner, key people, employees, debt and ownership arrangements."
 category: Business Protection
 tags: [Business Owners, Employee Benefits, Policy Reviews]
-featured_image: /assets/images/insight-business-owner.png
+featured_image: /assets/images/insight-business-owner.webp
 featured_image_alt: "Abstract illustration showing business-owner insurance responsibilities"
 read_time: 7 min read
 date: 2026-08-22

@@ -7,6 +7,7 @@ permalink: /terms/
 eyebrow: TERMS & DISCLAIMER
 heading: "General educational information, not personal advice"
 intro: "Please read these terms before relying on information published on this website."
+last_modified_at: 2026-08-24
 ---
 These terms should be reviewed periodically and updated if the website, services or applicable requirements change.
 

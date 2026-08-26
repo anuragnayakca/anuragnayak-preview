@@ -41,7 +41,11 @@ related_links:
     url: /who-i-help/families/
   - label: Insurance Policy Reviews
     url: /services/policy-reviews/
+related_articles:
+  - disability-insurance-questions
+  - workplace-vs-personal-life-insurance
 educational_disclaimer: "Insurance descriptions on this page are general. Actual coverage, definitions, exclusions, limitations, premiums and claims are governed by the policy contract and insurer requirements."
+last_modified_at: 2026-08-24
 ---
 Insurance is most useful when it is connected to a specific financial responsibility. A life-insurance conversation may begin with income replacement, debt or long-term family responsibilities. A disability-insurance conversation may begin with the financial effect of being unable to work. Critical illness coverage may be considered where a serious diagnosis could create costs, time away from work or other financial pressure.
 

@@ -7,6 +7,7 @@ permalink: /services/
 eyebrow: SERVICES
 heading: "Begin with the responsibility or decision, not the product."
 intro: "The services below are designed to help you review what is already in place, clarify what deserves attention and evaluate options only where appropriate."
+last_modified_at: 2026-08-24
 ---
 ## Personal Insurance
 

@@ -366,3 +366,38 @@ button[disabled]{opacity:.65;cursor:not-allowed}
 .social-links a{display:inline-flex;align-items:center;min-height:44px;padding:8px 12px}
 .service-at-a-glance{display:grid;gap:28px;margin:0 0 44px}.service-at-a-glance>section{padding:26px;border:1px solid var(--line);border-radius:16px;background:#FBFCFC}.service-at-a-glance h2{font-size:25px;margin-bottom:16px}.compact-list{display:grid;grid-template-columns:1fr 1fr;gap:8px 28px;padding-left:20px;margin:0}.compact-list li{padding:5px 0;color:#40515D}.service-editorial{margin-top:8px}.content-accordion{margin:18px 0;border:1px solid var(--line);border-radius:14px;background:var(--white)}.content-accordion>summary{cursor:pointer;list-style:none;padding:18px 52px 18px 20px;font-weight:800;color:var(--navy);position:relative}.content-accordion>summary::-webkit-details-marker{display:none}.content-accordion>summary::after{content:"+";position:absolute;right:20px;color:var(--teal-dark);font-size:20px}.content-accordion[open]>summary::after{content:"−"}.content-accordion>div{padding:0 20px 20px}.content-accordion ul{margin-bottom:0}
 @media(max-width:620px){.compact-list{grid-template-columns:1fr}.service-at-a-glance>section{padding:20px}}
+
+/* v7 audit fixes and mobile compression */
+.hero{min-height:590px}
+.hero-layout{padding:58px 0;gap:58px}
+.hero h1{font-size:clamp(44px,4.7vw,64px);max-width:760px;line-height:1.04}
+.hero-positioning{font-size:clamp(18px,1.55vw,22px);max-width:760px}
+.picture-map{min-height:460px}
+.service-mobile{display:none}
+
+@media(max-width:620px){
+  .hero-layout{padding:40px 0 44px}
+  .hero h1{font-size:40px;line-height:1.06}
+  .hero-positioning{font-size:18px}
+  .hero-lede{font-size:14px}
+  .picture-map{min-height:400px}
+  .service-explorer{display:none}
+  .service-mobile{display:grid;gap:10px}
+  .service-mobile-item{border:1px solid var(--line);border-radius:13px;background:var(--white);overflow:hidden}
+  .service-mobile-item>summary{display:grid;grid-template-columns:34px 1fr;align-items:center;min-height:58px;padding:12px 16px;cursor:pointer;list-style:none;color:var(--navy)}
+  .service-mobile-item>summary::-webkit-details-marker{display:none}
+  .service-mobile-item>summary::after{content:"+";grid-column:3;color:var(--teal-dark);font-size:20px}
+  .service-mobile-item[open]>summary::after{content:"−"}
+  .service-mobile-item>summary span{color:var(--teal-dark);font-size:10px;letter-spacing:.11em;font-weight:800}
+  .service-mobile-item>summary strong{font-size:15px}
+  .service-mobile-item>div{padding:0 16px 16px 50px;color:var(--muted)}
+  .service-mobile-item p{margin:0 0 8px;font-size:14px}
+  .service-mobile-item ul{margin:0 0 10px;padding-left:18px;font-size:13px}
+  .service-mobile-item .text-link{min-height:44px;display:inline-flex;align-items:center}
+  .business-tile-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .business-tile-grid article{padding:18px}
+  .business-tile-grid h3{font-size:16px;margin-top:8px}
+  .business-tile-grid p{font-size:12px}
+  .footer-grid>div:not(:first-child)>a{display:flex;align-items:center;min-height:44px;padding:6px 0}
+  .footer-legal a{display:inline-flex;align-items:center;min-height:44px;padding:6px 0}
+}
