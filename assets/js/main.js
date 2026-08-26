@@ -46,7 +46,7 @@
       if(!panel)return;
       event.preventDefault();
       tabs.forEach(item=>{item.classList.toggle('active',item===tab);item.removeAttribute('aria-current');});
-      tab.setAttribute('aria-current','true');
+      tab.setAttribute('aria-current','page');
       panels.forEach(item=>{item.hidden=item!==panel;item.classList.toggle('active',item===panel);});
     }));
   }
@@ -69,6 +69,8 @@
         window.location.href='/thank-you/';
       }catch(error){
         status.textContent=error.message||'The message could not be sent. Please email contact@anuragnayak.ca.';
+        status.setAttribute('tabindex','-1');
+        status.focus();
         button.disabled=false;
         button.removeAttribute('aria-busy');
       }

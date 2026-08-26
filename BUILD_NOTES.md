@@ -39,3 +39,31 @@ The hero visual now resolves the four areas into **One Clearer Picture**.
 ## Preview / production
 
 The preview remains intentionally blocked from indexing. Follow `PRODUCTION_LAUNCH.md` before moving the production domain.
+
+
+## v8 visual refinements
+- Increased desktop header brand, navigation and consultation CTA typography for clearer hierarchy.
+- Increased header height slightly so the larger type has comfortable spacing.
+- Kept the mobile header proportionate with a larger brand name and readable menu type.
+- Enforced landscape article thumbnails with a block-level 16:9 media container so cards cannot stretch into tall cropped panels.
+- Tightened article-card body typography and excerpt length on the homepage.
+- Reduced secondary page H1 maximum size for a calmer visual hierarchy.
+- Removed the duplicate generic content CTA from the Book page; the page now has one primary scheduling panel.
+
+
+## V9 audit refinements
+- Primary booking CTAs now open the live booking calendar directly; `/book/` remains an explainer linked as a secondary path.
+- Booking links announce that they open in a new tab.
+- Contact select controls use stable machine values while email delivery maps them back to readable labels.
+- Contact controls now have explicit `id`/`for` pairs and province licensing guidance.
+- Employee-benefits article SEO title shortened.
+- Service/audience CTA labels are more context-specific.
+- FAQPage rich-result markup was intentionally not added because Google deprecated FAQ rich results in May 2026 and removed the documentation in June 2026. Visible FAQs remain accessible native accordions.
+
+## v10 testimonial update
+- Added four client testimonials supplied by Anurag Nayak.
+- Testimonials appear on the homepage after the advisor-background section and before Insights.
+- The homepage shows a concise exact excerpt from each testimonial, with the full supplied wording available through an accessible native details control.
+- Added a plain-language testimonial/investment-results disclosure.
+- No star ratings, performance statistics or invented review data were added.
+- Before production publication, retain written client permission and obtain any required compliance approval for testimonial use.

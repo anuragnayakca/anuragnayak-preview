@@ -1,5 +1,19 @@
 import { EmailMessage } from 'cloudflare:email';
 
+
+const provinceLabels = { bc: 'British Columbia', ab: 'Alberta', on: 'Ontario', other: 'Other' };
+const visitorLabels = { 'professional': 'Professional', 'business-owner': 'Business Owner', family: 'Family', other: 'Other' };
+const topicLabels = {
+  'personal-insurance': 'Personal Insurance',
+  'business-insurance': 'Business Insurance',
+  'employee-benefits': 'Employee Benefits',
+  'workplace-benefits': 'Workplace Benefits',
+  'registered-investments': 'Registered Investment Options',
+  'non-registered-investments': 'Non-Registered Investment Options',
+  'policy-review': 'Insurance Policy Review',
+  other: 'Other'
+};
+
 const safe = (value, max = 1500) => String(value ?? '')
   .replace(/[\r\n]+/g, ' ')
   .replace(/[<>]/g, '')
@@ -14,9 +28,12 @@ export default {
     const d = await request.json();
     const name = safe(d.name, 100);
     const email = safe(d.email, 160);
-    const topic = safe(d.topic, 100);
-    const province = safe(d.province, 60);
-    const visitorType = safe(d.visitor_type, 60);
+    const topicCode = safe(d.topic, 100);
+    const provinceCode = safe(d.province, 60);
+    const visitorCode = safe(d.visitor_type, 60);
+    const topic = topicLabels[topicCode] || topicCode;
+    const province = provinceLabels[provinceCode] || provinceCode;
+    const visitorType = visitorLabels[visitorCode] || visitorCode;
     const message = safe(d.message, 1500);
 
     const subject = `Website inquiry: ${topic} — ${name}`;

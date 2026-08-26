@@ -1,1 +1,28 @@
-{% comment %}Hidden by design until real, written, compliance-approved testimonials with documented permission are supplied.{% endcomment %}{% if site.data.testimonials and site.data.testimonials.size > 0 %}<section class="section testimonials"><div class="container"><div class="section-heading"><p class="eyebrow">CLIENT EXPERIENCES</p><h2>What clients have shared</h2></div><div class="card-grid three">{% for testimonial in site.data.testimonials %}<blockquote class="card"><p>“{{ testimonial.quote }}”</p><footer>{{ testimonial.attribution }}</footer></blockquote>{% endfor %}</div></div></section>{% endif %}
+{% if site.data.testimonials and site.data.testimonials.size > 0 %}
+<section class="section testimonials-section" aria-labelledby="testimonials-title">
+  <div class="container">
+    <div class="section-heading split">
+      <div>
+        <p class="eyebrow">CLIENT EXPERIENCES</p>
+        <h2 id="testimonials-title">What clients have shared</h2>
+      </div>
+      <p>Real experiences from clients who worked with me on insurance, claims, investments and understanding their options.</p>
+    </div>
+    <div class="testimonial-grid">
+      {% for testimonial in site.data.testimonials %}
+      <article class="testimonial-card">
+        <blockquote>
+          <p class="testimonial-excerpt">“{{ testimonial.excerpt }}”</p>
+        </blockquote>
+        <p class="testimonial-name">{{ testimonial.attribution }}</p>
+        <details class="testimonial-more">
+          <summary>Read full testimonial</summary>
+          <blockquote><p>“{{ testimonial.quote }}”</p></blockquote>
+        </details>
+      </article>
+      {% endfor %}
+    </div>
+    <p class="testimonial-disclosure">Testimonials reflect individual experiences and may not be representative of every client. Investment values can fluctuate, and past performance does not guarantee future results.</p>
+  </div>
+</section>
+{% endif %}

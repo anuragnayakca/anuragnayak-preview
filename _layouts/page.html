@@ -6,9 +6,9 @@ layout: default
   {% if page.show_profile_photo %}
   <div class="container about-page-layout">
     <aside class="about-page-photo"><img src="{{ site.data.site.headshot }}" alt="Portrait of Anurag Nayak" width="720" height="900"><div><strong>Anurag Nayak</strong><span>Insurance Advisor</span><small>Licensed in BC • AB • ON</small></div></aside>
-    <article class="prose">{{ content }}{% include content_cta.html %}</article>
+    <article class="prose">{{ content }}{% unless page.hide_content_cta %}{% include content_cta.html %}{% endunless %}</article>
   </div>
   {% else %}
-  <div class="container narrow"><article class="prose">{{ content }}</article>{% include content_cta.html %}</div>
+  <div class="container narrow"><article class="prose">{{ content }}</article>{% unless page.hide_content_cta %}{% include content_cta.html %}{% endunless %}</div>
   {% endif %}
 </section>

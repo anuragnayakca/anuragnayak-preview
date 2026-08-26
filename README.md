@@ -1,4 +1,4 @@
-# anuragnayak.ca — v7
+# anuragnayak.ca — v8
 
 Static-first website for Anurag Nayak, Insurance Advisor serving British Columbia, Alberta and Ontario.
 
@@ -12,9 +12,9 @@ Static-first website for Anurag Nayak, Insurance Advisor serving British Columbi
 - Decap CMS for browser-based content editing
 - Zoho booking handoff at `https://booknow.anuragnayak.ca/discovery`
 
-## v7 focus
+## v8 focus
 
-v7 keeps the stable technical architecture and closes the latest audit findings:
+v8 keeps the stable technical architecture and closes the latest audit findings:
 
 - visitor-facing hero question: **How well do your insurance, benefits and investment options fit together?**
 - `Start with what you already have` retained as the review philosophy lower on the homepage
@@ -37,3 +37,13 @@ Cloudflare output directory: `_site`
 ## Preview safety
 
 This repository is configured as a crawler-blocked preview with `robots.txt` and `_headers`. Follow `PRODUCTION_LAUNCH.md` before connecting the production domain.
+
+
+## V9 audit refinements
+- Primary booking CTAs now open the live booking calendar directly; `/book/` remains an explainer linked as a secondary path.
+- Booking links announce that they open in a new tab.
+- Contact select controls use stable machine values while email delivery maps them back to readable labels.
+- Contact controls now have explicit `id`/`for` pairs and province licensing guidance.
+- Employee-benefits article SEO title shortened.
+- Service/audience CTA labels are more context-specific.
+- FAQPage rich-result markup was intentionally not added because Google deprecated FAQ rich results in May 2026 and removed the documentation in June 2026. Visible FAQs remain accessible native accordions.

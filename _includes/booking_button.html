@@ -1,0 +1,2 @@
+{% assign booking_label = include.label | default: "Book a Consultation" %}
+<a class="{{ include.class | default: 'btn primary' }}" href="{{ site.data.site.booking_url }}" target="_blank" rel="noopener noreferrer">{{ booking_label }}<span class="sr-only"> (opens in a new tab)</span></a>

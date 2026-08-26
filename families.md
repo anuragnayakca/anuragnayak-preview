@@ -27,6 +27,7 @@ faqs:
     answer: "I can discuss personally owned life and health insurance in the context of mortgage-related responsibilities. I do not provide home or automobile insurance."
 cta_title: "Review the responsibilities that have changed."
 cta_text: "A family review can bring workplace coverage, personal policies, debt and savings questions into one clearer picture."
+cta_label: "Book a Family Review"
 last_modified_at: 2026-08-24
 ---
 Family financial arrangements rarely arrive all at once. A workplace plan may have been in place before marriage. A term policy may have been purchased with the first mortgage. An RESP may start after a child is born, while RRSP and TFSA contributions continue separately.

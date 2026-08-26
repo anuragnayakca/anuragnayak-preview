@@ -8,7 +8,7 @@ const redirectThankYou = () => new Response(null, {
   headers: { location: '/thank-you/', 'cache-control': 'no-store' }
 });
 
-const htmlError = (message, status = 400) => new Response(`<!doctype html><html lang="en-CA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Contact form | Anurag Nayak</title><link rel="stylesheet" href="/assets/css/styles.css"></head><body><a class="skip-link" href="#main-content">Skip to content</a><header class="site-header"><div class="container nav-wrap"><a class="brand" href="/" aria-label="Anurag Nayak home"><span>Anurag Nayak</span><small>Insurance Advisor</small></a><a class="btn header-cta" href="/book/">Book a Consultation</a></div></header><main id="main-content"><section class="page-hero"><div class="container narrow"><p class="eyebrow">CONTACT</p><h1>We could not send that message.</h1><p class="lede">${message}</p></div></section><section class="page-content"><div class="container narrow"><p>You can return to the contact page and try again, or email <a href="mailto:contact@anuragnayak.ca">contact@anuragnayak.ca</a>.</p><div class="actions"><a class="btn primary" href="/contact/">Return to Contact</a><a class="btn outline-dark" href="mailto:contact@anuragnayak.ca">Email Anurag</a></div></div></section></main></body></html>`, {
+const htmlError = (message, status = 400) => new Response(`<!doctype html><html lang="en-CA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Contact form | Anurag Nayak</title><link rel="stylesheet" href="/assets/css/styles.css"></head><body><a class="skip-link" href="#main-content">Skip to content</a><header class="site-header"><div class="container nav-wrap"><a class="brand" href="/" aria-label="Anurag Nayak home"><span>Anurag Nayak</span><small>Insurance Advisor</small></a><a class="btn header-cta" href="https://booknow.anuragnayak.ca/discovery" target="_blank" rel="noopener noreferrer">Book a Consultation<span class="sr-only"> (opens in a new tab)</span></a></div></header><main id="main-content"><section class="page-hero"><div class="container narrow"><p class="eyebrow">CONTACT</p><h1>We could not send that message.</h1><p class="lede">${message}</p></div></section><section class="page-content"><div class="container narrow"><p>You can return to the contact page and try again, or email <a href="mailto:contact@anuragnayak.ca">contact@anuragnayak.ca</a>.</p><div class="actions"><a class="btn primary" href="/contact/">Return to Contact</a><a class="btn outline-dark" href="mailto:contact@anuragnayak.ca">Email Anurag</a></div></div></section></main></body></html>`, {
   status,
   headers: { 'content-type': 'text/html; charset=UTF-8', 'cache-control': 'no-store' }
 });
@@ -56,9 +56,10 @@ export async function onRequestPost({ request, env }) {
     if (!emailOk(data.email)) return fail('Please enter a valid email address.');
     if (data.consent !== 'yes') return fail('Consent is required so we can respond to your inquiry.');
 
-    const allowedProvinces = ['British Columbia', 'Alberta', 'Ontario', 'Other'];
-    const visitorTypes = ['Professional', 'Business Owner', 'Family', 'Other'];
-    if (!allowedProvinces.includes(data.province) || !visitorTypes.includes(data.visitor_type)) return fail('Invalid selection.');
+    const allowedProvinces = ['bc', 'ab', 'on', 'other'];
+    const visitorTypes = ['professional', 'business-owner', 'family', 'other'];
+    const topics = ['personal-insurance', 'business-insurance', 'employee-benefits', 'workplace-benefits', 'registered-investments', 'non-registered-investments', 'policy-review', 'other'];
+    if (!allowedProvinces.includes(data.province) || !visitorTypes.includes(data.visitor_type) || !topics.includes(data.topic)) return fail('Invalid selection.');
 
     const ip = request.headers.get('CF-Connecting-IP') || 'unknown';
     if (env.FORM_RATE_LIMIT) {

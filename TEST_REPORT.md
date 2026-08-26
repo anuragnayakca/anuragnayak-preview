@@ -46,3 +46,19 @@ A complete Jekyll render could not be run in this artifact environment because t
 5. Submit an invalid contact form and confirm the error response looks branded.
 6. Confirm all five Insights thumbnails load as `.webp`.
 7. Re-run the external crawl/audit before production launch.
+
+
+## v8 source checks
+- Header typography increased without changing the desktop/mobile navigation breakpoint.
+- Article media containers now explicitly use `display:block` and a 16:9 aspect ratio.
+- Book page is flagged to suppress the generic duplicate content CTA.
+
+
+## V9 audit refinements
+- Primary booking CTAs now open the live booking calendar directly; `/book/` remains an explainer linked as a secondary path.
+- Booking links announce that they open in a new tab.
+- Contact select controls use stable machine values while email delivery maps them back to readable labels.
+- Contact controls now have explicit `id`/`for` pairs and province licensing guidance.
+- Employee-benefits article SEO title shortened.
+- Service/audience CTA labels are more context-specific.
+- FAQPage rich-result markup was intentionally not added because Google deprecated FAQ rich results in May 2026 and removed the documentation in June 2026. Visible FAQs remain accessible native accordions.

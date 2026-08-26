@@ -42,6 +42,7 @@ related_links:
   - label: Families
     url: /who-i-help/families/
 educational_disclaimer: "Investment values may fluctuate, and past performance does not guarantee future results. Product availability and suitability depend on individual circumstances and applicable licensing requirements."
+cta_label: "Book an Investment Options Review"
 last_modified_at: 2026-08-24
 ---
 Non-registered investing can be useful because it is not limited by the same contribution-room rules as registered accounts. That flexibility comes with a different tax profile and requires careful attention to the purpose of the money and the investment selected.

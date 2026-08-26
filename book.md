@@ -9,8 +9,17 @@ heading: "A first conversation should help you understand the situation, not rus
 intro: "Use the consultation to explain what has changed, what you already have and what questions you want to answer."
 cta_title: "Ready to choose a time?"
 cta_text: "The booking link opens the external scheduling service in a new page."
-last_modified_at: 2026-08-24
+last_modified_at: 2026-08-25
+hide_content_cta: true
 ---
+
+<div class="booking-quick-panel">
+  <p class="eyebrow">READY WHEN YOU ARE</p>
+  <h2>Choose a time now, or read what to expect below.</h2>
+  <p>The booking calendar opens in a new tab.</p>
+  {% include booking_button.html label="Open Booking Calendar" %}
+</div>
+
 ## Who the conversation is for
 
 The consultation is suitable for professionals, families and business owners in British Columbia, Alberta and Ontario who want to review questions related to life and health insurance, workplace benefits, employee benefits, business protection, existing policies, or eligible registered and non-registered investment options.
@@ -42,7 +51,7 @@ The consultation is educational and no pressure. A meeting does not assume that 
   <p class="eyebrow">SCHEDULING</p>
   <h2>Choose a time that works for you.</h2>
   <p>Zoom appointments are available for residents of British Columbia, Alberta and Ontario. In-person meetings may be available in the Nanaimo area where practical.</p>
-  <a class="btn primary" href="{{ site.data.site.booking_url }}" target="_blank" rel="noopener noreferrer">Open Booking Calendar</a>
+  {% include booking_button.html label="Open Booking Calendar" %}
 </div>
 
 The external booking provider has its own privacy terms and settings. Please review them when you continue to the scheduling page.

@@ -47,6 +47,7 @@ related_articles:
   - workplace-vs-personal-life-insurance
   - workplace-benefits-when-you-change-employers
 educational_disclaimer: "Policy reviews are educational and do not by themselves constitute a recommendation to replace or cancel coverage."
+cta_label: "Book a Policy Review"
 last_modified_at: 2026-08-24
 ---
 Insurance policies are often purchased at a specific moment: a mortgage, marriage, birth of a child, business loan, partnership or job change. Years later, the policy may still be in force while the reason for buying it is less clear.

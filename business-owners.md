@@ -29,6 +29,7 @@ faqs:
     answer: "No. I can explain insurance and benefit concepts and coordinate the discussion, but legal, accounting and tax conclusions should come from the appropriate professionals."
 cta_title: "Start with the responsibilities tied to the business."
 cta_text: "A review can help identify which risks, people and obligations deserve further discussion before choosing a product or structure."
+cta_label: "Book a Business Owner Review"
 last_modified_at: 2026-08-24
 ---
 Business owners often have two financial pictures operating at the same time: the household that depends on their income and the business that may depend on their leadership, relationships, knowledge or capital.

@@ -13,7 +13,7 @@ last_modified_at: 2026-08-24
       <p class="hero-positioning">{{ site.data.home.hero.support }}</p>
       <p class="hero-lede">{{ site.data.home.hero.detail }}</p>
       <div class="actions">
-        <a class="btn primary" href="/book/">{{ site.data.home.hero.primary_label }}</a>
+        {% include booking_button.html label=site.data.home.hero.primary_label %}
         <a class="btn secondary" href="/services/">{{ site.data.home.hero.secondary_label }}</a>
       </div>
       <p class="trust-line">Zoom: {{ site.data.site.licensed_short }} <span>•</span> In-person: Nanaimo area where practical</p>
@@ -49,7 +49,7 @@ last_modified_at: 2026-08-24
     <div class="section-heading split"><div><p class="eyebrow">{{ site.data.home.services.eyebrow }}</p><h2>{{ site.data.home.services.title }}</h2></div><p>{{ site.data.home.services.intro }}</p></div>
     <div class="service-explorer" data-service-explorer>
       <nav class="service-selector" aria-label="Service areas">
-        {% for card in site.data.home.services.cards %}<a class="service-tab{% if forloop.first %} active{% endif %}" href="{{ card.url }}" data-service-tab="{{ forloop.index0 }}"{% if forloop.first %} aria-current="true"{% endif %} aria-controls="service-panel-{{ forloop.index0 }}"><span>{{ forloop.index | prepend: '0' }}</span>{{ card.title }}<b aria-hidden="true">→</b></a>{% endfor %}
+        {% for card in site.data.home.services.cards %}<a class="service-tab{% if forloop.first %} active{% endif %}" href="{{ card.url }}" data-service-tab="{{ forloop.index0 }}"{% if forloop.first %} aria-current="page"{% endif %} aria-controls="service-panel-{{ forloop.index0 }}"><span>{{ forloop.index | prepend: '0' }}</span>{{ card.title }}<b aria-hidden="true">→</b></a>{% endfor %}
       </nav>
       <div class="service-panels">
         {% for card in site.data.home.services.cards %}<article class="service-panel{% if forloop.first %} active{% endif %}" id="service-panel-{{ forloop.index0 }}" data-service-panel="{{ forloop.index0 }}"{% unless forloop.first %} hidden{% endunless %}><p class="eyebrow">{{ card.title }}</p><h3>{{ card.title }}</h3><p>{{ card.short }}</p><div class="service-mini-grid">{% for point in card.points %}<div><span aria-hidden="true">✓</span>{{ point }}</div>{% endfor %}</div><a class="text-link" href="{{ card.url }}">Explore {{ card.title }} →</a></article>{% endfor %}
@@ -88,6 +88,8 @@ last_modified_at: 2026-08-24
   </div>
 </section>
 
+{% include testimonials.html %}
+
 <section class="section insights-preview">
   <div class="container">
     <div class="section-heading split"><div><p class="eyebrow">INSIGHTS</p><h2>Useful reading for decisions that are easy to postpone.</h2></div><p>Plain-language articles on insurance, workplace benefits, business protection and investment-account questions.</p></div>
@@ -100,6 +102,4 @@ last_modified_at: 2026-08-24
   <div class="container narrow"><div class="section-heading"><p class="eyebrow">{{ site.data.home.faq.eyebrow }}</p><h2>{{ site.data.home.faq.title }}</h2></div><div class="faq-list">{% for faq in site.data.home.faq.items %}<details><summary>{{ faq.question }}</summary><div><p>{{ faq.answer }}</p></div></details>{% endfor %}</div></div>
 </section>
 
-{% include testimonials.html %}
-
-<section class="final-cta"><div class="container cta-inner"><div><p class="eyebrow">A PRACTICAL FIRST STEP</p><h2>{{ site.data.home.final_cta.title }}</h2><p>{{ site.data.home.final_cta.text }}</p></div><div><div class="actions"><a class="btn primary" href="/book/">{{ site.data.home.final_cta.button }}</a><a class="btn secondary" href="/contact/">Send a Message</a></div><p class="cta-contact"><a href="{{ site.data.site.phone_href }}">{{ site.data.site.phone }}</a> <span>•</span> <a href="mailto:{{ site.data.site.email }}">{{ site.data.site.email }}</a></p></div></div></section>
+<section class="final-cta"><div class="container cta-inner"><div><p class="eyebrow">A PRACTICAL FIRST STEP</p><h2>{{ site.data.home.final_cta.title }}</h2><p>{{ site.data.home.final_cta.text }}</p></div><div><div class="actions">{% include booking_button.html label=site.data.home.final_cta.button %}<a class="btn secondary" href="/contact/">Send a Message</a></div><p class="cta-contact"><a href="{{ site.data.site.phone_href }}">{{ site.data.site.phone }}</a> <span>•</span> <a href="mailto:{{ site.data.site.email }}">{{ site.data.site.email }}</a></p></div></div></section>

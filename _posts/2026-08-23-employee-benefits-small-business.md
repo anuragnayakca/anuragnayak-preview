@@ -10,7 +10,7 @@ featured_image_alt: "Abstract illustration representing employee health and grou
 read_time: 7 min read
 date: 2026-08-23
 published: true
-seo_title: "What Should a Small Employer Consider in a Benefits Plan?"
+seo_title: "What Should a Small Employer Consider?"
 ---
 An employee benefits plan can include several types of coverage under one workplace arrangement. For a small business, the challenge is deciding what is useful for the workforce while keeping the plan understandable and financially manageable.
 
