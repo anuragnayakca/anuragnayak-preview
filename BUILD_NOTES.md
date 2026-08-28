@@ -58,7 +58,6 @@ The preview remains intentionally blocked from indexing. Follow `PRODUCTION_LAUN
 - Contact controls now have explicit `id`/`for` pairs and province licensing guidance.
 - Employee-benefits article SEO title shortened.
 - Service/audience CTA labels are more context-specific.
-- FAQPage rich-result markup was intentionally not added because Google deprecated FAQ rich results in May 2026 and removed the documentation in June 2026. Visible FAQs remain accessible native accordions.
 
 ## v10 testimonial update
 - Added four client testimonials supplied by Anurag Nayak.
@@ -67,3 +66,16 @@ The preview remains intentionally blocked from indexing. Follow `PRODUCTION_LAUN
 - Added a plain-language testimonial/investment-results disclosure.
 - No star ratings, performance statistics or invented review data were added.
 - Before production publication, retain written client permission and obtain any required compliance approval for testimonial use.
+
+
+## v11 brand integration and round-five audit fixes
+- Added optimized transparent web assets derived from the supplied light and dark AN logos.
+- Header and footer now use the gold monogram on navy; browser/app icons use the two-tone mark.
+- Added the monogram to the social-sharing card without changing its 1200x630 dimensions.
+- Scoped Insights filtering to `button[data-category]` and generate filters from published post categories only.
+- Raised inactive service-arrow contrast from the washed-out audit value to a WCAG-safe slate.
+- Changed the Professionals CTA to `Book a Professional Consultation`.
+- Added an above-the-fold booking-calendar CTA to the `/book/` hero and retained the lower scheduling CTA.
+- Increased breadcrumb/footer link targets for touch comfort.
+- Compressed the mobile homepage using 2x2 review tiles plus horizontal scroll-snap layouts for testimonials and homepage Insights.
+- Added FAQPage entities to the existing JSON-LD graph only on pages that visibly render FAQ content, using the same source questions/answers as the accordions.

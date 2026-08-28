@@ -9,16 +9,11 @@ heading: "A first conversation should help you understand the situation, not rus
 intro: "Use the consultation to explain what has changed, what you already have and what questions you want to answer."
 cta_title: "Ready to choose a time?"
 cta_text: "The booking link opens the external scheduling service in a new page."
-last_modified_at: 2026-08-25
+last_modified_at: 2026-08-27
 hide_content_cta: true
 ---
 
-<div class="booking-quick-panel">
-  <p class="eyebrow">READY WHEN YOU ARE</p>
-  <h2>Choose a time now, or read what to expect below.</h2>
-  <p>The booking calendar opens in a new tab.</p>
-  {% include booking_button.html label="Open Booking Calendar" %}
-</div>
+<span id="what-to-expect" class="anchor-target"></span>
 
 ## Who the conversation is for
 

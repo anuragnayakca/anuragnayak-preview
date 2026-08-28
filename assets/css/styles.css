@@ -448,3 +448,41 @@ button[disabled]{opacity:.65;cursor:not-allowed}
 .testimonial-more blockquote p{margin:0;line-height:1.75}
 .testimonial-disclosure{max-width:900px;margin:20px 0 0;font-size:12px;line-height:1.6;color:var(--muted)}
 @media(max-width:760px){.testimonial-grid{grid-template-columns:1fr}.testimonial-card{padding:20px}.testimonial-excerpt{font-size:17px}}
+
+/* V11 brand integration and round-five audit fixes */
+.brand{flex-direction:row;align-items:center;gap:12px;line-height:1.15}
+.brand-mark{width:48px;height:48px;object-fit:contain;flex:0 0 48px}
+.brand-copy{display:flex;flex-direction:column;justify-content:center}
+.brand-copy>span{font-size:23px;font-weight:800;letter-spacing:-.015em;color:var(--white)}
+.brand-copy>small{margin-top:5px;color:#DDE6EC;font-size:11px;letter-spacing:.11em;text-transform:uppercase;font-weight:650}
+.footer-profile .footer-logo{width:58px;height:58px;object-fit:contain;border:0;border-radius:0;background:transparent}
+.service-tab b{color:#526772}
+.article-card .text-link{min-height:44px;display:inline-flex;align-items:center}
+.breadcrumbs a{display:inline-flex;align-items:center;min-height:32px;padding:3px 1px}
+.footer-grid>div:not(:first-child)>a{display:flex;align-items:center;min-height:36px;padding:4px 0}
+.booking-hero-actions{align-items:center;margin-top:24px}
+.booking-hero-actions .text-link{min-height:48px;padding:10px 2px}
+.anchor-target{display:block;position:relative;top:-106px;visibility:hidden}
+
+/* Keep the homepage useful without turning mobile into an endless vertical stack. */
+@media(max-width:620px){
+  .section{padding:54px 0}
+  .brand{gap:9px}
+  .brand-mark{width:40px;height:40px;flex-basis:40px}
+  .brand-copy>span{font-size:19px}
+  .brand-copy>small{font-size:9px;margin-top:3px}
+  .principle-grid.four{grid-template-columns:1fr 1fr}
+  .principle-grid.four article{padding:18px 15px;border-right:1px solid var(--line-warm)!important;border-bottom:1px solid var(--line-warm)!important}
+  .principle-grid.four article:nth-child(2n){border-right:0!important}
+  .principle-grid.four article:nth-last-child(-n+2){border-bottom:0!important}
+  .principle-grid.four h3{font-size:15px;margin-top:7px}
+  .principle-grid.four p{font-size:12px;line-height:1.5}
+  .testimonial-grid{display:flex;overflow-x:auto;gap:14px;scroll-snap-type:x mandatory;padding:0 1px 10px;overscroll-behavior-inline:contain}
+  .testimonial-card{flex:0 0 min(84vw,340px);scroll-snap-align:start}
+  .insights-preview .article-grid{display:flex;overflow-x:auto;gap:14px;scroll-snap-type:x mandatory;padding:0 1px 10px;overscroll-behavior-inline:contain}
+  .insights-preview .article-card{flex:0 0 min(84vw,340px);scroll-snap-align:start}
+  .footer-grid>div:not(:first-child)>a,.footer-booking-link,.footer-brand{min-height:44px;padding-block:7px}
+  .breadcrumbs a{min-height:36px;padding-block:6px}
+  .booking-hero-actions .btn{width:100%}
+  .booking-hero-actions .text-link{width:auto}
+}

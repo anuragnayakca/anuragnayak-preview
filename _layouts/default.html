@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#0B1F33">
+  <link rel="icon" type="image/png" sizes="64x64" href="{{ site.data.site.favicon }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.data.site.apple_touch_icon }}">
   <meta name="author" content="{{ site.data.site.advisor_name }}">
   {% assign meta_title = page.seo_title | default: page.title | default: site.title %}
   {% assign meta_description = page.description | default: site.description %}
@@ -34,6 +36,8 @@
       {"@type":"WebSite","@id":"{{ site.url }}/#website","url":"{{ site.url }}","name":"{{ site.data.site.advisor_name }}","description":"{{ site.description | escape }}"},
       {"@type":"Person","@id":"{{ site.url }}/#anurag-nayak","name":"{{ site.data.site.advisor_name }}","jobTitle":"Insurance Advisor","url":"{{ site.url }}","email":"{{ site.data.site.email }}","telephone":"{{ site.data.site.phone }}","sameAs":["{{ site.data.site.linkedin }}","{{ site.data.site.facebook }}"{% if site.data.site.instagram and site.data.site.instagram != '' %},"{{ site.data.site.instagram }}"{% endif %}]},
       {"@type":"FinancialService","@id":"{{ site.url }}/#insurance-advisor","name":"{{ site.data.site.advisor_name }} — Insurance Advisor","url":"{{ site.url }}","email":"{{ site.data.site.email }}","telephone":"{{ site.data.site.phone }}","founder":{"@id":"{{ site.url }}/#anurag-nayak"},"areaServed":[{"@type":"AdministrativeArea","name":"British Columbia"},{"@type":"AdministrativeArea","name":"Alberta"},{"@type":"AdministrativeArea","name":"Ontario"}],"serviceType":["Personal Life and Health Insurance","Business Insurance","Employee Benefits","Insurance Policy Reviews","Registered Investment Options","Non-Registered Investment Options"],"contactPoint":{"@type":"ContactPoint","email":"{{ site.data.site.email }}","telephone":"{{ site.data.site.phone }}","contactType":"Customer Service"}}
+      {% assign faq_items = page.faqs %}{% if page.url == '/' %}{% assign faq_items = site.data.home.faq.items %}{% endif %}{% if faq_items and faq_items.size > 0 %},
+      {"@type":"FAQPage","mainEntity":[{% for faq in faq_items %}{"@type":"Question","name":{{ faq.question | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ faq.answer | strip_html | strip_newlines | jsonify }}}}{% unless forloop.last %},{% endunless %}{% endfor %}]}{% endif %}
       {% if page.url != '/' %},
       {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"{{ site.url }}/"}{% if page.breadcrumb_parent %},{"@type":"ListItem","position":2,"name":"{{ page.breadcrumb_parent | escape }}","item":"{{ page.breadcrumb_parent_url | absolute_url }}"},{"@type":"ListItem","position":3,"name":"{{ page.breadcrumb_label | default: page.title | escape }}","item":"{{ page.url | absolute_url }}"}{% else %},{"@type":"ListItem","position":2,"name":"{{ page.breadcrumb_label | default: page.title | escape }}","item":"{{ page.url | absolute_url }}"}{% endif %}]}
       {% endif %}

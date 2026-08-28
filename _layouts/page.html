@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<section class="page-hero"><div class="container narrow">{% include breadcrumbs.html %}<p class="eyebrow">{{ page.eyebrow | default: 'ANURAG NAYAK' }}</p><h1>{{ page.heading | default: page.title }}</h1>{% if page.intro %}<p class="lede">{{ page.intro }}</p>{% endif %}</div></section>
+<section class="page-hero"><div class="container narrow">{% include breadcrumbs.html %}<p class="eyebrow">{{ page.eyebrow | default: 'ANURAG NAYAK' }}</p><h1>{{ page.heading | default: page.title }}</h1>{% if page.intro %}<p class="lede">{{ page.intro }}</p>{% endif %}{% if page.permalink == '/book/' %}<div class="actions booking-hero-actions">{% include booking_button.html label="Open Booking Calendar" %}<a class="text-link light" href="#what-to-expect">See what to expect ↓</a></div>{% endif %}</div></section>
 <section class="page-content">
   {% if page.show_profile_photo %}
   <div class="container about-page-layout">

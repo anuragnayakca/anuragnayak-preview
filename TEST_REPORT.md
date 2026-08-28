@@ -61,4 +61,16 @@ A complete Jekyll render could not be run in this artifact environment because t
 - Contact controls now have explicit `id`/`for` pairs and province licensing guidance.
 - Employee-benefits article SEO title shortened.
 - Service/audience CTA labels are more context-specific.
-- FAQPage rich-result markup was intentionally not added because Google deprecated FAQ rich results in May 2026 and removed the documentation in June 2026. Visible FAQs remain accessible native accordions.
+
+
+## v11 source checks
+- Supplied logo sources converted to optimized transparent 512x512 WebP assets; 64x64 favicon and 180x180 Apple touch icon created.
+- Header/footer logo references use explicit dimensions.
+- Insights filter selector scoped to `button[data-category]`; article cards remain data-bearing but no longer receive filter handlers.
+- Insights filter list is generated from categories present in published posts, eliminating empty filters.
+- Inactive service-arrow colour checks at 5.93:1 on white and 5.40:1 on ivory.
+- `/book/` now exposes a direct calendar CTA in its page hero.
+- Professionals CTA is no longer the generic label.
+- Mobile testimonial and homepage Insights lists use CSS scroll-snap, not JavaScript.
+- Full Jekyll rendering remains delegated to Cloudflare Pages because Jekyll is not installed in this artifact environment.
+- FAQPage entities are conditionally generated from the same visible FAQ data on the homepage, service pages and audience pages; no separate FAQ copy is maintained.

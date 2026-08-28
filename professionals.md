@@ -30,8 +30,8 @@ faqs:
     answer: "Yes. Contract and incorporated work can change the way workplace benefits, income protection and business responsibilities need to be considered. Legal and tax questions should be coordinated with the appropriate professionals."
 cta_title: "Review what has changed around your career."
 cta_text: "Bring your current benefits, policies and account questions into one conversation and decide what deserves a closer look."
-cta_label: "Book a Consultation"
-last_modified_at: 2026-08-24
+cta_label: "Book a Professional Consultation"
+last_modified_at: 2026-08-27
 ---
 Many professionals spend years building skills, accepting greater responsibility and improving their income. Along the way, workplace benefits, personal insurance and investment accounts are often established at different times and for different reasons.
 

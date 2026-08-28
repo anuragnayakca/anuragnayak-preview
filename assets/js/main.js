@@ -81,7 +81,7 @@
   if(grid){
     const cards=[...grid.querySelectorAll('[data-article-card]')];
     const search=document.querySelector('[data-article-search]');
-    const filters=[...document.querySelectorAll('[data-category]')];
+    const filters=[...document.querySelectorAll('button[data-category]')];
     const loadMore=document.querySelector('[data-load-more]');
     const empty=document.querySelector('[data-search-empty]');
     let active='all',visible=9;
