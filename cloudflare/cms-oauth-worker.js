@@ -1,7 +1,7 @@
 /**
  * Decap CMS GitHub OAuth helper for Cloudflare Workers.
  * Required secrets: GITHUB_CLIENT_ID, GITHUB_CLIENT_SECRET
- * Optional env: ALLOWED_ORIGIN (default https://anuragnayak.ca)
+ * Optional env: ALLOWED_ORIGIN (default https://www.anuragnayak.ca)
  * Route this Worker at https://cms-auth.anuragnayak.ca/* and set that URL in admin/config.yml.
  */
 const html = body => new Response(body, { headers: { 'content-type': 'text/html; charset=UTF-8', 'cache-control': 'no-store' } });
@@ -10,7 +10,7 @@ const escapeJs = value => JSON.stringify(String(value));
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
-    const origin = env.ALLOWED_ORIGIN || 'https://anuragnayak.ca';
+    const origin = env.ALLOWED_ORIGIN || 'https://www.anuragnayak.ca';
 
     if (url.pathname === '/auth') {
       if (!env.GITHUB_CLIENT_ID) return new Response('OAuth not configured', { status: 503 });

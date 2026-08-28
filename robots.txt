@@ -3,4 +3,4 @@ Allow: /
 Disallow: /admin/
 Disallow: /thank-you/
 
-Sitemap: https://anuragnayak.ca/sitemap.xml
+Sitemap: https://www.anuragnayak.ca/sitemap.xml

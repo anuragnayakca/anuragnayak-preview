@@ -8,8 +8,8 @@ backend:
 publish_mode: editorial_workflow
 media_folder: assets/images/uploads
 public_folder: /assets/images/uploads
-site_url: https://anuragnayak.ca
-display_url: https://anuragnayak.ca
+site_url: https://www.anuragnayak.ca
+display_url: https://www.anuragnayak.ca
 logo_url: /assets/images/anurag-headshot.webp
 
 collections:
