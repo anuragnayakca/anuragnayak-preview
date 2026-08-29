@@ -3,7 +3,8 @@ layout: post
 title: "RDSP in Canada: A Powerful Savings Plan Many Eligible Families May Be Missing"
 slug: rdsp-registered-disability-savings-plan-canada
 author: Anurag Nayak
-date: 2026-08-31T11:53:00.000-07:00
+date: 2026-06-01T10:04:00.000-07:00
+updated: 2026-08-29T00:04:00.000-07:00
 excerpt_text: >-
   
   The Registered Disability Savings Plan (RDSP) can help eligible Canadians build long-term savings with government grants and bonds. Learn who qualifies, how the RDSP works, contribution and withdrawal rules, and how to make better use of available government benefits.
@@ -19,7 +20,7 @@ description: Learn how the RDSP works in Canada, who qualifies, government
   planning tips.
 canonical_url: https://www.anuragnayak.ca/blog/rdsp-registered-disability-savings-plan-canada
 read_time: 6-7 min read
-published: false
+published: true
 ---
 **Updated: August 2026**
 
