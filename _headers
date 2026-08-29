@@ -6,5 +6,4 @@
 
 /admin/*
   Cache-Control: no-store
-
-# PREVIEW ONLY: remove the site-wide X-Robots-Tag before production launch.
+  X-Robots-Tag: noindex, nofollow

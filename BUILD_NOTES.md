@@ -79,3 +79,11 @@ The preview remains intentionally blocked from indexing. Follow `PRODUCTION_LAUN
 - Increased breadcrumb/footer link targets for touch comfort.
 - Compressed the mobile homepage using 2x2 review tiles plus horizontal scroll-snap layouts for testimonials and homepage Insights.
 - Added FAQPage entities to the existing JSON-LD graph only on pages that visibly render FAQ content, using the same source questions/answers as the accordions.
+
+## V12 production contact update
+
+- Contact-page booking CTA changed from white outline to the gold primary treatment.
+- Contact delivery simplified to a direct Resend API call from the Pages Function.
+- Removed the obsolete separate contact-email Worker and Service Binding requirement.
+- Production canonical/base URLs standardized on `https://www.anuragnayak.ca`.
+- Production robots/header settings included in the package.

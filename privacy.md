@@ -28,7 +28,7 @@ The website links to an external scheduling service at `booknow.anuragnayak.ca`.
 
 ## Hosting and form processing
 
-The website is intended to be hosted on Cloudflare Pages. Cloudflare may process technical request information needed to deliver and secure the site. Contact-form submissions are intended to be processed through Cloudflare Pages Functions or Workers and delivered to the business contact address.
+The website is intended to be hosted on Cloudflare Pages. Cloudflare may process technical request information needed to deliver and secure the site. Contact-form submissions are processed through Cloudflare Pages Functions and may be transmitted through a transactional email delivery provider so the inquiry can reach the business contact address.
 
 ## Analytics and cookies
 

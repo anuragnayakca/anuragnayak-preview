@@ -80,14 +80,53 @@ export async function onRequestPost({ request, env }) {
       if (!result.success) return fail('Verification failed. Please try again.');
     }
 
-    if (!env.CONTACT_WORKER) return fail('Contact delivery is not configured yet. Please email contact@anuragnayak.ca.', 503);
+    if (!env.RESEND_API_KEY) return fail('Contact delivery is temporarily unavailable. Please email contact@anuragnayak.ca.', 503);
 
-    const delivery = await env.CONTACT_WORKER.fetch('https://contact-worker.internal/send', {
+    const provinceLabels = { bc: 'British Columbia', ab: 'Alberta', on: 'Ontario', other: 'Other' };
+    const visitorLabels = { professional: 'Professional', 'business-owner': 'Business Owner', family: 'Family', other: 'Other' };
+    const topicLabels = {
+      'personal-insurance': 'Personal Insurance',
+      'business-insurance': 'Business Insurance',
+      'employee-benefits': 'Employee Benefits',
+      'workplace-benefits': 'Workplace Benefits',
+      'registered-investments': 'Registered Investment Options',
+      'non-registered-investments': 'Non-Registered Investment Options',
+      'policy-review': 'Insurance Policy Review',
+      other: 'Other'
+    };
+
+    const subject = `Website inquiry: ${topicLabels[data.topic] || data.topic} — ${data.name}`;
+    const text = [
+      `Name: ${data.name}`,
+      `Email: ${data.email}`,
+      `Province: ${provinceLabels[data.province] || data.province}`,
+      `Visitor type: ${visitorLabels[data.visitor_type] || data.visitor_type}`,
+      `Topic: ${topicLabels[data.topic] || data.topic}`,
+      '',
+      'Message:',
+      data.message
+    ].join('\n');
+
+    const fromEmail = env.CONTACT_FROM_EMAIL || 'Anurag Nayak Website <website@forms.anuragnayak.ca>';
+    const toEmail = env.CONTACT_TO_EMAIL || 'contact@anuragnayak.ca';
+    const delivery = await fetch('https://api.resend.com/emails', {
       method: 'POST',
-      headers: { 'content-type': 'application/json', 'x-contact-key': env.CONTACT_SHARED_SECRET || '' },
-      body: JSON.stringify(data)
+      headers: {
+        'content-type': 'application/json',
+        'authorization': `Bearer ${env.RESEND_API_KEY}`
+      },
+      body: JSON.stringify({
+        from: fromEmail,
+        to: [toEmail],
+        reply_to: data.email,
+        subject,
+        text
+      })
     });
-    if (!delivery.ok) return fail('The message could not be delivered. Please email contact@anuragnayak.ca.', 502);
+    if (!delivery.ok) {
+      console.error('Resend delivery failed', delivery.status, await delivery.text());
+      return fail('The message could not be delivered. Please email contact@anuragnayak.ca.', 502);
+    }
 
     return succeed();
   } catch (error) {
