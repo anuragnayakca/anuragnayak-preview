@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What Should a Small Employer Consider in an Employee Benefits Plan?
+title: What Should an Employer Consider in an Employee Benefits Plan?
 author: Anurag Nayak
 date: 2026-08-23
 excerpt_text: Employee benefits are easier to evaluate when the employer starts
@@ -20,7 +20,7 @@ description: Review health, dental, group life and disability benefits for small
 read_time: 7 min read
 published: true
 ---
-# Employee Benefits for Small Businesses in Canada: What Should a Business Owner Really Consider?
+# What Should a Business Owner Really Consider?
 
 For many small business owners, employee benefits become a serious conversation at a familiar point in the growth of the company.
 
@@ -100,7 +100,7 @@ A benefits plan cannot solve every workplace problem. Culture, workload, managem
 
 But appropriate health, disability and mental-health resources can form part of the support system.
 
-## What does Manulife offer for small businesses?
+## What does Manulife offer for businesses?
 
 For businesses where I am helping arrange group benefits, **Manulife is one of the group-benefits providers I work with**.
 
@@ -223,8 +223,6 @@ Employee benefits should therefore fit into the financial realities of the busin
 But once a company has a stable workforce and is competing to attract and retain good people, it is worth understanding the options.
 
 If you are wondering whether employee benefits make sense for your company, a good place to start is simply understanding the options and the numbers.
-
-
 
 *This article is for general educational purposes and is not tax, legal or accounting advice. Group benefits are subject to eligibility requirements, plan provisions, exclusions, limitations and insurer approval. Product features and availability can change. Business owners should obtain advice appropriate to their individual circumstances.*
 
