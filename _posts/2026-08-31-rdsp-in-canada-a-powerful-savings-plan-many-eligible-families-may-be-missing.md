@@ -265,5 +265,3 @@ Empire Life: [Empire Life Registered Disability Savings Plan](https://www.empire
 Empire Life: [Empire Life RDSP FAQs and product details](https://www.empire.ca/rdsp-faq?utm_source=chatgpt.com)
 
 *This article is provided for general educational purposes. RDSP eligibility, grants, bonds, taxation and investment suitability depend on individual circumstances. Government thresholds are indexed and can change from year to year. Before making an RDSP contribution or withdrawal, review the current rules and consider obtaining appropriate financial and tax advice.*
-
-RDSP contributionGovernment grantFirst $500300%, or up to $1,500Next $1,000200%, or up to $2,000**Total $1,500 contributionUp to $3,500 grant**Family net incomePotential annual bond$38,237 or lessUp to $1,000$38,237 to $58,523Partial bond$58,523 or moreNo bond
