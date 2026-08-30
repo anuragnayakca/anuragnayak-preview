@@ -1,16 +1,24 @@
 ---
 layout: post
-title: "Five Insurance Areas Business Owners May Want to Review"
-description: "Review personal protection, key people, ownership agreements, business debt and employee benefits without beginning with complicated tax strategies."
-excerpt_text: "Insurance planning for business owners starts with responsibilities: the owner, key people, employees, debt and ownership arrangements."
-category: Business Protection
-tags: [Business Owners, Employee Benefits, Policy Reviews]
-featured_image: /assets/images/insight-business-owner.webp
-featured_image_alt: "Abstract illustration showing business-owner insurance responsibilities"
-read_time: 7 min read
+title: Five Insurance Areas Business Owners May Want to Review
+author: Anurag Nayak
 date: 2026-08-22
+excerpt_text: "Insurance planning for business owners starts with
+  responsibilities: the owner, key people, employees, debt and ownership
+  arrangements."
+category: Business Protection
+tags:
+  - Business Owners
+  - Employee Benefits
+  - Policy Reviews
+featured_image: /assets/images/uploads/business-protection-five-insurance-areas.png
+featured_image_alt: Abstract illustration showing business-owner insurance responsibilities
+seo_title: Insurance Areas for Business Owners
+description: Review personal protection, key people, ownership agreements,
+  business debt and employee benefits without beginning with complicated tax
+  strategies.
+read_time: 7 min read
 published: true
-seo_title: "Insurance Areas for Business Owners"
 ---
 A business creates financial responsibilities that may not exist in the same way for an employee. The owner may be responsible for personal income, business debt, employees, a partner, a family and the continuity of the company at the same time.
 
