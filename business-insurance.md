@@ -1,7 +1,7 @@
 ---
 last_modified_at: 2026-08-24
 layout: service
-title: Business Succession Planning
+title: Business Insurance
 seo_title: Business Insurance for Owners | Anurag Nayak
 description: Review key-person, buy-sell funding, business debt, corporate-owned
   life insurance and owner-protection considerations in BC, Alberta and Ontario.
