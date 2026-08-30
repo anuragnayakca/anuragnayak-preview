@@ -1,16 +1,24 @@
 ---
 layout: post
-title: "Disability Insurance: Questions to Ask When Your Income Depends on Your Ability to Work"
-description: "Review disability definitions, waiting periods, benefit amounts, duration, offsets and workplace coverage before deciding whether anything needs to change."
-excerpt_text: "Having disability insurance is one question. Understanding what the coverage would actually do for your income is the more useful one."
-category: Insurance Basics
-tags: [Professionals and Career Changes, Workplace Benefits, Income Protection]
-featured_image: /assets/images/insight-disability.webp
-featured_image_alt: "Abstract illustration representing income continuity and disability insurance"
-read_time: 7 min read
+title: "Disability Insurance: Questions to Ask When Your Income Depends on Your
+  Ability to Work"
+author: Anurag Nayak
 date: 2026-08-21
+excerpt_text: Having disability insurance is one question. Understanding what
+  the coverage would actually do for your income is the more useful one.
+category: Insurance Basics
+tags:
+  - Professionals and Career Changes
+  - Workplace Benefits
+  - Income Protection
+featured_image: /assets/images/uploads/disability-insurance-questions-to-ask.png
+featured_image_alt: Abstract illustration representing income continuity and disability insurance
+seo_title: Disability Insurance Questions to Review
+description: Review disability definitions, waiting periods, benefit amounts,
+  duration, offsets and workplace coverage before deciding whether anything
+  needs to change.
+read_time: 7 min read
 published: true
-seo_title: "Disability Insurance Questions to Review"
 ---
 For many professionals and business owners, the ability to keep working is the engine behind most other financial plans. Disability insurance is designed to replace part of income when an eligible illness or injury prevents someone from working, subject to the policy terms.
 
