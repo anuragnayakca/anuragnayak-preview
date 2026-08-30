@@ -1,16 +1,23 @@
 ---
 layout: post
 title: "Workplace Life Insurance vs Personal Life Insurance: What Should You Review?"
-description: "Workplace and personally owned life insurance can play different roles. Review amount, portability, ownership, duration and policy features before changes."
-excerpt_text: "Workplace life insurance can be a useful foundation. The useful comparison is how it fits with personal coverage and your responsibilities."
+author: Anurag Nayak
+date: 2026-07-20T11:16:00.000-07:00
+excerpt_text: Workplace life insurance can be a useful foundation. The useful
+  comparison is how it fits with personal coverage and your responsibilities.
 category: Insurance Basics
-tags: [Workplace Benefits, Policy Reviews, Families]
-featured_image: /assets/images/insight-life-insurance.webp
-featured_image_alt: "Abstract illustration comparing workplace and personal life insurance"
+tags:
+  - Workplace Benefits
+  - Policy Reviews
+  - Families
+featured_image: /assets/images/uploads/workplace-life-vs-personal-life-insurance.png
+featured_image_alt: Abstract illustration comparing workplace and personal life insurance
+seo_title: Workplace vs Personal Life Insurance
+description: Workplace and personally owned life insurance can play different
+  roles. Review amount, portability, ownership, duration and policy features
+  before changes.
 read_time: 6 min read
-date: 2026-08-20
 published: true
-seo_title: "Workplace vs Personal Life Insurance"
 ---
 Workplace life insurance can be a useful part of an employee benefits package. Personally owned life insurance can serve a different role. The objective is not to declare one universally better than the other.
 
