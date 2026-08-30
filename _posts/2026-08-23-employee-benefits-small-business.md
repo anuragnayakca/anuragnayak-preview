@@ -11,7 +11,7 @@ tags:
   - Business Owners
   - Employee Benefits
   - Group Benefits
-featured_image: /assets/images/insight-employee-benefits.webp
+featured_image: /assets/images/uploads/employee-benefits-small-businesses.png
 featured_image_alt: Abstract illustration representing employee health and group benefits
 seo_title: What Should a Small Employer Consider?
 description: Review health, dental, group life and disability benefits for small
