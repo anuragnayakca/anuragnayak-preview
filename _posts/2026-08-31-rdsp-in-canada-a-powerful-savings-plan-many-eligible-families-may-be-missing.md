@@ -11,7 +11,7 @@ excerpt_text: >-
 category: Registered Accounts
 tags:
   - RDSP
-featured_image: /assets/images/uploads/rdsp.png
+featured_image: /assets/images/uploads/rdsp-practical-guide-canadian-families.png
 featured_image_alt: Canadian family reviewing Registered Disability Savings Plan
   options for long-term disability savings and government grants
 seo_title: "RDSP Canada: Grants, Eligibility, Rules & How It Works"
