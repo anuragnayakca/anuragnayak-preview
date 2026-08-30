@@ -216,7 +216,7 @@ collections:
           - { label: CTA heading, name: cta_title, widget: string, required: false }
           - { label: CTA text, name: cta_text, widget: text, required: false }
           - { label: Page body, name: body, widget: markdown }
-      - { name: business_insurance, label: Business Insurance, file: business-insurance.md, fields: *service_fields }
+      - { name: business_insurance, label: Insurance for Business Owners, file: business-insurance.md, fields: *service_fields }
       - { name: employee_benefits, label: Employee Benefits, file: employee-benefits.md, fields: *service_fields }
       - { name: registered_investments, label: Registered Investment Options, file: registered-investments.md, fields: *service_fields }
       - { name: non_registered_investments, label: Non-Registered Investment Options, file: non-registered-investments.md, fields: *service_fields }

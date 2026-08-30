@@ -30,7 +30,7 @@ faqs:
 cta_title: "Start with the responsibilities tied to the business."
 cta_text: "A review can help identify which risks, people and obligations deserve further discussion before choosing a product or structure."
 cta_label: "Book a Business Owner Review"
-last_modified_at: 2026-08-24
+last_modified_at: 2026-08-30
 ---
 Business owners often have two financial pictures operating at the same time: the household that depends on their income and the business that may depend on their leadership, relationships, knowledge or capital.
 
@@ -38,7 +38,7 @@ That can create questions that do not arise in the same way for an employee. Wha
 
 ## Begin with continuity and obligations
 
-Business insurance should not begin with a complicated tax strategy. A more useful starting point is identifying obligations and dependencies. That may include loans, leases, payroll, partner arrangements, client relationships, ownership transfer requirements or the household's dependence on business income.
+Insurance planning for business owners should not begin with a complicated tax strategy. A more useful starting point is identifying obligations and dependencies. That may include loans, leases, payroll, partner arrangements, client relationships, ownership transfer requirements or the household's dependence on business income.
 
 Once the responsibility is clear, different funding approaches can be considered. Insurance may be one of them, but policy availability, underwriting, cost, ownership structure and legal or tax considerations all matter.
 

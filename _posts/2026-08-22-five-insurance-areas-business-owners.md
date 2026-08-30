@@ -2,7 +2,7 @@
 layout: post
 title: "Five Insurance Areas Business Owners May Want to Review"
 description: "Review personal protection, key people, ownership agreements, business debt and employee benefits without beginning with complicated tax strategies."
-excerpt_text: "Business insurance planning starts with responsibilities: the owner, key people, employees, debt and ownership arrangements."
+excerpt_text: "Insurance planning for business owners starts with responsibilities: the owner, key people, employees, debt and ownership arrangements."
 category: Business Protection
 tags: [Business Owners, Employee Benefits, Policy Reviews]
 featured_image: /assets/images/insight-business-owner.webp
@@ -74,7 +74,7 @@ The objective is not to promise better retention or lower costs. It is to unders
 
 Corporate-owned insurance can involve tax and legal considerations. Those outcomes depend on the policy structure, corporate circumstances and current legislation.
 
-For that reason, business insurance conversations should be coordinated with the company's accountant, lawyer or tax professional where appropriate rather than relying on broad statements about tax advantages.
+For that reason, insurance conversations for business owners should be coordinated with the company's accountant, lawyer or tax professional where appropriate rather than relying on broad statements about tax advantages.
 
 A useful first review simply maps the people and obligations the business depends on and identifies which questions deserve deeper attention.
 

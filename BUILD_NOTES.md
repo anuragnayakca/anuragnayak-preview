@@ -22,7 +22,7 @@ The hero visual now resolves the four areas into **One Clearer Picture**.
 - Added a Jekyll post-write output guard that fails the build if any generated HTML page lacks a doctype or title.
 - Styled non-JavaScript contact-form error responses with the public site stylesheet and branded page structure.
 - Renamed the employee-benefits article so its title no longer duplicates the Employee Benefits service page.
-- Added explicit related-article links from Personal Insurance, Business Insurance, Employee Benefits and Policy Reviews.
+- Added explicit related-article links from Personal Insurance, Insurance for Business Owners, Employee Benefits and Policy Reviews.
 - Converted the five Insights thumbnails from PNG to WebP and updated article references.
 - Increased mobile footer and legal-link tap targets.
 - Added last-modified metadata to current public pages for sitemap freshness where supported by the sitemap generator.
@@ -87,3 +87,13 @@ The preview remains intentionally blocked from indexing. Follow `PRODUCTION_LAUN
 - Removed the obsolete separate contact-email Worker and Service Binding requirement.
 - Production canonical/base URLs standardized on `https://www.anuragnayak.ca`.
 - Production robots/header settings included in the package.
+
+## V13 terminology and CMS source alignment
+
+- Replaced the public-facing service label **Business Insurance** with **Insurance for Business Owners** across the homepage service explorer, Services navigation, footer, Services overview, contact form, related links and CMS labels.
+- Reworded service copy so it does not imply broad commercial property/casualty coverage. The service now focuses on life and living-benefit considerations for owners, key people, buy-sell funding, obligations and continuity.
+- Updated the service-page SEO title, CTA, introduction and educational disclaimer to the new wording.
+- Updated structured-data `serviceType` and contact-form email labels for consistent public terminology.
+- Retained the existing `/services/business-insurance/` permalink and internal machine value `business-insurance` to avoid unnecessary URL migration, broken links or SEO churn. These are implementation identifiers, not public service names.
+- Updated the business-owner educational article language where “business insurance” was being used as the public category label.
+- Synced `cloudflare/cms-oauth-worker.js` with the OAuth handshake version that successfully authenticates Decap CMS on the production site.

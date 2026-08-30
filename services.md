@@ -2,12 +2,12 @@
 layout: page
 title: Services
 seo_title: "Insurance, Benefits & Investments | Anurag Nayak"
-description: "Explore personal and business insurance, employee benefits, registered and non-registered investment options, and policy reviews in BC, AB and ON."
+description: "Explore personal insurance, insurance for business owners, employee benefits, registered and non-registered investment options, and policy reviews in BC, AB and ON."
 permalink: /services/
 eyebrow: SERVICES
 heading: "Begin with the responsibility or decision, not the product."
 intro: "The services below are designed to help you review what is already in place, clarify what deserves attention and evaluate options only where appropriate."
-last_modified_at: 2026-08-24
+last_modified_at: 2026-08-30
 ---
 ## Personal Insurance
 
@@ -15,11 +15,11 @@ Life, critical illness and disability insurance can be reviewed in the context o
 
 [Explore Personal Insurance →](/services/personal-insurance/)
 
-## Business Insurance
+## Insurance for Business Owners
 
-Business insurance discussions may include owners, key people, buy-sell funding considerations, business obligations and continuity questions. Tax, legal and corporate-structure considerations should be coordinated with the appropriate professionals.
+Insurance for business owners may include life and living-benefit considerations connected to owners, key people, buy-sell funding, business obligations and continuity. Tax, legal and corporate-structure considerations should be coordinated with the appropriate professionals.
 
-[Explore Business Insurance →](/services/business-insurance/)
+[Explore Insurance for Business Owners →](/services/business-insurance/)
 
 ## Employee Benefits
 

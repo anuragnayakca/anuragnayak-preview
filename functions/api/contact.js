@@ -86,7 +86,7 @@ export async function onRequestPost({ request, env }) {
     const visitorLabels = { professional: 'Professional', 'business-owner': 'Business Owner', family: 'Family', other: 'Other' };
     const topicLabels = {
       'personal-insurance': 'Personal Insurance',
-      'business-insurance': 'Business Insurance',
+      'business-insurance': 'Insurance for Business Owners',
       'employee-benefits': 'Employee Benefits',
       'workplace-benefits': 'Workplace Benefits',
       'registered-investments': 'Registered Investment Options',

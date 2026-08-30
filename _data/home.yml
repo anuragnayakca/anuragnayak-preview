@@ -44,8 +44,8 @@ services:
       short: "Life, critical illness and disability coverage in the context of income and responsibilities."
       url: "/services/personal-insurance/"
       points: ["Life insurance", "Critical illness", "Disability insurance", "Workplace + personal coverage"]
-    - title: "Business Insurance"
-      short: "Insurance considerations connected to ownership, key people, obligations and continuity."
+    - title: "Insurance for Business Owners"
+      short: "Life and living-benefit considerations connected to ownership, key people, obligations and continuity."
       url: "/services/business-insurance/"
       points: ["Owner protection", "Key-person considerations", "Buy-sell funding", "Business obligations"]
     - title: "Employee Benefits"

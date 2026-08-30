@@ -1,17 +1,17 @@
 ---
-last_modified_at: 2026-08-24
+last_modified_at: 2026-08-30
 layout: service
-title: Business Insurance
-seo_title: Business Insurance for Owners | Anurag Nayak
+title: Insurance for Business Owners
+seo_title: Insurance for Business Owners | Anurag Nayak
 description: Review key-person, buy-sell funding, business debt, corporate-owned
   life insurance and owner-protection considerations in BC, Alberta and Ontario.
 permalink: /services/business-insurance/
 heading: Connect insurance decisions to the people, obligations and ownership
   arrangements that keep the business operating.
-cta_label: Book a Business Insurance Review
+cta_label: Book a Business Owner Review
 breadcrumb_parent: Services
 breadcrumb_parent_url: /services/
-intro: "Business insurance is most useful when it starts with a clear
+intro: "Insurance for business owners is most useful when it starts with a clear
   responsibility: a key person, a loan, an ownership agreement, a family
   dependency or a continuity concern."
 relevant_when:
@@ -69,11 +69,11 @@ related_links:
 related_articles:
   - five-insurance-areas-business-owners
   - employee-benefits-small-business
-educational_disclaimer: Business-insurance information is general and does not
-  constitute legal, accounting or tax advice. Corporate ownership and tax
+educational_disclaimer: Insurance information for business owners is general and
+  does not constitute legal, accounting or tax advice. Corporate ownership and tax
   consequences should be reviewed with qualified professionals.
 ---
-Business insurance becomes clearer when the conversation begins with dependency rather than product type. Who does the business rely on? What obligation would arise if an owner died or became disabled? What debt or guarantee is connected to a particular person? What does a shareholder agreement require, and how would that requirement actually be funded?
+Insurance planning for business owners becomes clearer when the conversation begins with dependency rather than product type. Who does the business rely on? What obligation would arise if an owner died or became disabled? What debt or guarantee is connected to a particular person? What does a shareholder agreement require, and how would that requirement actually be funded?
 
 Those questions can lead to different insurance considerations, but they can also reveal that a legal agreement, valuation, succession plan or emergency reserve needs attention first.
 

@@ -40,7 +40,7 @@ Open **Site Content → Contact & Business Settings** to edit:
 
 Use **Audience Pages** for Professionals, Business Owners and Families.
 
-Use **Service Pages** for Personal Insurance, Business Insurance, Employee Benefits, Registered Investment Options, Non-Registered Investment Options and Insurance Policy Reviews.
+Use **Service Pages** for Personal Insurance, Insurance for Business Owners, Employee Benefits, Registered Investment Options, Non-Registered Investment Options and Insurance Policy Reviews.
 
 Review areas, limitations, FAQs, related links and page copy are editable.
 

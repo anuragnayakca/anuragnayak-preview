@@ -74,3 +74,15 @@ A complete Jekyll render could not be run in this artifact environment because t
 - Mobile testimonial and homepage Insights lists use CSS scroll-snap, not JavaScript.
 - Full Jekyll rendering remains delegated to Cloudflare Pages because Jekyll is not installed in this artifact environment.
 - FAQPage entities are conditionally generated from the same visible FAQ data on the homepage, service pages and audience pages; no separate FAQ copy is maintained.
+
+## V13 source checks
+
+- Public-facing `Business Insurance` service labels replaced with `Insurance for Business Owners` across navigation, footer, homepage, Services overview, contact UI, CMS labels and structured data.
+- Existing `/services/business-insurance/` route retained intentionally for link and SEO continuity.
+- Contact backend retains the stable `business-insurance` machine value while mapping it to the new readable label in delivered messages.
+- Business-owner article wording updated where the old phrase acted as a category/service label.
+- Decap OAuth Worker source updated with the `authorizing:github` popup handshake that was verified successfully in the live CMS flow.
+- JavaScript syntax checks passed for the public script, contact Pages Function and CMS OAuth Worker.
+- Relevant YAML configuration files parse successfully.
+- No public-facing exact phrase `Business Insurance` remains in source; remaining `business-insurance` strings are intentional URL slugs or machine identifiers.
+- Full Jekyll rendering remains delegated to Cloudflare Pages because Jekyll is not installed in this artifact environment.

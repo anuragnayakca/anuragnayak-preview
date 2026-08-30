@@ -12,7 +12,7 @@
   children:
     - label: Personal Insurance
       url: /services/personal-insurance/
-    - label: Business Insurance
+    - label: Insurance for Business Owners
       url: /services/business-insurance/
     - label: Employee Benefits
       url: /services/employee-benefits/
