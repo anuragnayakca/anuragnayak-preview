@@ -1,16 +1,23 @@
 ---
 layout: post
-title: "What Happens to Your Workplace Benefits When You Change Employers?"
-description: "Review what happens to workplace life, disability, health and dental benefits when changing employers, including timing, portability and personal coverage."
-excerpt_text: "A job change is a good time to compare what ends, what begins, and what personal coverage continues independently of employment."
-category: Workplace Benefits
-tags: [Professionals and Career Changes, Workplace Benefits, Policy Reviews]
-featured_image: /assets/images/insight-job-change.webp
-featured_image_alt: "Abstract illustration of workplace benefits moving from one employer to another"
-read_time: 6 min read
+title: What Happens to Your Workplace Benefits When You Change Employers?
+author: Anurag Nayak
 date: 2026-08-19
+excerpt_text: A job change is a good time to compare what ends, what begins, and
+  what personal coverage continues independently of employment.
+category: Workplace Benefits
+tags:
+  - Professionals and Career Changes
+  - Workplace Benefits
+  - Policy Reviews
+featured_image: /assets/images/uploads/workplace-benefits-changing-employers.png
+featured_image_alt: Abstract illustration of workplace benefits moving from one employer to another
+seo_title: Workplace Benefits After a Job Change
+description: Review what happens to workplace life, disability, health and
+  dental benefits when changing employers, including timing, portability and
+  personal coverage.
+read_time: 6 min read
 published: true
-seo_title: "Workplace Benefits After a Job Change"
 ---
 A new role is usually evaluated through salary, responsibilities, flexibility, commute and career potential. Workplace benefits deserve a place on that list too.
 
